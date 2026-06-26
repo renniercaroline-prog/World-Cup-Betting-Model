@@ -1,34 +1,37 @@
 # WC Edge
 
-A phone-friendly web page that shows model probabilities for World Cup markets
-(goals, half-time leader, team corners). Your friend types in the odds his
-sportsbook offers; the page flags positive-value bets and suggests a stake.
-It refreshes itself once a day — no server, free to run.
+A phone-friendly web page showing model probabilities for World Cup markets, refreshed daily. No server, free to run. Your friend types in the odds his book offers and the page flags positive-value bets and suggests a stake.
 
-## How it fits together
-- **index.html** — the page he opens. Reads `data.json`. Falls back to sample data if that file isn't there yet.
-- **update.py** — the model. Pulls fixtures + corner/goal stats from API-Football, computes probabilities, writes `data.json`. With no API key it writes clearly-labelled sample data so you can see everything working first.
-- **.github/workflows/daily.yml** — runs `update.py` every day at 12:00 UTC and commits the fresh `data.json`.
+## Markets covered
+- **Match result**, **total goals** (over 0.5–4.5), **both teams to score**
+- **First-half result**, **half-time / full-time**
+- **Corners** — total over/under and per-team lines
+- **Players** — to score, score-or-assist, shot on target, foul committed, fouled
 
-## Deploy in ~10 minutes
-1. **Get a key**: sign up at api-sports.io (free plan, 100 requests/day) and copy your API key.
-2. **Create a GitHub repo** and upload these files.
-3. **Add the key as a secret**: repo → Settings → Secrets and variables → Actions → New repository secret → name `API_FOOTBALL_KEY`, paste the key.
-4. **Confirm the league id**: call `https://v3.football.api-sports.io/leagues?search=world cup` with your key, find the World Cup id, and set `WC_LEAGUE_ID` in `daily.yml` if it isn't `1`.
-5. **Turn on Pages**: repo → Settings → Pages → deploy from branch `main`, root. Your friend bookmarks the URL it gives you.
-6. **Run it once**: Actions tab → Daily update → Run workflow. After it finishes, the page shows live numbers.
+## Files
+- **model.py** — all the probability math. Poisson goals, Negative-Binomial corners, per-90 player props. No AI, no network.
+- **agent.py** — the AI layer. Uses an LLM + web search to project each team's lineup and minutes from the latest news. It returns lineups and minutes only — it never produces a probability.
+- **update.py** — runs daily: fetch data → ask the agent for lineups → run the model → write `data.json`.
+- **index.html** — the page your friend opens. Reads `data.json`; shows sample data until the first live run.
+- **.github/workflows/daily.yml** — runs it every day at 12:00 UTC.
 
-## Try it locally first
+## How the agent fits (and its one real limit)
+Player props depend on who actually starts. Confirmed lineups only appear ~1 hour before kickoff, so the noon run uses the agent's *projection* from team news and recent starts, not a confirmed sheet. Re-run the workflow manually closer to kickoff (Actions → Run workflow) for sharper player numbers. The agent's projection feeds minutes into the model; a player it marks "out" drops off entirely.
+
+## Deploy (~10 min)
+1. **API-Football key** — sign up at api-sports.io (free, 100 req/day), copy the key.
+2. **Anthropic key** — from console.anthropic.com, for the lineup agent. (Optional: without it, player props use fallback minutes and everything else still works.)
+3. **Create a repo** and upload these files (keep `.github/workflows/daily.yml` in that path).
+4. **Add secrets** — Settings → Secrets and variables → Actions → New repository secret. Add `API_FOOTBALL_KEY` and `ANTHROPIC_API_KEY`.
+5. **Pages needs a public repo on the free plan** — either make the repo public (your keys live in encrypted secrets, not in any file, so they stay private), or host the page on Cloudflare Pages from a private repo. Then Settings → Pages → branch `main` / root.
+6. **Run once** — Actions → Daily update → Run workflow. Refresh the page for live numbers.
+
+## Run locally first
 ```bash
 pip install scipy
-python update.py          # writes sample data.json (no key needed)
-python -m http.server     # open http://localhost:8000
+python update.py        # writes sample data.json, no keys needed
+python -m http.server   # open http://localhost:8000
 ```
 
-## Things to tune as you go
-- `MU_GOALS`, `LEAGUE_AVG_CORNERS`, `CORNER_R` in `update.py` are starting constants. Fit them on real data and **backtest against closing odds** before trusting any flagged edge.
-- The game-state corner adjustment (`gstate`) is a simple hand-set curve. It's the right place to encode "the team that's losing chases and wins more corners."
-- Injuries/lineups aren't in the model yet. That's the natural next layer — and the one place an LLM agent earns its keep: read team news, nudge a team's corner rate down when its set-piece taker is out, then hand the numbers back to the model.
-
-## Honest limits
-Three group games per team is very little data, so early ratings are noisy. The structure is sound; the edge is only real once it's calibrated and backtested. This is a tool for disciplined decisions, not a guaranteed profit.
+## Tune before trusting an edge
+`MU_GOALS`, `LEAGUE_AVG_CORNERS`, `CORNER_R` and the per-90 player rates are starting points. Fit them on real data and **backtest against closing odds** before believing any flagged value. The structure is sound; the edge has to be earned with calibration.
