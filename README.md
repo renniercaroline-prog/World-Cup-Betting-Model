@@ -20,9 +20,9 @@ Player props depend on who actually starts. Confirmed lineups only appear ~1 hou
 
 ## Deploy (~10 min)
 1. **API-Football key** — sign up at api-sports.io (free, 100 req/day), copy the key.
-2. **Anthropic key** — from console.anthropic.com, for the lineup agent. (Optional: without it, player props use fallback minutes and everything else still works.)
+2. **OpenAI key** — from platform.openai.com, for the lineup agent (uses gpt-5.5 via the Responses API). (Optional: without it, player props use fallback minutes and everything else still works.)
 3. **Create a repo** and upload these files (keep `.github/workflows/daily.yml` in that path).
-4. **Add secrets** — Settings → Secrets and variables → Actions → New repository secret. Add `API_FOOTBALL_KEY` and `ANTHROPIC_API_KEY`.
+4. **Add secrets** — Settings → Secrets and variables → Actions → New repository secret. Add `API_FOOTBALL_KEY` and `OPENAI_API_KEY`.
 5. **Pages needs a public repo on the free plan** — either make the repo public (your keys live in encrypted secrets, not in any file, so they stay private), or host the page on Cloudflare Pages from a private repo. Then Settings → Pages → branch `main` / root.
 6. **Run once** — Actions → Daily update → Run workflow. Refresh the page for live numbers.
 
