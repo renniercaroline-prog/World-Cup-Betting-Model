@@ -55,12 +55,12 @@ def player_pool(tid, cache):
 def build_live():
     cache={}
     if os.path.exists("cache.json"): cache=json.load(open("cache.json"))
-    today=datetime.date.today().isoformat()
-    soon=(datetime.date.today()+datetime.timedelta(days=2)).isoformat()
-    fx=api(f"/fixtures?league={LEAGUE_ID}&season={SEASON}&from={today}&to={soon}")
+    fx=api(f"/fixtures?league={LEAGUE_ID}&season={SEASON}&next=20")
     out=[]
     for f in fx:
         h,a=f["teams"]["home"],f["teams"]["away"]; ko=f["fixture"]["date"]
+        if not h.get("id") or not a.get("id"):   # undetermined knockout slot
+            continue
         hr={**team_rates(h["id"],cache),"name":h["name"]}
         ar={**team_rates(a["id"],cache),"name":a["name"]}
         proj=agent.project(h["name"],a["name"],ko)
