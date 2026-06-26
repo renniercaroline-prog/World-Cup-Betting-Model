@@ -1,0 +1,84 @@
+{
+  "updated": "2026-06-26T21:32:20.922263Z",
+  "sample": true,
+  "fixtures": [
+    {
+      "home": "Spain",
+      "away": "Uruguay",
+      "kickoff": "2026-06-26T18:00:00Z",
+      "xg": [
+        2.62,
+        0.9
+      ],
+      "corners": [
+        7.9,
+        4.8
+      ],
+      "markets": [
+        {
+          "label": "Over 1.5 goals",
+          "p": 0.866
+        },
+        {
+          "label": "Over 2.5 goals",
+          "p": 0.683
+        },
+        {
+          "label": "Spain lead at HT",
+          "p": 0.558
+        },
+        {
+          "label": "Uruguay 3+ corners",
+          "p": 0.778
+        },
+        {
+          "label": "Uruguay 4+ corners",
+          "p": 0.631
+        },
+        {
+          "label": "Uruguay 5+ corners",
+          "p": 0.482
+        }
+      ]
+    },
+    {
+      "home": "Brazil",
+      "away": "Netherlands",
+      "kickoff": "2026-06-29T19:00:00Z",
+      "xg": [
+        1.84,
+        1.57
+      ],
+      "corners": [
+        5.7,
+        5.2
+      ],
+      "markets": [
+        {
+          "label": "Over 1.5 goals",
+          "p": 0.853
+        },
+        {
+          "label": "Over 2.5 goals",
+          "p": 0.661
+        },
+        {
+          "label": "Brazil lead at HT",
+          "p": 0.354
+        },
+        {
+          "label": "Netherlands 3+ corners",
+          "p": 0.813
+        },
+        {
+          "label": "Netherlands 4+ corners",
+          "p": 0.68
+        },
+        {
+          "label": "Netherlands 5+ corners",
+          "p": 0.537
+        }
+      ]
+    }
+  ]
+}
