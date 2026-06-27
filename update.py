@@ -19,6 +19,12 @@ ELO_SEASONS_BACK = 4             # seasons of internationals for the Elo prior; 
                                  # and helps teams that play infrequently (international = sparse)
 CLUB_SEASON = SEASON - 1         # club-season used for player priors (just-finished season)
 XG_LEAGUE = os.environ.get("XG_LEAGUE", "INT-World Cup").strip()  # FBref key for team xG (best-effort)
+# Only line-shop across bookmakers the user can actually bet at. Including offshore/
+# sharp books (Pinnacle, 1xBet, Betano, Marathonbet, SBO) inflates the apparent edge
+# with prices that aren't placeable in the UK. Default = UK-accessible books in the
+# feed; override via env (comma-separated). Empty string = use every book.
+ODDS_BOOKS = set(b.strip() for b in os.environ.get(
+    "ODDS_BOOKS", "Bet365,William Hill,Unibet,Betfair,BetVictor,888Sport,10Bet").split(",") if b.strip())
 
 def api(path):
     req = urllib.request.Request(BASE + path, headers={"x-apisports-key": API_KEY})
@@ -166,6 +172,8 @@ def best_odds(resp):
     if not resp:
         return out
     for bm in resp[0].get("bookmakers", []):
+        if ODDS_BOOKS and bm.get("name") not in ODDS_BOOKS:
+            continue                                          # only books the user can bet at
         for bet in bm.get("bets", []):
             for val in bet.get("values", []):
                 key = _odds_key(bet["name"], val.get("value", ""))
