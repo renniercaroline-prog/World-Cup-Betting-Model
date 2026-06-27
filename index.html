@@ -741,16 +741,16 @@ function renderBoard(){
   const picks=bestBets();
   const note='<div class="bnote">Ranked by expected value after removing model-vs-market mismatches (usually model error, not edge). '
     +'These are <b>candidates, not advice</b> — the model is not yet validated against closing lines. Singles only, small stakes.</div>';
-  if(!picks.length){ el.innerHTML='<div class="board"><div class="bhead"><span>Today’s best bets</span></div>'
-    +'<div class="bnote">No clear edges in today’s prices — the market looks efficient. That’s normal, and a good sign the tool isn’t fooling you with fake value.</div></div>'; return; }
+  if(!picks.length){ el.innerHTML='<div class="board"><div class="bhead"><span>Best bets</span></div>'
+    +'<div class="bnote">No clear edges in the current prices — the market looks efficient. That’s normal, and a good sign the tool isn’t fooling you with fake value.</div></div>'; return; }
   const rows=picks.map(p=>{ const o=p.m.odd, k=Math.max(0,(p.m.p*o-1)/(o-1))*kf()*bk();
     return `<div class="brow">
-      <div><b>${p.m.label}</b><small>${p.f.home} v ${p.f.away} · ${p.g.name}</small></div>
+      <div><b>${p.m.label}</b><small><span style="color:var(--chalk)">${fmt(p.f.kickoff)}</span> · ${p.f.home} v ${p.f.away} · ${p.g.name}</small></div>
       <div class="bnum">${pct(p.m.p)}<small>mkt ${pct(p.m.mkt_p)}</small></div>
       <div class="bnum">${o}<small>${p.m.book||''}</small></div>
       <div class="bnum"><span class="tag val">+${(p.m.ev*100).toFixed(0)}%</span><small>stake ${k.toFixed(2)}</small></div>
     </div>`; }).join('');
-  el.innerHTML=`<div class="board"><div class="bhead"><span>Today’s best bets</span><span class="bsub">candidate edges · unproven</span></div>${rows}${note}</div>`;
+  el.innerHTML=`<div class="board"><div class="bhead"><span>Best bets <span class="bsub">next few days</span></span><span class="bsub">candidate edges · unproven</span></div>${rows}${note}</div>`;
 }
 // Model track record — how the flagged bets have actually done (paper-trade).
 function renderTrack(){
