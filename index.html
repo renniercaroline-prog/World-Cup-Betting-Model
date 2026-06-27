@@ -54,6 +54,24 @@
   .ev-neg{color:var(--red)}
   footer{color:var(--sage);font-size:11px;line-height:1.5;margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
   a{color:var(--blue)}
+  .help{background:var(--card2);border:1px solid var(--line);border-radius:12px;margin:14px 0}
+  .help>summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:600;font-size:13px;color:var(--gold);
+                display:flex;justify-content:space-between;align-items:center}
+  .help>summary::-webkit-details-marker{display:none}
+  .help>summary .chev{font-family:var(--mono);color:var(--sage)}
+  .help .body{padding:0 14px 14px;font-size:13px;color:var(--sage);line-height:1.55}
+  .help .body p{margin:9px 0}
+  .help .body b{color:var(--chalk)}
+  .hint{grid-column:1/-1;color:var(--sage);font-size:11px;line-height:1.4;margin-top:2px}
+  .board{background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:12px 14px;margin:14px 0}
+  .bhead{color:var(--gold);font-weight:700;font-size:14px;margin-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+  .bsub{color:var(--sage);font-family:var(--mono);font-size:10px;letter-spacing:.5px;font-weight:400}
+  .brow{display:grid;grid-template-columns:1fr auto auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--card2)}
+  .brow b{font-size:13px}
+  .brow small{display:block;color:var(--sage);font-family:var(--mono);font-size:10px}
+  .bnum{text-align:right;font-family:var(--mono);font-size:13px;color:var(--chalk)}
+  .bnote{color:var(--sage);font-size:11px;line-height:1.5;margin-top:10px;border-top:1px solid var(--card2);padding-top:8px}
+  .bnote b{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -63,11 +81,24 @@
   <p class="sub">Type the odds your book offers into any market. Gold means the model rates it higher than the price implies.</p>
   <div class="updated" id="updated"></div>
   <div id="banner"></div>
+  <details class="help">
+    <summary><span>ℹ How to use this — value bets, stakes &amp; Kelly explained</span><span class="chev">+</span></summary>
+    <div class="body">
+      <p><b>1. Type the odds your bookmaker offers</b> in the box next to any market. Each market already shows the model's own estimate, e.g. <i>model 60%</i>.</p>
+      <p><b>2. Look for gold.</b> <span class="tag val">VALUE</span> means the model rates the outcome <b>more likely than the odds imply</b> — a positive-value bet. <span class="tag pass">PASS</span> means the price isn't worth it.</p>
+      <p><b>What is a value bet?</b> Odds of 2.50 imply a 40% chance (1 ÷ 2.50). If the model says 50%, the book is paying you as if it's less likely than it really is — that gap is your edge.</p>
+      <p><b>Stake</b> next to a VALUE bet is how much to put on, worked out from your <b>Bankroll</b> and <b>Kelly fraction</b>.</p>
+      <p><b>Kelly fraction</b> sets how aggressively you stake. Full Kelly grows a bankroll fastest but swings hard; <b>0.25 (quarter-Kelly)</b> is the safe default — slide lower to be more cautious.</p>
+      <p style="color:var(--gold)"><b>Bet responsibly:</b> these are estimates, not certainties. Stick to single bets (don't combine them), and only stake what you can afford to lose.</p>
+    </div>
+  </details>
   <div class="controls">
-    <div><label>Bankroll</label><input type="number" id="bankroll" value="100" inputmode="decimal"></div>
+    <div><label>Bankroll</label><input type="number" id="bankroll" value="100" inputmode="decimal" step="any"></div>
     <div><label>Kelly fraction · <span id="kf">0.25</span>×</label>
          <input type="range" id="kelly" min="0.1" max="1" step="0.05" value="0.25"></div>
+    <div class="hint">Bankroll = your total betting pot. Kelly fraction = how aggressively to stake (0.25 = cautious quarter-Kelly).</div>
   </div>
+  <div id="board"></div>
   <div id="fixtures"></div>
   <footer>
     Probabilities come from a statistical model (Poisson goals, Negative-Binomial corners, per-90 player rates).
@@ -682,10 +713,42 @@ function verdict(p, o){
   return `<span class="tag pass">PASS</span><br><span class="ev-neg">${(ev*100).toFixed(1)}%</span>`;
 }
 
+// Candidate value board. CRITICAL: the biggest raw-EV "edges" are almost always the
+// model being miscalibrated on longshots (e.g. an 18% underdog the market prices at 5%),
+// not real value. So we DROP bets where the model disagrees too much with the de-vigged
+// market price, keep only small believable edges, and label them as unproven candidates.
+function bestBets(){
+  const picks=[];
+  DATA.fixtures.forEach(f=>f.groups.forEach(g=>g.markets.forEach(m=>{
+    if(m.ev==null||m.mkt_p==null) return;
+    const ratio=m.p/m.mkt_p;                       // how much more optimistic than the sharp market
+    if(m.ev>=0.03 && m.ev<=0.25 && ratio<=1.6 && m.mkt_p>=0.12) picks.push({f,g,m});
+  })));
+  return picks.sort((a,b)=>b.m.ev-a.m.ev).slice(0,8);
+}
+function renderBoard(){
+  const el=document.getElementById('board');
+  const priced=DATA.fixtures.some(f=>f.groups.some(g=>g.markets.some(m=>m.ev!=null)));
+  if(!priced){ el.innerHTML=''; return; }          // sample mode / no odds yet
+  const picks=bestBets();
+  const note='<div class="bnote">Ranked by expected value after removing model-vs-market mismatches (usually model error, not edge). '
+    +'These are <b>candidates, not advice</b> — the model is not yet validated against closing lines. Singles only, small stakes.</div>';
+  if(!picks.length){ el.innerHTML='<div class="board"><div class="bhead"><span>Today’s best bets</span></div>'
+    +'<div class="bnote">No clear edges in today’s prices — the market looks efficient. That’s normal, and a good sign the tool isn’t fooling you with fake value.</div></div>'; return; }
+  const rows=picks.map(p=>{ const o=p.m.odd, k=Math.max(0,(p.m.p*o-1)/(o-1))*kf()*bk();
+    return `<div class="brow">
+      <div><b>${p.m.label}</b><small>${p.f.home} v ${p.f.away} · ${p.g.name}</small></div>
+      <div class="bnum">${pct(p.m.p)}<small>mkt ${pct(p.m.mkt_p)}</small></div>
+      <div class="bnum">${o}<small>${p.m.book||''}</small></div>
+      <div class="bnum"><span class="tag val">+${(p.m.ev*100).toFixed(0)}%</span><small>stake ${k.toFixed(2)}</small></div>
+    </div>`; }).join('');
+  el.innerHTML=`<div class="board"><div class="bhead"><span>Today’s best bets</span><span class="bsub">candidate edges · unproven</span></div>${rows}${note}</div>`;
+}
 function render(){
   document.getElementById('updated').textContent = DATA.updated==='sample'?'':'Updated '+fmt(DATA.updated);
   document.getElementById('banner').innerHTML = DATA.sample
     ? '<div class="banner">Showing sample data. Add your API-Football and Anthropic keys in GitHub to switch to live daily numbers and lineups.</div>':'';
+  renderBoard();
   const root = document.getElementById('fixtures'); root.innerHTML='';
   DATA.fixtures.forEach((f, fi) => {
     const el = document.createElement('div'); el.className='fixture';
@@ -701,11 +764,12 @@ function render(){
       s.innerHTML = `<span>${g.name}</span><span class="chev">${d.open?'–':'+'}</span>`;
       d.appendChild(s);
       g.markets.forEach((m, mi) => {
-        const id=`o_${fi}_${gi}_${mi}`, o=odds[id];
+        // keep the user's RAW text (so a half-typed "2." isn't wiped); parse only for math
+        const id=`o_${fi}_${gi}_${mi}`, raw=odds[id], o=parseFloat(raw);
         const row=document.createElement('div'); row.className='row';
         row.innerHTML =
-          `<div class="mlabel">${m.label}<small>model ${pct(m.p)}${o&&o>1?' · impl '+pct(1/o):''}</small></div>
-           <input class="odds" id="${id}" inputmode="decimal" placeholder="odds" value="${o||''}">
+          `<div class="mlabel">${m.label}<small>model ${pct(m.p)}${m.odd?' · book '+m.odd:''}${o>1?' · impl '+pct(1/o):''}</small></div>
+           <input class="odds" id="${id}" inputmode="decimal" placeholder="odds" value="${raw||''}">
            <div class="verdict">${verdict(m.p,o)}</div>`;
         d.appendChild(row);
       });
@@ -715,13 +779,14 @@ function render(){
     root.appendChild(el);
   });
   document.querySelectorAll('.odds').forEach(inp=>{
-    inp.addEventListener('input',e=>{ odds[e.target.id]=parseFloat(e.target.value); _f=e.target.id; render(); });
+    inp.addEventListener('input',e=>{ odds[e.target.id]=e.target.value; _f=e.target.id; render(); });
   });
 }
 let _f=null;
 const _r=render; render=function(){ _r(); if(_f){const n=document.getElementById(_f); if(n){n.focus(); n.setSelectionRange(n.value.length,n.value.length);}} };
 document.getElementById('kelly').addEventListener('input',e=>{document.getElementById('kf').textContent=(+e.target.value).toFixed(2); render();});
 document.getElementById('bankroll').addEventListener('input',render);
+(()=>{const h=document.querySelector('.help');h.addEventListener('toggle',()=>{h.querySelector('.chev').textContent=h.open?'–':'+';});})();
 fetch('data.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(d=>{DATA=d; render();}).catch(()=>render());
 </script>
 </body>

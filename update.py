@@ -5,6 +5,7 @@ model, writes data.json. With no API_FOOTBALL_KEY it produces labelled sample
 data so the page renders end to end.
 """
 import os, json, datetime, urllib.request
+from collections import defaultdict
 import model, agent, elo, xg
 
 API_KEY   = os.environ.get("API_FOOTBALL_KEY", "").strip()
@@ -141,6 +142,87 @@ def player_pool(tid, cache):
                 p[k]=w*club[k]+(1-w)*p[k]
     cache[key]=pool; return pool
 
+# ---------------------------------------------------------------- odds (book prices)
+# Pull bookmaker odds, take the BEST price per selection across all books (line
+# shopping maximises your payout), de-vig each market to a fair market probability,
+# and attach odds + expected value to the matching model markets. EV = model_p*odd-1.
+# Odds are NOT cached — they move; we fetch fresh each run.
+def _odds_key(betname, value):
+    """Normalise a (bookmaker bet, selection) into a key that matches a model market."""
+    v = str(value).strip()
+    if betname == "Match Winner":
+        return {"Home": "1x2:home", "Draw": "1x2:draw", "Away": "1x2:away"}.get(v)
+    if betname == "Goals Over/Under":
+        return "ou:" + v.lower().replace(" ", ":")            # 'Over 2.5' -> 'ou:over:2.5'
+    if betname == "Both Teams Score":
+        return "btts:" + v.lower() if v in ("Yes", "No") else None
+    if betname == "Corners Over Under":
+        return "corners:" + v.lower().replace(" ", ":")        # 'Over 9.5' -> 'corners:over:9.5'
+    return None
+
+def best_odds(resp):
+    """{key: (best_odd, book_name)} — highest price offered for each selection."""
+    out = {}
+    if not resp:
+        return out
+    for bm in resp[0].get("bookmakers", []):
+        for bet in bm.get("bets", []):
+            for val in bet.get("values", []):
+                key = _odds_key(bet["name"], val.get("value", ""))
+                if not key:
+                    continue
+                try:
+                    odd = float(val["odd"])
+                except (KeyError, ValueError, TypeError):
+                    continue
+                if key not in out or odd > out[key][0]:
+                    out[key] = (odd, bm["name"])
+    return out
+
+def devig(best):
+    """Per logical market, strip the bookmaker margin to a fair probability:
+    fair_p = (1/odd) / sum(1/odd over the market's mutually-exclusive outcomes)."""
+    groups = defaultdict(list)
+    for key in best:
+        if key.startswith("1x2:"):       groups["1x2"].append(key)
+        elif key.startswith("ou:"):      groups["ou:" + key.split(":")[2]].append(key)      # per line
+        elif key.startswith("btts:"):    groups["btts"].append(key)
+        elif key.startswith("corners:"): groups["corners:" + key.split(":")[2]].append(key) # per line
+    prob = {}
+    for keys in groups.values():
+        imp = {k: 1.0 / best[k][0] for k in keys}
+        s = sum(imp.values())
+        if s > 0:
+            for k in keys:
+                prob[k] = imp[k] / s
+    return prob
+
+def _market_key(group, label, home, away):
+    if group == "Match result":
+        return {f"{home} win": "1x2:home", "Draw": "1x2:draw", f"{away} win": "1x2:away"}.get(label)
+    if group == "Total goals":
+        return "ou:" + label.lower().replace(" ", ":")
+    if group == "Both teams to score":
+        return "btts:" + label.lower()
+    if group == "Corners" and label.startswith("Total "):
+        return "corners:" + label[6:].lower().replace(" ", ":")
+    return None
+
+def attach_odds(fo, best, fair):
+    """Add book odds, source book, fair (de-vigged) market prob and EV to each market
+    we have a price for. Markets with no book line are left model-only."""
+    home, away = fo["home"], fo["away"]
+    for g in fo["groups"]:
+        for m in g["markets"]:
+            key = _market_key(g["name"], m["label"], home, away)
+            if key and key in best:
+                odd, book = best[key]
+                m["odd"] = round(odd, 2)
+                m["book"] = book
+                m["ev"] = round(m["p"] * odd - 1, 3)           # +EV = model rates it above the price
+                if key in fair:
+                    m["mkt_p"] = round(fair[key], 3)           # market's fair prob, for context
+
 def build_live():
     cache={}
     if os.path.exists("cache.json"): cache=json.load(open("cache.json"))
@@ -198,7 +280,14 @@ def build_live():
         ar["atk"]*=a_atk; ar["def"]*=a_def
         hp=agent.apply_minutes(hp_pool,proj["home"])
         ap=agent.apply_minutes(ap_pool,proj["away"])
-        fo=model.build_fixture(hr,ar,hp,ap,proj.get("note","")); fo["kickoff"]=ko; out.append(fo)
+        fo=model.build_fixture(hr,ar,hp,ap,proj.get("note","")); fo["kickoff"]=ko
+        # auto odds: pull book prices, attach best-price + EV to each matched market
+        try:
+            od=best_odds(api(f"/odds?fixture={f['fixture']['id']}"))
+            attach_odds(fo,od,devig(od))
+        except Exception as e:
+            print(f"   (odds skipped for {h['name']} v {a['name']}: {e})")
+        out.append(fo)
     out.sort(key=lambda o:o["kickoff"])              # §4.2 soonest kickoff first
     json.dump(cache,open("cache.json","w"))
     return out,False
