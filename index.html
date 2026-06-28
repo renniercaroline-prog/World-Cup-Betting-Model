@@ -85,6 +85,13 @@
   .gbrow{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:5px 0;border-top:1px solid var(--line);font-size:12px}
   .gbrow .gblab small{color:var(--sage);font-family:var(--mono);font-size:10px;margin-left:6px}
   .gbnum{font-family:var(--mono);color:var(--chalk);font-size:12px;text-align:right}
+  .tmeans{margin-top:8px;border-top:1px solid var(--line);padding-top:6px}
+  .tmeans>summary{list-style:none;cursor:pointer;color:var(--gold);font-size:11px;font-weight:600}
+  .tmeans>summary::-webkit-details-marker{display:none}
+  .tmeans>summary::after{content:" +";font-family:var(--mono)}
+  .tmeans[open]>summary::after{content:" –";font-family:var(--mono)}
+  .tmeans p{font-size:11px;color:var(--sage);line-height:1.5;margin:7px 0}
+  .tmeans b{color:var(--chalk)}
 </style>
 </head>
 <body>
@@ -782,9 +789,15 @@ function renderTrack(){
       + (thin?` (most so far were logged too late to measure)`:``)
       + `; the numbers need ~30+ settled bets to mean much. Watch <b>closing-line value</b> first — consistently positive = the model is genuinely ahead of the market.`
     : `Watch closing-line value: consistently positive = a real edge.`;
+  const means=`<details class="tmeans"><summary>ℹ what these numbers mean</summary>`
+    +`<p><b>Profit (1 unit flat)</b> — your running up/down if you staked the same amount (“1 unit”) on every bet the model flags. E.g. +5u = up 5 stakes (≈ +£50 at £10 a bet).</p>`
+    +`<p><b>ROI</b> — profit as a % of everything staked. +10% = up about £10 for every £100 risked.</p>`
+    +`<p><b>Closing-line value (CLV)</b> — did you take a <b>better price</b> than where the odds finished at kickoff? It’s the earliest, most reliable sign of a real edge. Positive = you’re ahead of the market.</p>`
+    +`<p><b>beat close</b> — the % of bets that got a bigger price than the closing line. You want this <b>above 50%</b>.</p>`
+    +`<p style="color:var(--gold)"><b>Which to trust:</b> profit/ROI on a small number of bets is mostly luck. <b>CLV is the real signal</b> — a good ROI alongside flat or negative CLV means you got lucky, not that the model has an edge.</p></details>`;
   el.innerHTML=`<div class="track"><div class="thead"><span>Model track record</span>`
     +`<span class="bsub">${t.logged} flagged · ${t.open} open</span></div>${rows}`
-    +`<div class="bnote" style="border-top:1px solid var(--line);margin-top:6px;padding-top:8px">${note}</div></div>`;
+    +`<div class="bnote" style="border-top:1px solid var(--line);margin-top:6px;padding-top:8px">${note}</div>${means}</div>`;
 }
 // Per-game best value: every priced market in THIS game, sorted by edge (looser
 // than the top board — drops only the wildest model-vs-market mismatches).
