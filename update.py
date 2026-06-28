@@ -18,6 +18,11 @@ ELO_SEASONS_BACK = 4             # seasons of internationals for the Elo prior; 
                                  # time-decay down-weights the oldest, so extra history is safe
                                  # and helps teams that play infrequently (international = sparse)
 CLUB_SEASON = SEASON - 1         # club-season used for player priors (just-finished season)
+# The lineup agent (OpenAI, pay-per-call) is only worth running near kickoff — that's
+# when lineups matter and get confirmed. Outside this window we skip the call entirely;
+# inside it we reuse a recent cached projection rather than re-querying every run.
+AGENT_WINDOW_HOURS = float(os.environ.get("AGENT_WINDOW_HOURS", "3"))   # only call the agent within Nh of kickoff
+AGENT_REFRESH_MIN  = float(os.environ.get("AGENT_REFRESH_MIN", "60"))   # reuse a cached projection younger than this
 XG_LEAGUE = os.environ.get("XG_LEAGUE", "INT-World Cup").strip()  # FBref key for team xG (best-effort)
 # Only line-shop across bookmakers the user can actually bet at. Including offshore/
 # sharp books (Pinnacle, 1xBet, Betano, Marathonbet, SBO) inflates the apparent edge
@@ -328,6 +333,29 @@ def _result(fid):
     except Exception:
         return None
 
+def get_projection(fid, home, away, ko, cache):
+    """Spend a (paid) OpenAI lineup call ONLY near kickoff, and reuse a recent cached
+    one — instead of re-querying every fixture on every run. Far from kickoff, returns
+    a no-call placeholder (player props then use fallback minutes, same as no key)."""
+    now = datetime.datetime.now(datetime.timezone.utc)
+    try:
+        hrs = (datetime.datetime.fromisoformat(ko.replace("Z","+00:00")) - now).total_seconds()/3600
+    except Exception:
+        hrs = 0
+    if hrs > AGENT_WINDOW_HOURS:                       # too far out -> no OpenAI call
+        return {"home":{"starters":[],"out":[]}, "away":{"starters":[],"out":[]},
+                "note": f"Lineups projected ~{int(AGENT_WINDOW_HOURS)}h before kickoff."}
+    key = f"ag{fid}"; ent = cache.get(key)
+    if isinstance(ent, dict) and "proj" in ent:
+        try:
+            if (now - datetime.datetime.fromisoformat(ent["ts"])).total_seconds()/60 < AGENT_REFRESH_MIN:
+                return ent["proj"]                    # recent enough -> reuse, no call
+        except Exception:
+            pass
+    proj = agent.project(home, away, ko)              # the paid OpenAI call (or mock if no key)
+    cache[key] = {"ts": now.isoformat(), "proj": proj}
+    return proj
+
 def build_live():
     cache={}
     if os.path.exists("cache.json"): cache=json.load(open("cache.json"))
@@ -375,7 +403,7 @@ def build_live():
     for f in games:
         h,a=f["teams"]["home"],f["teams"]["away"]; ko=f["fixture"]["date"]
         hp_pool=player_pool(h["id"],cache); ap_pool=player_pool(a["id"],cache)
-        proj=agent.project(h["name"],a["name"],ko)
+        proj=get_projection(f["fixture"]["id"],h["name"],a["name"],ko,cache)
         # §5.4 missing/rested key players dock TEAM attack/defence, not just props
         h_atk,h_def=model.lineup_strength(hp_pool,proj["home"])
         a_atk,a_def=model.lineup_strength(ap_pool,proj["away"])
