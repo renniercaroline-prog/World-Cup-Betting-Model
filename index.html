@@ -771,11 +771,16 @@ function renderTrack(){
   } else {
     rows+=`<div class="trow"><span>Settled bets</span><b>none yet</b></div>`;
   }
-  if(t.closed>0){
+  if(t.closed>=15){
     rows+=`<div class="trow"><span>Closing-line value <small style="color:var(--sage)">(the key signal)</small></span><b class="${sign(t.avg_clv)}">${pct(t.avg_clv)} · beat close ${(100*t.beat_close).toFixed(0)}%</b></div>`;
+  } else {
+    rows+=`<div class="trow"><span>Closing-line value <small style="color:var(--sage)">(the key signal)</small></span><b style="color:var(--sage)">building…</b></div>`;
   }
-  const note = t.settled<30
-    ? `Early days — needs ~30+ settled bets before the numbers mean much. Watch <b>closing-line value</b> first: consistently positive = the model is genuinely ahead of the market.`
+  const thin = (t.clv_single||0) > t.closed;
+  const note = (t.closed<15 || t.settled<30)
+    ? `Early days. CLV only counts once a game is logged <i>ahead</i> of kickoff and re-priced at the close`
+      + (thin?` (most so far were logged too late to measure)`:``)
+      + `; the numbers need ~30+ settled bets to mean much. Watch <b>closing-line value</b> first — consistently positive = the model is genuinely ahead of the market.`
     : `Watch closing-line value: consistently positive = a real edge.`;
   el.innerHTML=`<div class="track"><div class="thead"><span>Model track record</span>`
     +`<span class="bsub">${t.logged} flagged · ${t.open} open</span></div>${rows}`

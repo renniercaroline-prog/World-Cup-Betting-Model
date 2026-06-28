@@ -147,14 +147,21 @@ def summary_dict(log=None):
     """Machine-readable track record (embedded in data.json for the website panel)."""
     log = log if log is not None else load()
     recs = list(log.values())
-    clv = [r["clv"] for r in recs if r.get("clv") is not None]
+    # CLV is only meaningful when we captured an EARLY 'open' and a LATER 'close'.
+    # Records seen only once (open_ts == close_ts — first logged right before kickoff)
+    # carry no closing-line information, so they're excluded from the CLV stats rather
+    # than counted as "didn't beat the close" (which would falsely drag the number down).
+    moved = [r for r in recs if r.get("clv") is not None and r.get("open_ts") != r.get("close_ts")]
+    single = sum(1 for r in recs if r.get("clv") is not None and r.get("open_ts") == r.get("close_ts"))
+    clv = [r["clv"] for r in moved]
     settled = [r for r in recs if r.get("result")]
     wins = sum(1 for r in settled if r["result"] == "win")
     pnl = sum(r["pnl"] for r in settled if r.get("pnl") is not None)
     return {
         "logged": len(recs),
         "open": sum(1 for r in recs if r["status"] == "open"),
-        "closed": len(clv),
+        "closed": len(clv),                 # only bets with a real open-vs-close comparison
+        "clv_single": single,               # logged once, too late to measure CLV
         "avg_clv": round(sum(clv) / len(clv), 4) if clv else None,
         "beat_close": round(sum(1 for c in clv if c > 0) / len(clv), 3) if clv else None,
         "settled": len(settled), "wins": wins, "losses": len(settled) - wins,
@@ -165,10 +172,13 @@ def summary(log=None):
     log = log if log is not None else load()
     recs = list(log.values())
     openn = [r for r in recs if r["status"] == "open"]
-    clv = [r["clv"] for r in recs if r.get("clv") is not None]
+    moved = [r for r in recs if r.get("clv") is not None and r.get("open_ts") != r.get("close_ts")]
+    single = sum(1 for r in recs if r.get("clv") is not None and r.get("open_ts") == r.get("close_ts"))
+    clv = [r["clv"] for r in moved]
     settled = [r for r in recs if r.get("result")]
     print("=" * 64)
-    print(f"CLV SCOREBOARD — {len(recs)} bets logged ({len(openn)} still open, {len(clv)} closed)")
+    print(f"CLV SCOREBOARD — {len(recs)} logged ({len(openn)} open, {len(clv)} with a real "
+          f"open→close, {single} logged too late to measure)")
     print("=" * 64)
     if clv:
         beat = sum(1 for c in clv if c > 0)
@@ -176,7 +186,8 @@ def summary(log=None):
         print(f"  average CLV   : {sum(clv)/len(clv)*100:+.2f}%   (want this clearly > 0)")
         print(f"  beat the close: {beat}/{len(clv)} = {100*beat/len(clv):.0f}% of bets")
     else:
-        print("No closed bets yet — CLV appears once logged fixtures kick off.")
+        print(f"No measurable CLV yet ({single} bets were logged right before kickoff, so there")
+        print(" was no earlier 'opening' price to compare). Needs games captured days ahead.")
     if settled:
         wins = sum(1 for r in settled if r["result"] == "win")
         pnl = sum(r["pnl"] for r in settled if r.get("pnl") is not None)
