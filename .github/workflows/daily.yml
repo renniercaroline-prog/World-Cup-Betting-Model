@@ -27,10 +27,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # scipy: model math. soccerdata: optional xG source (Phase 2.1) — the pipeline
-      # degrades gracefully to goals if it fails to install or scrape, so it must not
-      # break the run. Pinned-free install; remove soccerdata if you don't want xG.
-      - run: pip install scipy && pip install soccerdata || echo "soccerdata unavailable — xG will fall back to goals"
+      # scipy: model math. (soccerdata/FBref xG is intentionally NOT installed — it
+      # is big-5-only and fragile in CI; the model uses goals, which is reliable.
+      # To experiment with xG, add `pip install soccerdata` and set XG_ENABLE=1 below.)
+      - run: pip install scipy
       - name: Run agent + model
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}

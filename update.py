@@ -75,13 +75,16 @@ def team_rates(tid, name, cache):
        "catk":(cf/n)/model.LEAGUE_AVG_CORNERS or 1,"ccon":(ca/n)/model.LEAGUE_AVG_CORNERS or 1,
        "sot_con":(sotc/n)/model.LEAGUE_AVG_SOT or 1,  # §2.2 opponent SoT adjustment
        "n":n}                                  # n drives the prior/form shrinkage weight
-    # §2.1 prefer xG-derived attack/defence when a free source has it (else keep goals)
-    try:
-        xr = xg.team_rates_from_xg(name, XG_LEAGUE, SEASON, model.MU_GOALS)
-        if xr:
-            r.update({k: xr[k] for k in ("atk", "def") if k in xr})
-    except Exception as e:
-        print(f"   (team xG skipped for {name}: {e})")
+    # §2.1 optional xG-derived attack/defence. OFF by default: soccerdata/FBref is
+    # big-5-only and fragile in CI (it crashed the live runner), so we use goals,
+    # which is reliable. Set XG_ENABLE=1 (and install soccerdata) to experiment.
+    if os.environ.get("XG_ENABLE") == "1":
+        try:
+            xr = xg.team_rates_from_xg(name, XG_LEAGUE, SEASON, model.MU_GOALS)
+            if xr:
+                r.update({k: xr[k] for k in ("atk", "def") if k in xr})
+        except BaseException as e:                  # belt-and-braces: never crash the run
+            print(f"   (team xG skipped for {name}: {e})")
     _cache_put(cache, str(tid), r); return r
 
 def build_historical_elo(team_ids, cache):
