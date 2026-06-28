@@ -834,13 +834,28 @@ function render(){
     root.appendChild(el);
   });
   document.querySelectorAll('.odds').forEach(inp=>{
-    inp.addEventListener('input',e=>{ odds[e.target.id]=e.target.value; _f=e.target.id; render(); });
+    // update ONLY this row in place. Re-rendering the whole page on each keystroke
+    // collapsed the open section and jumped the page to the top.
+    inp.addEventListener('input',e=>{
+      const id=e.target.id; odds[id]=e.target.value;
+      const p=id.split('_'), m=DATA.fixtures[+p[1]].groups[+p[2]].markets[+p[3]];
+      const o=parseFloat(e.target.value), row=e.target.closest('.row');
+      row.querySelector('.verdict').innerHTML=verdict(m.p,o);
+      row.querySelector('.mlabel small').innerHTML=`model ${pct(m.p)}${m.odd?' · book '+m.odd:''}${o>1?' · impl '+pct(1/o):''}`;
+    });
   });
 }
-let _f=null;
-const _r=render; render=function(){ _r(); if(_f){const n=document.getElementById(_f); if(n){n.focus(); n.setSelectionRange(n.value.length,n.value.length);}} };
-document.getElementById('kelly').addEventListener('input',e=>{document.getElementById('kf').textContent=(+e.target.value).toFixed(2); render();});
-document.getElementById('bankroll').addEventListener('input',render);
+// Bankroll + Kelly change stakes/verdicts; update them in place rather than rebuilding
+// #fixtures (which would collapse whatever section the user has open).
+function refreshVerdicts(){
+  document.querySelectorAll('#fixtures .row').forEach(row=>{
+    const inp=row.querySelector('.odds'); if(!inp) return;
+    const p=inp.id.split('_'), m=DATA.fixtures[+p[1]].groups[+p[2]].markets[+p[3]];
+    row.querySelector('.verdict').innerHTML=verdict(m.p, parseFloat(odds[inp.id]));
+  });
+}
+document.getElementById('kelly').addEventListener('input',e=>{document.getElementById('kf').textContent=(+e.target.value).toFixed(2); renderBoard(); refreshVerdicts();});
+document.getElementById('bankroll').addEventListener('input',()=>{ renderBoard(); refreshVerdicts(); });
 (()=>{const h=document.querySelector('.help');h.addEventListener('toggle',()=>{h.querySelector('.chev').textContent=h.open?'–':'+';});})();
 fetch('data.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(d=>{DATA=d; render();}).catch(()=>render());
 </script>
