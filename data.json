@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T18:12:32.134656+00:00",
+  "updated": "2026-06-29T19:42:10.784575+00:00",
   "sample": false,
   "fixtures": [
     {
@@ -13,7 +13,7 @@
         6.4,
         3.3
       ],
-      "agent_note": "Projected XIs; Brown carries minor muscle concern.",
+      "agent_note": "Confirmed lineups used; only ruled-out injury/suspension listed.",
       "groups": [
         {
           "name": "Match result",
@@ -8835,7 +8835,7 @@
               "p": 0.084
             },
             {
-              "label": "Sen/Draw",
+              "label": "Bel/Draw",
               "p": 0.05
             }
           ]
@@ -10216,7 +10216,7 @@
               "p": 0.081
             },
             {
-              "label": "Bos/Draw",
+              "label": "USBos/Draw",
               "p": 0.05
             }
           ]
@@ -13804,10 +13804,10 @@
     "clv_single": 31,
     "avg_clv": 0.003,
     "beat_close": 0.286,
-    "settled": 56,
-    "wins": 27,
-    "losses": 29,
-    "pnl": -1.68,
-    "roi": -0.03
+    "settled": 72,
+    "wins": 30,
+    "losses": 42,
+    "pnl": -12.77,
+    "roi": -0.177
   }
 }
