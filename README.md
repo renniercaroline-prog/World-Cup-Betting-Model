@@ -236,9 +236,9 @@ using it just opens the link, with no setup on their end.
 
 - **Making good predictions when data is scarce:** leaning on history and blending it with recent
   information, the way a careful forecaster (or a Bayesian statistician) would.
-- **Using AI responsibly:** pointing a language model at the one task it's reliable for, keeping
-  it cheap with kickoff-gating and caching, and never letting it touch the numbers that matter.
-- **Trusting evidence over intuition:** every modelling choice is checked against real results,
-  and the honest answer (including "this idea didn't work, so it's off") is documented.
+- **Integrating an AI agent into a data pipeline:** building an LLM agent (GPT-5.5 with live
+  web-search tool use and structured JSON output) that researches team news and feeds its results
+  into a statistical model, bounded to the task it's reliable for and gated plus cached to keep it
+  cheap, so its output is consumed automatically rather than read by a human.
 - **Building end-to-end:** data, model, live odds, web page, and automation, plus a built-in way
   to keep checking over time whether it actually works.
