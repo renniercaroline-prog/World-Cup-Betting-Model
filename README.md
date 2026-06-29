@@ -112,22 +112,35 @@ they sound confident even when guessing, so letting one set a betting probabilit
 wrong tool for the job. It's pointed at the task it's genuinely good at, reading team news and
 projecting a line-up, and the calibrated maths is left to the model.
 
-**Technical details:**
-- Built on the **OpenAI Responses API** (GPT-5.5) with the hosted **web-search** tool, so it
-  pulls current injury and team news at request time. It's prompted to return strict JSON only,
-  which the pipeline parses directly into projected minutes.
-- **How the line-up feeds the model:** projected minutes scale each player's per-90 rate into a
-  prop probability (a player marked "out" drops off entirely), and a rested or missing key
-  player also docks the team's attack/defence rating, so a benched star ripples through the
-  result, totals, and corners markets, not just his own props.
-- **Cost control (the agent is the only pay-per-call component):** it's only invoked when a
-  fixture is within a configurable window of kickoff (`AGENT_WINDOW_HOURS`, default 3h, when
-  line-ups actually confirm), and a cached projection younger than `AGENT_REFRESH_MIN`
-  (default 60m) is reused instead of re-querying on every run. This cut LLM calls by roughly
-  **90%** versus a naive per-fixture-per-run approach, while making projections sharper because
-  they're made closer to the confirmed XI.
-- **Graceful degradation:** with no API key the agent returns mock minutes and the rest of the
-  pipeline runs unchanged, so the AI layer is an enhancement, never a dependency.
+**What the agent returns.** Built on the **OpenAI Responses API** (GPT-5.5) with the hosted
+**web-search** tool, it pulls current injury and team news at request time and returns strict
+JSON only: for each team, a projected starting XI with **expected minutes per player**, plus a
+list of anyone **ruled out**. That JSON is the agent's entire output. No probabilities.
+
+**How that line-up turns into numbers (two paths):**
+
+1. **Player props.** Every player already carries per-90 rates from their club season, for
+   example a striker who scores 0.6 goals per 90 minutes. The agent's projected minutes scale
+   that rate into a probability: "to score" is the chance of at least one goal given
+   `rate × (minutes ÷ 90) × match context`. A full 90 minutes uses the whole rate; 30 minutes of
+   rotation scales it down; a player marked "out" is dropped from the props entirely.
+2. **Team strength.** Each player also represents a share of the team's attacking output (his
+   goals plus assists per 90). If a key player is rested or out, that share is subtracted from
+   the team's attack rating (and its defence nudged), and the adjusted rating feeds straight into
+   the goals grid. So a benched striker doesn't only lower his own props, he lowers the team's
+   predicted goals, which ripples through match result, over/under, both-teams-to-score and
+   corners.
+
+In short: the agent supplies "who plays and for how long," and the statistical model converts
+that into every probability. The LLM never says "40% to score." It says "starts, about 90
+minutes," and the model computes the 40% from the player's club-season rate and the match context.
+
+**Cost control (the agent is the only pay-per-call component).** It's only invoked when a fixture
+is within a configurable window of kickoff (`AGENT_WINDOW_HOURS`, default 3h, when line-ups
+actually confirm), and a cached projection younger than `AGENT_REFRESH_MIN` (default 60m) is
+reused instead of re-querying on every run. This cut LLM calls by roughly **90%** versus a naive
+per-fixture-per-run approach, while making projections sharper because they're made closer to the
+confirmed XI.
 
 ---
 
