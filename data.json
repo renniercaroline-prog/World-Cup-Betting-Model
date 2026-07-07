@@ -1,1411 +1,30 @@
 {
-  "updated": "2026-07-07T14:42:33.098966+00:00",
+  "updated": "2026-07-07T17:59:08.874805+00:00",
   "sample": false,
   "fixtures": [
-    {
-      "home": "Argentina",
-      "away": "Egypt",
-      "xg": [
-        1.88,
-        0.79
-      ],
-      "corners": [
-        4.0,
-        4.9
-      ],
-      "agent_note": "Projected XIs; Argentina unchanged likely, Egypt defense has multiple fitness doubts.",
-      "groups": [
-        {
-          "name": "Match result",
-          "markets": [
-            {
-              "label": "Argentina win",
-              "p": 0.632,
-              "odd": 1.33,
-              "book": "William Hill",
-              "ev": -0.159,
-              "mkt_p": 0.721
-            },
-            {
-              "label": "Draw",
-              "p": 0.217,
-              "odd": 5.0,
-              "book": "BetVictor",
-              "ev": 0.085,
-              "mkt_p": 0.192
-            },
-            {
-              "label": "Egypt win",
-              "p": 0.151,
-              "odd": 11.0,
-              "book": "10Bet",
-              "ev": 0.661,
-              "mkt_p": 0.087
-            }
-          ]
-        },
-        {
-          "name": "Double chance",
-          "markets": [
-            {
-              "label": "Argentina or draw",
-              "p": 0.849,
-              "odd": 1.06,
-              "book": "William Hill",
-              "ev": -0.1,
-              "mkt_p": 0.905
-            },
-            {
-              "label": "Either team (no draw)",
-              "p": 0.783,
-              "odd": 1.18,
-              "book": "William Hill",
-              "ev": -0.076,
-              "mkt_p": 0.813
-            },
-            {
-              "label": "Egypt or draw",
-              "p": 0.368,
-              "odd": 3.4,
-              "book": "BetVictor",
-              "ev": 0.251,
-              "mkt_p": 0.282
-            }
-          ]
-        },
-        {
-          "name": "Total goals",
-          "markets": [
-            {
-              "label": "Over 0.5",
-              "p": 0.931,
-              "odd": 1.05,
-              "book": "10Bet",
-              "ev": -0.022,
-              "mkt_p": 0.913
-            },
-            {
-              "label": "Under 0.5",
-              "p": 0.069,
-              "odd": 11.0,
-              "book": "Betfair",
-              "ev": -0.241,
-              "mkt_p": 0.087
-            },
-            {
-              "label": "Over 1.5",
-              "p": 0.746,
-              "odd": 1.3,
-              "book": "Unibet",
-              "ev": -0.03,
-              "mkt_p": 0.74
-            },
-            {
-              "label": "Under 1.5",
-              "p": 0.254,
-              "odd": 3.7,
-              "book": "Betfair",
-              "ev": -0.06,
-              "mkt_p": 0.26
-            },
-            {
-              "label": "Over 2.5",
-              "p": 0.5,
-              "odd": 1.98,
-              "book": "Unibet",
-              "ev": -0.01,
-              "mkt_p": 0.49
-            },
-            {
-              "label": "Under 2.5",
-              "p": 0.5,
-              "odd": 1.9,
-              "book": "10Bet",
-              "ev": -0.05,
-              "mkt_p": 0.51
-            },
-            {
-              "label": "Over 3.5",
-              "p": 0.28,
-              "odd": 3.6,
-              "book": "Unibet",
-              "ev": 0.008,
-              "mkt_p": 0.27
-            },
-            {
-              "label": "Under 3.5",
-              "p": 0.72,
-              "odd": 1.33,
-              "book": "10Bet",
-              "ev": -0.042,
-              "mkt_p": 0.73
-            },
-            {
-              "label": "Over 4.5",
-              "p": 0.133,
-              "odd": 7.5,
-              "book": "Unibet",
-              "ev": -0.002,
-              "mkt_p": 0.129
-            },
-            {
-              "label": "Under 4.5",
-              "p": 0.867,
-              "odd": 1.11,
-              "book": "10Bet",
-              "ev": -0.038,
-              "mkt_p": 0.871
-            }
-          ]
-        },
-        {
-          "name": "Argentina total goals",
-          "markets": [
-            {
-              "label": "Over 0.5",
-              "p": 0.848,
-              "odd": 1.1,
-              "book": "Unibet",
-              "ev": -0.067,
-              "mkt_p": 0.855
-            },
-            {
-              "label": "Under 0.5",
-              "p": 0.152,
-              "odd": 6.5,
-              "book": "Betfair",
-              "ev": -0.012,
-              "mkt_p": 0.145
-            },
-            {
-              "label": "Over 1.5",
-              "p": 0.561,
-              "odd": 1.55,
-              "book": "Unibet",
-              "ev": -0.13,
-              "mkt_p": 0.608
-            },
-            {
-              "label": "Under 1.5",
-              "p": 0.439,
-              "odd": 2.4,
-              "book": "10Bet",
-              "ev": 0.054,
-              "mkt_p": 0.392
-            },
-            {
-              "label": "Over 2.5",
-              "p": 0.291,
-              "odd": 2.88,
-              "book": "Betfair",
-              "ev": -0.162,
-              "mkt_p": 0.333
-            },
-            {
-              "label": "Under 2.5",
-              "p": 0.709,
-              "odd": 1.44,
-              "book": "10Bet",
-              "ev": 0.021,
-              "mkt_p": 0.667
-            }
-          ]
-        },
-        {
-          "name": "Egypt total goals",
-          "markets": [
-            {
-              "label": "Over 0.5",
-              "p": 0.547,
-              "odd": 2.18,
-              "book": "Unibet",
-              "ev": 0.192,
-              "mkt_p": 0.434
-            },
-            {
-              "label": "Under 0.5",
-              "p": 0.453,
-              "odd": 1.67,
-              "book": "10Bet",
-              "ev": -0.243,
-              "mkt_p": 0.566
-            },
-            {
-              "label": "Over 1.5",
-              "p": 0.188,
-              "odd": 7.0,
-              "book": "Unibet",
-              "ev": 0.316,
-              "mkt_p": 0.134
-            },
-            {
-              "label": "Under 1.5",
-              "p": 0.812,
-              "odd": 1.08,
-              "book": "10Bet",
-              "ev": -0.123,
-              "mkt_p": 0.866
-            },
-            {
-              "label": "Over 2.5",
-              "p": 0.046,
-              "odd": 29.0,
-              "book": "888Sport",
-              "ev": 0.334,
-              "mkt_p": 0.034
-            },
-            {
-              "label": "Under 2.5",
-              "p": 0.954,
-              "odd": 1.01,
-              "book": "888Sport",
-              "ev": -0.036,
-              "mkt_p": 0.966
-            }
-          ]
-        },
-        {
-          "name": "Both teams to score",
-          "markets": [
-            {
-              "label": "Yes",
-              "p": 0.464,
-              "odd": 2.45,
-              "book": "Unibet",
-              "ev": 0.137,
-              "mkt_p": 0.402
-            },
-            {
-              "label": "No",
-              "p": 0.536,
-              "odd": 1.65,
-              "book": "Betfair",
-              "ev": -0.116,
-              "mkt_p": 0.598
-            }
-          ]
-        },
-        {
-          "name": "Clean sheet",
-          "markets": [
-            {
-              "label": "Argentina yes",
-              "p": 0.453,
-              "odd": 1.67,
-              "book": "10Bet",
-              "ev": -0.243,
-              "mkt_p": 0.557
-            },
-            {
-              "label": "Egypt yes",
-              "p": 0.152,
-              "odd": 6.25,
-              "book": "10Bet",
-              "ev": -0.05,
-              "mkt_p": 0.147
-            }
-          ]
-        },
-        {
-          "name": "Win to nil",
-          "markets": [
-            {
-              "label": "Argentina yes",
-              "p": 0.384,
-              "odd": 1.95,
-              "book": "10Bet",
-              "ev": -0.251,
-              "mkt_p": 0.48
-            },
-            {
-              "label": "Egypt yes",
-              "p": 0.083,
-              "odd": 15.0,
-              "book": "10Bet",
-              "ev": 0.245,
-              "mkt_p": 0.064
-            }
-          ]
-        },
-        {
-          "name": "Correct score",
-          "markets": [
-            {
-              "label": "1:0",
-              "p": 0.13,
-              "odd": 5.5,
-              "book": "William Hill",
-              "ev": -0.285
-            },
-            {
-              "label": "2:0",
-              "p": 0.122,
-              "odd": 5.5,
-              "book": "Betfair",
-              "ev": -0.329
-            },
-            {
-              "label": "1:1",
-              "p": 0.103,
-              "odd": 9.5,
-              "book": "BetVictor",
-              "ev": -0.022
-            },
-            {
-              "label": "2:1",
-              "p": 0.097,
-              "odd": 8.5,
-              "book": "Unibet",
-              "ev": -0.176
-            },
-            {
-              "label": "3:0",
-              "p": 0.077,
-              "odd": 8.5,
-              "book": "Betfair",
-              "ev": -0.346
-            },
-            {
-              "label": "0:0",
-              "p": 0.069,
-              "odd": 12.0,
-              "book": "Betfair",
-              "ev": -0.172
-            },
-            {
-              "label": "3:1",
-              "p": 0.061,
-              "odd": 13.0,
-              "book": "William Hill",
-              "ev": -0.207
-            }
-          ]
-        },
-        {
-          "name": "First-half result",
-          "markets": [
-            {
-              "label": "Argentina lead",
-              "p": 0.455
-            },
-            {
-              "label": "Level",
-              "p": 0.398
-            },
-            {
-              "label": "Egypt lead",
-              "p": 0.148
-            }
-          ]
-        },
-        {
-          "name": "First-half goals",
-          "markets": [
-            {
-              "label": "Over 0.5",
-              "p": 0.7,
-              "odd": 1.4,
-              "book": "10Bet",
-              "ev": -0.02,
-              "mkt_p": 0.689
-            },
-            {
-              "label": "Under 0.5",
-              "p": 0.3,
-              "odd": 3.1,
-              "book": "Betfair",
-              "ev": -0.07,
-              "mkt_p": 0.311
-            },
-            {
-              "label": "Over 1.5",
-              "p": 0.338,
-              "odd": 2.88,
-              "book": "Unibet",
-              "ev": -0.027,
-              "mkt_p": 0.327
-            },
-            {
-              "label": "Under 1.5",
-              "p": 0.662,
-              "odd": 1.4,
-              "book": "William Hill",
-              "ev": -0.073,
-              "mkt_p": 0.673
-            },
-            {
-              "label": "Over 2.5",
-              "p": 0.121,
-              "odd": 8.5,
-              "book": "BetVictor",
-              "ev": 0.028,
-              "mkt_p": 0.113
-            },
-            {
-              "label": "Under 2.5",
-              "p": 0.879,
-              "odd": 1.08,
-              "book": "William Hill",
-              "ev": -0.051,
-              "mkt_p": 0.887
-            }
-          ]
-        },
-        {
-          "name": "Second-half result",
-          "markets": [
-            {
-              "label": "Argentina lead",
-              "p": 0.501,
-              "odd": 1.67,
-              "book": "William Hill",
-              "ev": -0.163,
-              "mkt_p": 0.557
-            },
-            {
-              "label": "Level",
-              "p": 0.346,
-              "odd": 2.85,
-              "book": "Unibet",
-              "ev": -0.014,
-              "mkt_p": 0.326
-            },
-            {
-              "label": "Egypt lead",
-              "p": 0.153,
-              "odd": 8.0,
-              "book": "William Hill",
-              "ev": 0.224,
-              "mkt_p": 0.116
-            }
-          ]
-        },
-        {
-          "name": "Second-half goals",
-          "markets": [
-            {
-              "label": "Over 0.5",
-              "p": 0.77,
-              "odd": 1.3,
-              "book": "William Hill",
-              "ev": 0.001,
-              "mkt_p": 0.759
-            },
-            {
-              "label": "Under 0.5",
-              "p": 0.23,
-              "odd": 4.1,
-              "book": "10Bet",
-              "ev": -0.057,
-              "mkt_p": 0.241
-            },
-            {
-              "label": "Over 1.5",
-              "p": 0.432,
-              "odd": 2.25,
-              "book": "William Hill",
-              "ev": -0.028,
-              "mkt_p": 0.44
-            },
-            {
-              "label": "Under 1.5",
-              "p": 0.568,
-              "odd": 1.77,
-              "book": "10Bet",
-              "ev": 0.005,
-              "mkt_p": 0.56
-            },
-            {
-              "label": "Over 2.5",
-              "p": 0.184,
-              "odd": 5.0,
-              "book": "888Sport",
-              "ev": -0.08,
-              "mkt_p": 0.196
-            },
-            {
-              "label": "Under 2.5",
-              "p": 0.816,
-              "odd": 1.22,
-              "book": "10Bet",
-              "ev": -0.004,
-              "mkt_p": 0.804
-            }
-          ]
-        },
-        {
-          "name": "Half-time / Full-time",
-          "markets": [
-            {
-              "label": "Egyrg/Egyrg",
-              "p": 0.406
-            },
-            {
-              "label": "Draw/Egyrg",
-              "p": 0.199
-            },
-            {
-              "label": "Draw/Draw",
-              "p": 0.138
-            },
-            {
-              "label": "Egy/Egy",
-              "p": 0.081
-            },
-            {
-              "label": "Draw/Egy",
-              "p": 0.061
-            },
-            {
-              "label": "Egyrg/Draw",
-              "p": 0.04
-            }
-          ]
-        },
-        {
-          "name": "Corners",
-          "markets": [
-            {
-              "label": "Total Over 7.5",
-              "p": 0.605,
-              "odd": 1.7,
-              "book": "10Bet",
-              "ev": 0.028,
-              "mkt_p": 0.605
-            },
-            {
-              "label": "Total Under 7.5",
-              "p": 0.395,
-              "odd": 2.6,
-              "book": "Betfair",
-              "ev": 0.027,
-              "mkt_p": 0.395
-            },
-            {
-              "label": "Total Over 8.5",
-              "p": 0.497,
-              "odd": 1.81,
-              "book": "Unibet",
-              "ev": -0.1,
-              "mkt_p": 0.519
-            },
-            {
-              "label": "Total Under 8.5",
-              "p": 0.503,
-              "odd": 1.95,
-              "book": "Betfair",
-              "ev": -0.019,
-              "mkt_p": 0.481
-            },
-            {
-              "label": "Total Over 9.5",
-              "p": 0.394,
-              "odd": 2.3,
-              "book": "Unibet",
-              "ev": -0.094,
-              "mkt_p": 0.406
-            },
-            {
-              "label": "Total Under 9.5",
-              "p": 0.606,
-              "odd": 1.57,
-              "book": "Betfair",
-              "ev": -0.049,
-              "mkt_p": 0.594
-            },
-            {
-              "label": "Total Over 10.5",
-              "p": 0.303,
-              "odd": 3.2,
-              "book": "Betfair",
-              "ev": -0.03,
-              "mkt_p": 0.295
-            },
-            {
-              "label": "Total Under 10.5",
-              "p": 0.697,
-              "odd": 1.34,
-              "book": "Unibet",
-              "ev": -0.066,
-              "mkt_p": 0.705
-            },
-            {
-              "label": "Egypt 3+",
-              "p": 0.787
-            },
-            {
-              "label": "Egypt 4+",
-              "p": 0.643
-            },
-            {
-              "label": "Egypt 5+",
-              "p": 0.495
-            },
-            {
-              "label": "Argentina 4+",
-              "p": 0.521
-            },
-            {
-              "label": "Argentina 5+",
-              "p": 0.365
-            },
-            {
-              "label": "Argentina 6+",
-              "p": 0.242
-            }
-          ]
-        },
-        {
-          "name": "Players \u2014 to score",
-          "markets": [
-            {
-              "player": "L. Messi",
-              "label": "L. Messi to score",
-              "p": 0.418
-            },
-            {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to score",
-              "p": 0.207
-            },
-            {
-              "player": "Emam Ashour",
-              "label": "Emam Ashour to score",
-              "p": 0.165
-            },
-            {
-              "player": "Mohamed Salah",
-              "label": "Mohamed Salah to score",
-              "p": 0.153
-            },
-            {
-              "player": "Omar Marmoush",
-              "label": "Omar Marmoush to score",
-              "p": 0.121
-            },
-            {
-              "player": "J. \u00c1lvarez",
-              "label": "J. \u00c1lvarez to score",
-              "p": 0.101
-            },
-            {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez to score",
-              "p": 0.094
-            },
-            {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to score",
-              "p": 0.069
-            },
-            {
-              "player": "Mostafa Zico",
-              "label": "Mostafa Zico to score",
-              "p": 0.063
-            },
-            {
-              "player": "T. Almada",
-              "label": "T. Almada to score",
-              "p": 0.056
-            },
-            {
-              "player": "G. Montiel",
-              "label": "G. Montiel to score",
-              "p": 0.051
-            },
-            {
-              "player": "Zizo",
-              "label": "Zizo to score",
-              "p": 0.05
-            },
-            {
-              "player": "C. Romero",
-              "label": "C. Romero to score",
-              "p": 0.049
-            },
-            {
-              "player": "Hamdi Fathy",
-              "label": "Hamdi Fathy to score",
-              "p": 0.046
-            },
-            {
-              "player": "Rami Rabia",
-              "label": "Rami Rabia to score",
-              "p": 0.042
-            },
-            {
-              "player": "Lisandro Mart\u00ednez",
-              "label": "Lisandro Mart\u00ednez to score",
-              "p": 0.041
-            },
-            {
-              "player": "Yasser Ibrahim",
-              "label": "Yasser Ibrahim to score",
-              "p": 0.039
-            },
-            {
-              "player": "N. Molina",
-              "label": "N. Molina to score",
-              "p": 0.036
-            },
-            {
-              "player": "Karim Hafez",
-              "label": "Karim Hafez to score",
-              "p": 0.021
-            },
-            {
-              "player": "R. De Paul",
-              "label": "R. De Paul to score",
-              "p": 0.016
-            },
-            {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister to score",
-              "p": 0.016
-            },
-            {
-              "player": "Ahmed Abou El Fotouh",
-              "label": "Ahmed Abou El Fotouh to score",
-              "p": 0.011
-            },
-            {
-              "player": "F. Medina",
-              "label": "F. Medina to score",
-              "p": 0.0
-            },
-            {
-              "player": "E. Mart\u00ednez",
-              "label": "E. Mart\u00ednez to score",
-              "p": 0.0
-            },
-            {
-              "player": "Mohamed Hany",
-              "label": "Mohamed Hany to score",
-              "p": 0.0
-            },
-            {
-              "player": "Mostafa Shobeir",
-              "label": "Mostafa Shobeir to score",
-              "p": 0.0
-            },
-            {
-              "player": "Marwan Attia",
-              "label": "Marwan Attia to score",
-              "p": 0.0
-            },
-            {
-              "player": "Mohanad Lasheen",
-              "label": "Mohanad Lasheen to score",
-              "p": 0.0
-            }
-          ]
-        },
-        {
-          "name": "Players \u2014 shots on target",
-          "markets": [
-            {
-              "player": "L. Messi",
-              "label": "L. Messi 1+ shot on target",
-              "p": 0.533
-            },
-            {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez 1+ shot on target",
-              "p": 0.282
-            },
-            {
-              "player": "J. \u00c1lvarez",
-              "label": "J. \u00c1lvarez 1+ shot on target",
-              "p": 0.246
-            },
-            {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez 1+ shot on target",
-              "p": 0.222
-            },
-            {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez 1+ shot on target",
-              "p": 0.177
-            },
-            {
-              "player": "Mohamed Salah",
-              "label": "Mohamed Salah 1+ shot on target",
-              "p": 0.125
-            },
-            {
-              "player": "T. Almada",
-              "label": "T. Almada 1+ shot on target",
-              "p": 0.114
-            },
-            {
-              "player": "Omar Marmoush",
-              "label": "Omar Marmoush 1+ shot on target",
-              "p": 0.106
-            },
-            {
-              "player": "Emam Ashour",
-              "label": "Emam Ashour 1+ shot on target",
-              "p": 0.098
-            },
-            {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister 1+ shot on target",
-              "p": 0.084
-            },
-            {
-              "player": "G. Montiel",
-              "label": "G. Montiel 1+ shot on target",
-              "p": 0.075
-            },
-            {
-              "player": "C. Romero",
-              "label": "C. Romero 1+ shot on target",
-              "p": 0.047
-            },
-            {
-              "player": "Hamdi Fathy",
-              "label": "Hamdi Fathy 1+ shot on target",
-              "p": 0.047
-            },
-            {
-              "player": "Marwan Attia",
-              "label": "Marwan Attia 1+ shot on target",
-              "p": 0.046
-            },
-            {
-              "player": "N. Molina",
-              "label": "N. Molina 1+ shot on target",
-              "p": 0.045
-            },
-            {
-              "player": "Zizo",
-              "label": "Zizo 1+ shot on target",
-              "p": 0.044
-            },
-            {
-              "player": "Mostafa Zico",
-              "label": "Mostafa Zico 1+ shot on target",
-              "p": 0.042
-            },
-            {
-              "player": "Rami Rabia",
-              "label": "Rami Rabia 1+ shot on target",
-              "p": 0.037
-            },
-            {
-              "player": "Lisandro Mart\u00ednez",
-              "label": "Lisandro Mart\u00ednez 1+ shot on target",
-              "p": 0.026
-            },
-            {
-              "player": "R. De Paul",
-              "label": "R. De Paul 1+ shot on target",
-              "p": 0.021
-            },
-            {
-              "player": "Mohamed Hany",
-              "label": "Mohamed Hany 1+ shot on target",
-              "p": 0.016
-            },
-            {
-              "player": "Yasser Ibrahim",
-              "label": "Yasser Ibrahim 1+ shot on target",
-              "p": 0.015
-            },
-            {
-              "player": "Ahmed Abou El Fotouh",
-              "label": "Ahmed Abou El Fotouh 1+ shot on target",
-              "p": 0.013
-            },
-            {
-              "player": "Mohanad Lasheen",
-              "label": "Mohanad Lasheen 1+ shot on target",
-              "p": 0.012
-            },
-            {
-              "player": "F. Medina",
-              "label": "F. Medina 1+ shot on target",
-              "p": 0.011
-            },
-            {
-              "player": "Karim Hafez",
-              "label": "Karim Hafez 1+ shot on target",
-              "p": 0.008
-            },
-            {
-              "player": "E. Mart\u00ednez",
-              "label": "E. Mart\u00ednez 1+ shot on target",
-              "p": 0.0
-            },
-            {
-              "player": "Mostafa Shobeir",
-              "label": "Mostafa Shobeir 1+ shot on target",
-              "p": 0.0
-            }
-          ]
-        },
-        {
-          "name": "Players \u2014 to score/assist",
-          "markets": [
-            {
-              "player": "L. Messi",
-              "label": "L. Messi to score or assist",
-              "p": 0.508
-            },
-            {
-              "player": "Mohamed Salah",
-              "label": "Mohamed Salah to score or assist",
-              "p": 0.324
-            },
-            {
-              "player": "Emam Ashour",
-              "label": "Emam Ashour to score or assist",
-              "p": 0.267
-            },
-            {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to score or assist",
-              "p": 0.258
-            },
-            {
-              "player": "Omar Marmoush",
-              "label": "Omar Marmoush to score or assist",
-              "p": 0.227
-            },
-            {
-              "player": "J. \u00c1lvarez",
-              "label": "J. \u00c1lvarez to score or assist",
-              "p": 0.148
-            },
-            {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez to score or assist",
-              "p": 0.14
-            },
-            {
-              "player": "Mohamed Hany",
-              "label": "Mohamed Hany to score or assist",
-              "p": 0.126
-            },
-            {
-              "player": "R. De Paul",
-              "label": "R. De Paul to score or assist",
-              "p": 0.118
-            },
-            {
-              "player": "G. Montiel",
-              "label": "G. Montiel to score or assist",
-              "p": 0.115
-            },
-            {
-              "player": "Zizo",
-              "label": "Zizo to score or assist",
-              "p": 0.107
-            },
-            {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to score or assist",
-              "p": 0.095
-            },
-            {
-              "player": "Mostafa Zico",
-              "label": "Mostafa Zico to score or assist",
-              "p": 0.094
-            },
-            {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister to score or assist",
-              "p": 0.085
-            },
-            {
-              "player": "Lisandro Mart\u00ednez",
-              "label": "Lisandro Mart\u00ednez to score or assist",
-              "p": 0.08
-            },
-            {
-              "player": "T. Almada",
-              "label": "T. Almada to score or assist",
-              "p": 0.073
-            },
-            {
-              "player": "N. Molina",
-              "label": "N. Molina to score or assist",
-              "p": 0.07
-            },
-            {
-              "player": "C. Romero",
-              "label": "C. Romero to score or assist",
-              "p": 0.061
-            },
-            {
-              "player": "F. Medina",
-              "label": "F. Medina to score or assist",
-              "p": 0.059
-            },
-            {
-              "player": "Karim Hafez",
-              "label": "Karim Hafez to score or assist",
-              "p": 0.055
-            },
-            {
-              "player": "Hamdi Fathy",
-              "label": "Hamdi Fathy to score or assist",
-              "p": 0.046
-            },
-            {
-              "player": "Ahmed Abou El Fotouh",
-              "label": "Ahmed Abou El Fotouh to score or assist",
-              "p": 0.042
-            },
-            {
-              "player": "Rami Rabia",
-              "label": "Rami Rabia to score or assist",
-              "p": 0.042
-            },
-            {
-              "player": "Yasser Ibrahim",
-              "label": "Yasser Ibrahim to score or assist",
-              "p": 0.039
-            },
-            {
-              "player": "Mohanad Lasheen",
-              "label": "Mohanad Lasheen to score or assist",
-              "p": 0.031
-            },
-            {
-              "player": "E. Mart\u00ednez",
-              "label": "E. Mart\u00ednez to score or assist",
-              "p": 0.007
-            },
-            {
-              "player": "Mostafa Shobeir",
-              "label": "Mostafa Shobeir to score or assist",
-              "p": 0.0
-            },
-            {
-              "player": "Marwan Attia",
-              "label": "Marwan Attia to score or assist",
-              "p": 0.0
-            }
-          ]
-        },
-        {
-          "name": "Players \u2014 to commit a foul",
-          "markets": [
-            {
-              "player": "Hamdi Fathy",
-              "label": "Hamdi Fathy to commit a foul",
-              "p": 0.815
-            },
-            {
-              "player": "Marwan Attia",
-              "label": "Marwan Attia to commit a foul",
-              "p": 0.682
-            },
-            {
-              "player": "Omar Marmoush",
-              "label": "Omar Marmoush to commit a foul",
-              "p": 0.642
-            },
-            {
-              "player": "Mohanad Lasheen",
-              "label": "Mohanad Lasheen to commit a foul",
-              "p": 0.604
-            },
-            {
-              "player": "Yasser Ibrahim",
-              "label": "Yasser Ibrahim to commit a foul",
-              "p": 0.533
-            },
-            {
-              "player": "Emam Ashour",
-              "label": "Emam Ashour to commit a foul",
-              "p": 0.528
-            },
-            {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to commit a foul",
-              "p": 0.449
-            },
-            {
-              "player": "Mohamed Salah",
-              "label": "Mohamed Salah to commit a foul",
-              "p": 0.432
-            },
-            {
-              "player": "Mohamed Hany",
-              "label": "Mohamed Hany to commit a foul",
-              "p": 0.401
-            },
-            {
-              "player": "Rami Rabia",
-              "label": "Rami Rabia to commit a foul",
-              "p": 0.379
-            },
-            {
-              "player": "C. Romero",
-              "label": "C. Romero to commit a foul",
-              "p": 0.36
-            },
-            {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez to commit a foul",
-              "p": 0.351
-            },
-            {
-              "player": "Mostafa Zico",
-              "label": "Mostafa Zico to commit a foul",
-              "p": 0.328
-            },
-            {
-              "player": "F. Medina",
-              "label": "F. Medina to commit a foul",
-              "p": 0.322
-            },
-            {
-              "player": "Karim Hafez",
-              "label": "Karim Hafez to commit a foul",
-              "p": 0.309
-            },
-            {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister to commit a foul",
-              "p": 0.293
-            },
-            {
-              "player": "R. De Paul",
-              "label": "R. De Paul to commit a foul",
-              "p": 0.285
-            },
-            {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to commit a foul",
-              "p": 0.262
-            },
-            {
-              "player": "N. Molina",
-              "label": "N. Molina to commit a foul",
-              "p": 0.218
-            },
-            {
-              "player": "Zizo",
-              "label": "Zizo to commit a foul",
-              "p": 0.215
-            },
-            {
-              "player": "T. Almada",
-              "label": "T. Almada to commit a foul",
-              "p": 0.19
-            },
-            {
-              "player": "G. Montiel",
-              "label": "G. Montiel to commit a foul",
-              "p": 0.188
-            },
-            {
-              "player": "Ahmed Abou El Fotouh",
-              "label": "Ahmed Abou El Fotouh to commit a foul",
-              "p": 0.188
-            },
-            {
-              "player": "J. \u00c1lvarez",
-              "label": "J. \u00c1lvarez to commit a foul",
-              "p": 0.183
-            },
-            {
-              "player": "Lisandro Mart\u00ednez",
-              "label": "Lisandro Mart\u00ednez to commit a foul",
-              "p": 0.136
-            },
-            {
-              "player": "L. Messi",
-              "label": "L. Messi to commit a foul",
-              "p": 0.124
-            },
-            {
-              "player": "E. Mart\u00ednez",
-              "label": "E. Mart\u00ednez to commit a foul",
-              "p": 0.0
-            },
-            {
-              "player": "Mostafa Shobeir",
-              "label": "Mostafa Shobeir to commit a foul",
-              "p": 0.0
-            }
-          ]
-        },
-        {
-          "name": "Players \u2014 to be fouled",
-          "markets": [
-            {
-              "player": "Emam Ashour",
-              "label": "Emam Ashour to be fouled",
-              "p": 0.924
-            },
-            {
-              "player": "Hamdi Fathy",
-              "label": "Hamdi Fathy to be fouled",
-              "p": 0.895
-            },
-            {
-              "player": "Omar Marmoush",
-              "label": "Omar Marmoush to be fouled",
-              "p": 0.892
-            },
-            {
-              "player": "Mohamed Salah",
-              "label": "Mohamed Salah to be fouled",
-              "p": 0.737
-            },
-            {
-              "player": "Mohanad Lasheen",
-              "label": "Mohanad Lasheen to be fouled",
-              "p": 0.714
-            },
-            {
-              "player": "Mostafa Shobeir",
-              "label": "Mostafa Shobeir to be fouled",
-              "p": 0.555
-            },
-            {
-              "player": "Yasser Ibrahim",
-              "label": "Yasser Ibrahim to be fouled",
-              "p": 0.521
-            },
-            {
-              "player": "Mohamed Hany",
-              "label": "Mohamed Hany to be fouled",
-              "p": 0.481
-            },
-            {
-              "player": "L. Messi",
-              "label": "L. Messi to be fouled",
-              "p": 0.448
-            },
-            {
-              "player": "Rami Rabia",
-              "label": "Rami Rabia to be fouled",
-              "p": 0.423
-            },
-            {
-              "player": "Marwan Attia",
-              "label": "Marwan Attia to be fouled",
-              "p": 0.398
-            },
-            {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to be fouled",
-              "p": 0.353
-            },
-            {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez to be fouled",
-              "p": 0.349
-            },
-            {
-              "player": "Zizo",
-              "label": "Zizo to be fouled",
-              "p": 0.345
-            },
-            {
-              "player": "R. De Paul",
-              "label": "R. De Paul to be fouled",
-              "p": 0.342
-            },
-            {
-              "player": "Karim Hafez",
-              "label": "Karim Hafez to be fouled",
-              "p": 0.311
-            },
-            {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister to be fouled",
-              "p": 0.301
-            },
-            {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to be fouled",
-              "p": 0.295
-            },
-            {
-              "player": "Ahmed Abou El Fotouh",
-              "label": "Ahmed Abou El Fotouh to be fouled",
-              "p": 0.295
-            },
-            {
-              "player": "Mostafa Zico",
-              "label": "Mostafa Zico to be fouled",
-              "p": 0.258
-            },
-            {
-              "player": "T. Almada",
-              "label": "T. Almada to be fouled",
-              "p": 0.248
-            },
-            {
-              "player": "C. Romero",
-              "label": "C. Romero to be fouled",
-              "p": 0.187
-            },
-            {
-              "player": "F. Medina",
-              "label": "F. Medina to be fouled",
-              "p": 0.169
-            },
-            {
-              "player": "J. \u00c1lvarez",
-              "label": "J. \u00c1lvarez to be fouled",
-              "p": 0.159
-            },
-            {
-              "player": "G. Montiel",
-              "label": "G. Montiel to be fouled",
-              "p": 0.14
-            },
-            {
-              "player": "E. Mart\u00ednez",
-              "label": "E. Mart\u00ednez to be fouled",
-              "p": 0.083
-            },
-            {
-              "player": "N. Molina",
-              "label": "N. Molina to be fouled",
-              "p": 0.063
-            },
-            {
-              "player": "Lisandro Mart\u00ednez",
-              "label": "Lisandro Mart\u00ednez to be fouled",
-              "p": 0.026
-            }
-          ]
-        }
-      ],
-      "kickoff": "2026-07-07T16:00:00+00:00"
-    },
     {
       "home": "Switzerland",
       "away": "Colombia",
       "xg": [
         1.02,
-        1.07
+        1.06
       ],
       "corners": [
         4.4,
         4.3
       ],
-      "agent_note": "Lineups projected ~3h before kickoff.",
+      "agent_note": "Manzambi ruled out; Vargas/Sow concerns, Cordoba hamstring out.",
       "groups": [
         {
           "name": "Match result",
           "markets": [
             {
               "label": "Switzerland win",
-              "p": 0.336,
-              "odd": 3.7,
-              "book": "Betfair",
-              "ev": 0.243,
-              "mkt_p": 0.263
+              "p": 0.341,
+              "odd": 3.6,
+              "book": "Unibet",
+              "ev": 0.228,
+              "mkt_p": 0.271
             },
             {
               "label": "Draw",
@@ -1413,15 +32,15 @@
               "odd": 3.2,
               "book": "BetVictor",
               "ev": -0.037,
-              "mkt_p": 0.304
+              "mkt_p": 0.305
             },
             {
               "label": "Colombia win",
-              "p": 0.363,
-              "odd": 2.25,
-              "book": "Unibet",
-              "ev": -0.183,
-              "mkt_p": 0.433
+              "p": 0.358,
+              "odd": 2.3,
+              "book": "Betfair",
+              "ev": -0.177,
+              "mkt_p": 0.424
             }
           ]
         },
@@ -1430,27 +49,27 @@
           "markets": [
             {
               "label": "Switzerland or draw",
-              "p": 0.637,
-              "odd": 1.63,
-              "book": "Unibet",
-              "ev": 0.038,
-              "mkt_p": 0.579
+              "p": 0.642,
+              "odd": 1.62,
+              "book": "10Bet",
+              "ev": 0.04,
+              "mkt_p": 0.583
             },
             {
               "label": "Either team (no draw)",
               "p": 0.699,
-              "odd": 1.36,
-              "book": "William Hill",
-              "ev": -0.049,
-              "mkt_p": 0.694
+              "odd": 1.37,
+              "book": "Unibet",
+              "ev": -0.042,
+              "mkt_p": 0.69
             },
             {
               "label": "Colombia or draw",
-              "p": 0.664,
+              "p": 0.659,
               "odd": 1.3,
               "book": "10Bet",
-              "ev": -0.137,
-              "mkt_p": 0.726
+              "ev": -0.143,
+              "mkt_p": 0.727
             }
           ]
         },
@@ -1459,18 +78,18 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.875,
+              "p": 0.876,
               "odd": 1.09,
               "book": "10Bet",
-              "ev": -0.046,
+              "ev": -0.045,
               "mkt_p": 0.886
             },
             {
               "label": "Under 0.5",
-              "p": 0.125,
+              "p": 0.124,
               "odd": 8.5,
               "book": "Betfair",
-              "ev": 0.062,
+              "ev": 0.054,
               "mkt_p": 0.114
             },
             {
@@ -1479,23 +98,23 @@
               "odd": 1.42,
               "book": "10Bet",
               "ev": -0.125,
-              "mkt_p": 0.67
+              "mkt_p": 0.679
             },
             {
               "label": "Under 1.5",
               "p": 0.384,
-              "odd": 2.88,
-              "book": "Unibet",
-              "ev": 0.106,
-              "mkt_p": 0.33
+              "odd": 3.0,
+              "book": "Betfair",
+              "ev": 0.152,
+              "mkt_p": 0.321
             },
             {
               "label": "Over 2.5",
               "p": 0.346,
-              "odd": 2.32,
+              "odd": 2.33,
               "book": "Unibet",
-              "ev": -0.197,
-              "mkt_p": 0.411
+              "ev": -0.194,
+              "mkt_p": 0.41
             },
             {
               "label": "Under 2.5",
@@ -1503,15 +122,15 @@
               "odd": 1.62,
               "book": "10Bet",
               "ev": 0.059,
-              "mkt_p": 0.589
+              "mkt_p": 0.59
             },
             {
               "label": "Over 3.5",
               "p": 0.158,
-              "odd": 4.3,
+              "odd": 4.35,
               "book": "Unibet",
-              "ev": -0.321,
-              "mkt_p": 0.221
+              "ev": -0.313,
+              "mkt_p": 0.219
             },
             {
               "label": "Under 3.5",
@@ -1519,22 +138,22 @@
               "odd": 1.22,
               "book": "10Bet",
               "ev": 0.027,
-              "mkt_p": 0.779
+              "mkt_p": 0.781
             },
             {
               "label": "Over 4.5",
-              "p": 0.06,
+              "p": 0.061,
               "odd": 9.0,
               "book": "Unibet",
-              "ev": -0.46,
+              "ev": -0.451,
               "mkt_p": 0.105
             },
             {
               "label": "Under 4.5",
-              "p": 0.94,
+              "p": 0.939,
               "odd": 1.06,
               "book": "10Bet",
-              "ev": -0.004,
+              "ev": -0.005,
               "mkt_p": 0.895
             }
           ]
@@ -1544,50 +163,50 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.638,
+              "p": 0.641,
               "odd": 1.48,
               "book": "10Bet",
-              "ev": -0.056,
+              "ev": -0.051,
               "mkt_p": 0.65
             },
             {
               "label": "Under 0.5",
-              "p": 0.362,
+              "p": 0.359,
               "odd": 2.75,
               "book": "Betfair",
-              "ev": -0.005,
+              "ev": -0.013,
               "mkt_p": 0.35
             },
             {
               "label": "Over 1.5",
-              "p": 0.27,
-              "odd": 3.35,
+              "p": 0.273,
+              "odd": 3.3,
               "book": "Unibet",
-              "ev": -0.095,
-              "mkt_p": 0.28
+              "ev": -0.099,
+              "mkt_p": 0.283
             },
             {
               "label": "Under 1.5",
-              "p": 0.73,
+              "p": 0.727,
               "odd": 1.3,
               "book": "10Bet",
-              "ev": -0.051,
-              "mkt_p": 0.72
+              "ev": -0.055,
+              "mkt_p": 0.717
             },
             {
               "label": "Over 2.5",
-              "p": 0.083,
+              "p": 0.085,
               "odd": 10.0,
               "book": "888Sport",
-              "ev": -0.17,
+              "ev": -0.15,
               "mkt_p": 0.095
             },
             {
               "label": "Under 2.5",
-              "p": 0.917,
+              "p": 0.915,
               "odd": 1.05,
               "book": "Unibet",
-              "ev": -0.037,
+              "ev": -0.039,
               "mkt_p": 0.905
             }
           ]
@@ -1597,50 +216,50 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.656,
+              "p": 0.653,
               "odd": 1.29,
               "book": "BetVictor",
-              "ev": -0.154,
-              "mkt_p": 0.731
+              "ev": -0.158,
+              "mkt_p": 0.744
             },
             {
               "label": "Under 0.5",
-              "p": 0.344,
-              "odd": 3.5,
+              "p": 0.347,
+              "odd": 3.75,
               "book": "Betfair",
-              "ev": 0.204,
-              "mkt_p": 0.269
+              "ev": 0.301,
+              "mkt_p": 0.256
             },
             {
               "label": "Over 1.5",
-              "p": 0.289,
-              "odd": 2.5,
-              "book": "Betfair",
-              "ev": -0.278,
-              "mkt_p": 0.378
+              "p": 0.286,
+              "odd": 2.45,
+              "book": "888Sport",
+              "ev": -0.299,
+              "mkt_p": 0.384
             },
             {
               "label": "Under 1.5",
-              "p": 0.711,
-              "odd": 1.52,
-              "book": "Unibet",
-              "ev": 0.081,
-              "mkt_p": 0.622
+              "p": 0.714,
+              "odd": 1.53,
+              "book": "Betfair",
+              "ev": 0.092,
+              "mkt_p": 0.616
             },
             {
               "label": "Over 2.5",
-              "p": 0.093,
+              "p": 0.091,
               "odd": 6.0,
               "book": "Betfair",
-              "ev": -0.442,
+              "ev": -0.454,
               "mkt_p": 0.157
             },
             {
               "label": "Under 2.5",
-              "p": 0.907,
+              "p": 0.909,
               "odd": 1.12,
               "book": "Unibet",
-              "ev": 0.016,
+              "ev": 0.018,
               "mkt_p": 0.843
             }
           ]
@@ -1650,19 +269,19 @@
           "markets": [
             {
               "label": "Yes",
-              "p": 0.418,
+              "p": 0.419,
               "odd": 1.95,
               "book": "William Hill",
-              "ev": -0.185,
-              "mkt_p": 0.495
+              "ev": -0.183,
+              "mkt_p": 0.5
             },
             {
               "label": "No",
-              "p": 0.582,
-              "odd": 1.91,
+              "p": 0.581,
+              "odd": 1.95,
               "book": "Betfair",
-              "ev": 0.112,
-              "mkt_p": 0.505
+              "ev": 0.133,
+              "mkt_p": 0.5
             }
           ]
         },
@@ -1671,18 +290,18 @@
           "markets": [
             {
               "label": "Switzerland yes",
-              "p": 0.344,
+              "p": 0.347,
               "odd": 3.3,
               "book": "10Bet",
-              "ev": 0.135,
+              "ev": 0.145,
               "mkt_p": 0.279
             },
             {
               "label": "Colombia yes",
-              "p": 0.362,
+              "p": 0.359,
               "odd": 2.5,
               "book": "10Bet",
-              "ev": -0.095,
+              "ev": -0.103,
               "mkt_p": 0.372
             }
           ]
@@ -1692,19 +311,19 @@
           "markets": [
             {
               "label": "Switzerland yes",
-              "p": 0.219,
+              "p": 0.222,
               "odd": 5.25,
               "book": "10Bet",
-              "ev": 0.15,
-              "mkt_p": 0.176
+              "ev": 0.165,
+              "mkt_p": 0.177
             },
             {
               "label": "Colombia yes",
-              "p": 0.238,
-              "odd": 3.6,
+              "p": 0.234,
+              "odd": 3.55,
               "book": "10Bet",
-              "ev": -0.143,
-              "mkt_p": 0.258
+              "ev": -0.169,
+              "mkt_p": 0.26
             }
           ]
         },
@@ -1714,30 +333,30 @@
             {
               "label": "1:1",
               "p": 0.135,
-              "odd": 6.0,
-              "book": "BetVictor",
-              "ev": -0.19
+              "odd": 5.8,
+              "book": "William Hill",
+              "ev": -0.217
             },
             {
               "label": "0:1",
-              "p": 0.133,
+              "p": 0.132,
               "odd": 6.5,
               "book": "William Hill",
-              "ev": -0.135
+              "ev": -0.142
             },
             {
               "label": "1:0",
-              "p": 0.127,
+              "p": 0.128,
               "odd": 9.0,
               "book": "Betfair",
-              "ev": 0.143
+              "ev": 0.152
             },
             {
               "label": "0:0",
-              "p": 0.125,
+              "p": 0.124,
               "odd": 8.5,
               "book": "Betfair",
-              "ev": 0.062
+              "ev": 0.054
             },
             {
               "label": "1:2",
@@ -1748,10 +367,10 @@
             },
             {
               "label": "0:2",
-              "p": 0.071,
+              "p": 0.07,
               "odd": 10.0,
               "book": "Betfair",
-              "ev": -0.29
+              "ev": -0.3
             },
             {
               "label": "2:1",
@@ -1767,15 +386,15 @@
           "markets": [
             {
               "label": "Switzerland lead",
-              "p": 0.251
+              "p": 0.254
             },
             {
               "label": "Level",
-              "p": 0.483
+              "p": 0.482
             },
             {
               "label": "Colombia lead",
-              "p": 0.267
+              "p": 0.264
             }
           ]
         },
@@ -1785,26 +404,26 @@
             {
               "label": "Over 0.5",
               "p": 0.608,
-              "odd": 1.51,
-              "book": "BetVictor",
-              "ev": -0.082,
-              "mkt_p": 0.628
+              "odd": 1.53,
+              "book": "William Hill",
+              "ev": -0.07,
+              "mkt_p": 0.632
             },
             {
               "label": "Under 0.5",
               "p": 0.392,
-              "odd": 2.55,
+              "odd": 2.63,
               "book": "Betfair",
-              "ev": -0.0,
-              "mkt_p": 0.372
+              "ev": 0.031,
+              "mkt_p": 0.368
             },
             {
               "label": "Over 1.5",
               "p": 0.241,
-              "odd": 3.4,
-              "book": "William Hill",
-              "ev": -0.181,
-              "mkt_p": 0.277
+              "odd": 3.7,
+              "book": "BetVictor",
+              "ev": -0.108,
+              "mkt_p": 0.26
             },
             {
               "label": "Under 1.5",
@@ -1812,23 +431,23 @@
               "odd": 1.3,
               "book": "10Bet",
               "ev": -0.013,
-              "mkt_p": 0.723
+              "mkt_p": 0.74
             },
             {
               "label": "Over 2.5",
               "p": 0.069,
-              "odd": 10.0,
+              "odd": 10.5,
               "book": "BetVictor",
-              "ev": -0.31,
-              "mkt_p": 0.096
+              "ev": -0.275,
+              "mkt_p": 0.091
             },
             {
               "label": "Under 2.5",
               "p": 0.931,
-              "odd": 1.06,
-              "book": "William Hill",
-              "ev": -0.013,
-              "mkt_p": 0.904
+              "odd": 1.05,
+              "book": "10Bet",
+              "ev": -0.022,
+              "mkt_p": 0.909
             }
           ]
         },
@@ -1837,27 +456,27 @@
           "markets": [
             {
               "label": "Switzerland lead",
-              "p": 0.275,
-              "odd": 3.65,
+              "p": 0.278,
+              "odd": 3.6,
               "book": "Unibet",
-              "ev": 0.004,
-              "mkt_p": 0.256
+              "ev": 0.001,
+              "mkt_p": 0.258
             },
             {
               "label": "Level",
               "p": 0.431,
-              "odd": 2.35,
+              "odd": 2.33,
               "book": "Unibet",
-              "ev": 0.013,
+              "ev": 0.004,
               "mkt_p": 0.398
             },
             {
               "label": "Colombia lead",
-              "p": 0.293,
+              "p": 0.29,
               "odd": 2.7,
               "book": "William Hill",
-              "ev": -0.209,
-              "mkt_p": 0.346
+              "ev": -0.217,
+              "mkt_p": 0.344
             }
           ]
         },
@@ -1870,31 +489,31 @@
               "odd": 1.33,
               "book": "William Hill",
               "ev": -0.093,
-              "mkt_p": 0.713
+              "mkt_p": 0.719
             },
             {
               "label": "Under 0.5",
               "p": 0.318,
-              "odd": 3.3,
+              "odd": 3.4,
               "book": "10Bet",
-              "ev": 0.049,
-              "mkt_p": 0.287
+              "ev": 0.081,
+              "mkt_p": 0.281
             },
             {
               "label": "Over 1.5",
-              "p": 0.317,
+              "p": 0.318,
               "odd": 2.45,
               "book": "888Sport",
-              "ev": -0.223,
-              "mkt_p": 0.384
+              "ev": -0.221,
+              "mkt_p": 0.391
             },
             {
               "label": "Under 1.5",
-              "p": 0.683,
-              "odd": 1.53,
+              "p": 0.682,
+              "odd": 1.57,
               "book": "10Bet",
-              "ev": 0.045,
-              "mkt_p": 0.616
+              "ev": 0.071,
+              "mkt_p": 0.609
             },
             {
               "label": "Over 2.5",
@@ -1908,7 +527,7 @@
               "label": "Under 2.5",
               "p": 0.891,
               "odd": 1.13,
-              "book": "Unibet",
+              "book": "10Bet",
               "ev": 0.007,
               "mkt_p": 0.836
             }
@@ -1923,22 +542,22 @@
             },
             {
               "label": "Col/Col",
-              "p": 0.206
+              "p": 0.203
             },
             {
               "label": "Swi/Swi",
-              "p": 0.189
+              "p": 0.192
             },
             {
               "label": "Draw/Col",
-              "p": 0.142
+              "p": 0.14
             },
             {
               "label": "Draw/Swi",
-              "p": 0.133
+              "p": 0.134
             },
             {
-              "label": "Col/Draw",
+              "label": "Swi/Draw",
               "p": 0.046
             }
           ]
@@ -1948,91 +567,91 @@
           "markets": [
             {
               "label": "Total Over 7.5",
-              "p": 0.587,
+              "p": 0.586,
               "odd": 1.41,
               "book": "Unibet",
-              "ev": -0.172,
+              "ev": -0.174,
               "mkt_p": 0.661
             },
             {
               "label": "Total Under 7.5",
-              "p": 0.413,
+              "p": 0.414,
               "odd": 2.75,
               "book": "Betfair",
-              "ev": 0.136,
+              "ev": 0.138,
               "mkt_p": 0.339
             },
             {
               "label": "Total Over 8.5",
-              "p": 0.478,
+              "p": 0.476,
               "odd": 1.73,
               "book": "Betfair",
-              "ev": -0.173,
+              "ev": -0.177,
               "mkt_p": 0.542
             },
             {
               "label": "Total Under 8.5",
-              "p": 0.522,
+              "p": 0.524,
               "odd": 2.05,
               "book": "10Bet",
-              "ev": 0.07,
+              "ev": 0.074,
               "mkt_p": 0.458
             },
             {
               "label": "Total Over 9.5",
-              "p": 0.376,
-              "odd": 2.2,
+              "p": 0.374,
+              "odd": 2.25,
               "book": "Betfair",
-              "ev": -0.173,
-              "mkt_p": 0.427
+              "ev": -0.158,
+              "mkt_p": 0.423
             },
             {
               "label": "Total Under 9.5",
-              "p": 0.624,
-              "odd": 1.64,
+              "p": 0.626,
+              "odd": 1.65,
               "book": "Unibet",
-              "ev": 0.023,
-              "mkt_p": 0.573
+              "ev": 0.033,
+              "mkt_p": 0.577
             },
             {
               "label": "Total Over 10.5",
-              "p": 0.286,
+              "p": 0.284,
               "odd": 3.0,
               "book": "Betfair",
-              "ev": -0.142,
-              "mkt_p": 0.315
+              "ev": -0.148,
+              "mkt_p": 0.318
             },
             {
               "label": "Total Under 10.5",
-              "p": 0.714,
-              "odd": 1.38,
+              "p": 0.716,
+              "odd": 1.4,
               "book": "Unibet",
-              "ev": -0.015,
-              "mkt_p": 0.685
+              "ev": 0.002,
+              "mkt_p": 0.682
             },
             {
               "label": "Colombia 3+",
-              "p": 0.727
+              "p": 0.726
             },
             {
               "label": "Colombia 4+",
-              "p": 0.564
+              "p": 0.563
             },
             {
               "label": "Colombia 5+",
-              "p": 0.41
+              "p": 0.409
             },
             {
               "label": "Switzerland 4+",
-              "p": 0.581
+              "p": 0.58
             },
             {
               "label": "Switzerland 5+",
-              "p": 0.428
+              "p": 0.427
             },
             {
               "label": "Switzerland 6+",
-              "p": 0.298
+              "p": 0.297
             }
           ]
         },
@@ -2042,17 +661,17 @@
             {
               "player": "L. Su\u00e1rez",
               "label": "L. Su\u00e1rez to score",
-              "p": 0.131
+              "p": 0.13
             },
             {
               "player": "J. Manzambi",
               "label": "J. Manzambi to score",
-              "p": 0.103
+              "p": 0.104
             },
             {
               "player": "B. Embolo",
               "label": "B. Embolo to score",
-              "p": 0.093
+              "p": 0.094
             },
             {
               "player": "L. D\u00edaz",
@@ -2062,22 +681,22 @@
             {
               "player": "C. Hern\u00e1ndez",
               "label": "C. Hern\u00e1ndez to score",
-              "p": 0.079
+              "p": 0.078
             },
             {
               "player": "J. Campaz",
               "label": "J. Campaz to score",
-              "p": 0.077
+              "p": 0.076
             },
             {
               "player": "R. Vargas",
               "label": "R. Vargas to score",
-              "p": 0.069
+              "p": 0.07
             },
             {
               "player": "D. Mu\u00f1oz",
               "label": "D. Mu\u00f1oz to score",
-              "p": 0.068
+              "p": 0.067
             },
             {
               "player": "J. Rodr\u00edguez",
@@ -2107,12 +726,12 @@
             {
               "player": "J. Arias",
               "label": "J. Arias to score",
-              "p": 0.034
+              "p": 0.033
             },
             {
               "player": "G. Xhaka",
               "label": "G. Xhaka to score",
-              "p": 0.024
+              "p": 0.025
             },
             {
               "player": "G. Puerta",
@@ -2332,42 +951,42 @@
             {
               "player": "L. Su\u00e1rez",
               "label": "L. Su\u00e1rez to score or assist",
-              "p": 0.177
+              "p": 0.176
             },
             {
               "player": "J. Manzambi",
               "label": "J. Manzambi to score or assist",
-              "p": 0.17
+              "p": 0.171
             },
             {
               "player": "L. D\u00edaz",
               "label": "L. D\u00edaz to score or assist",
-              "p": 0.169
+              "p": 0.167
             },
             {
               "player": "B. Embolo",
               "label": "B. Embolo to score or assist",
-              "p": 0.146
+              "p": 0.148
             },
             {
               "player": "R. Vargas",
               "label": "R. Vargas to score or assist",
-              "p": 0.134
+              "p": 0.135
             },
             {
               "player": "C. Hern\u00e1ndez",
               "label": "C. Hern\u00e1ndez to score or assist",
-              "p": 0.131
+              "p": 0.13
             },
             {
               "player": "D. Mu\u00f1oz",
               "label": "D. Mu\u00f1oz to score or assist",
-              "p": 0.083
+              "p": 0.082
             },
             {
               "player": "J. Campaz",
               "label": "J. Campaz to score or assist",
-              "p": 0.077
+              "p": 0.076
             },
             {
               "player": "J. Rodr\u00edguez",
@@ -2382,12 +1001,12 @@
             {
               "player": "R. Rios",
               "label": "R. Rios to score or assist",
-              "p": 0.064
+              "p": 0.063
             },
             {
               "player": "F. Rieder",
               "label": "F. Rieder to score or assist",
-              "p": 0.057
+              "p": 0.058
             },
             {
               "player": "G. Xhaka",
@@ -2407,7 +1026,7 @@
             {
               "player": "J. Arias",
               "label": "J. Arias to score or assist",
-              "p": 0.034
+              "p": 0.033
             },
             {
               "player": "J. Mojica",
@@ -2782,27 +1401,27 @@
           "markets": [
             {
               "label": "France win",
-              "p": 0.423,
-              "odd": 1.61,
+              "p": 0.422,
+              "odd": 1.6,
               "book": "Unibet",
-              "ev": -0.319,
-              "mkt_p": 0.602
+              "ev": -0.325,
+              "mkt_p": 0.607
             },
             {
               "label": "Draw",
               "p": 0.269,
-              "odd": 3.9,
-              "book": "Betfair",
-              "ev": 0.049,
-              "mkt_p": 0.249
+              "odd": 4.0,
+              "book": "BetVictor",
+              "ev": 0.076,
+              "mkt_p": 0.243
             },
             {
               "label": "Morocco win",
-              "p": 0.308,
+              "p": 0.309,
               "odd": 6.5,
               "book": "Betfair",
-              "ev": 1.002,
-              "mkt_p": 0.149
+              "ev": 1.009,
+              "mkt_p": 0.15
             }
           ]
         },
@@ -2811,27 +1430,27 @@
           "markets": [
             {
               "label": "France or draw",
-              "p": 0.692,
+              "p": 0.691,
               "odd": 1.14,
               "book": "BetVictor",
-              "ev": -0.211,
-              "mkt_p": 0.843
+              "ev": -0.212,
+              "mkt_p": 0.836
             },
             {
               "label": "Either team (no draw)",
               "p": 0.731,
-              "odd": 1.27,
-              "book": "Unibet",
-              "ev": -0.072,
-              "mkt_p": 0.757
+              "odd": 1.25,
+              "book": "William Hill",
+              "ev": -0.086,
+              "mkt_p": 0.763
             },
             {
               "label": "Morocco or draw",
-              "p": 0.577,
-              "odd": 2.4,
+              "p": 0.578,
+              "odd": 2.38,
               "book": "10Bet",
-              "ev": 0.385,
-              "mkt_p": 0.4
+              "ev": 0.376,
+              "mkt_p": 0.401
             }
           ]
         },
@@ -2844,15 +1463,15 @@
               "odd": 1.06,
               "book": "10Bet",
               "ev": -0.029,
-              "mkt_p": 0.904
+              "mkt_p": 0.912
             },
             {
               "label": "Under 0.5",
               "p": 0.084,
-              "odd": 10.0,
-              "book": "Unibet",
-              "ev": -0.16,
-              "mkt_p": 0.096
+              "odd": 11.0,
+              "book": "Betfair",
+              "ev": -0.076,
+              "mkt_p": 0.088
             },
             {
               "label": "Over 1.5",
@@ -2860,47 +1479,47 @@
               "odd": 1.3,
               "book": "10Bet",
               "ev": -0.081,
-              "mkt_p": 0.726
+              "mkt_p": 0.732
             },
             {
               "label": "Under 1.5",
               "p": 0.293,
-              "odd": 3.45,
+              "odd": 3.55,
               "book": "Unibet",
-              "ev": 0.011,
-              "mkt_p": 0.274
+              "ev": 0.04,
+              "mkt_p": 0.268
             },
             {
               "label": "Over 2.5",
-              "p": 0.449,
-              "odd": 1.98,
+              "p": 0.45,
+              "odd": 1.95,
               "book": "Unibet",
-              "ev": -0.111,
-              "mkt_p": 0.48
+              "ev": -0.123,
+              "mkt_p": 0.487
             },
             {
               "label": "Under 2.5",
-              "p": 0.551,
-              "odd": 1.83,
+              "p": 0.55,
+              "odd": 1.85,
               "book": "10Bet",
-              "ev": 0.008,
-              "mkt_p": 0.52
+              "ev": 0.018,
+              "mkt_p": 0.513
             },
             {
               "label": "Over 3.5",
               "p": 0.237,
-              "odd": 3.5,
+              "odd": 3.4,
               "book": "Unibet",
-              "ev": -0.171,
-              "mkt_p": 0.271
+              "ev": -0.194,
+              "mkt_p": 0.281
             },
             {
               "label": "Under 3.5",
               "p": 0.763,
-              "odd": 1.3,
+              "odd": 1.33,
               "book": "10Bet",
-              "ev": -0.008,
-              "mkt_p": 0.729
+              "ev": 0.015,
+              "mkt_p": 0.719
             },
             {
               "label": "Over 4.5",
@@ -2908,15 +1527,15 @@
               "odd": 7.0,
               "book": "Unibet",
               "ev": -0.265,
-              "mkt_p": 0.136
+              "mkt_p": 0.137
             },
             {
               "label": "Under 4.5",
               "p": 0.895,
-              "odd": 1.1,
+              "odd": 1.11,
               "book": "10Bet",
-              "ev": -0.015,
-              "mkt_p": 0.864
+              "ev": -0.007,
+              "mkt_p": 0.863
             }
           ]
         },
@@ -2925,25 +1544,25 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.743,
+              "p": 0.742,
               "odd": 1.14,
               "book": "888Sport",
-              "ev": -0.153,
+              "ev": -0.154,
               "mkt_p": 0.828
             },
             {
               "label": "Under 0.5",
-              "p": 0.257,
+              "p": 0.258,
               "odd": 5.5,
               "book": "Betfair",
-              "ev": 0.413,
+              "ev": 0.419,
               "mkt_p": 0.172
             },
             {
               "label": "Over 1.5",
               "p": 0.393,
               "odd": 1.75,
-              "book": "Unibet",
+              "book": "888Sport",
               "ev": -0.312,
               "mkt_p": 0.545
             },
@@ -2978,34 +1597,34 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.672,
+              "p": 0.673,
               "odd": 1.7,
               "book": "10Bet",
-              "ev": 0.142,
+              "ev": 0.144,
               "mkt_p": 0.553
             },
             {
               "label": "Under 0.5",
-              "p": 0.328,
+              "p": 0.327,
               "odd": 2.1,
-              "book": "Betfair",
-              "ev": -0.311,
+              "book": "Unibet",
+              "ev": -0.313,
               "mkt_p": 0.447
             },
             {
               "label": "Over 1.5",
-              "p": 0.307,
+              "p": 0.308,
               "odd": 4.5,
-              "book": "10Bet",
-              "ev": 0.381,
+              "book": "Betfair",
+              "ev": 0.386,
               "mkt_p": 0.208
             },
             {
               "label": "Under 1.5",
-              "p": 0.693,
+              "p": 0.692,
               "odd": 1.18,
-              "book": "888Sport",
-              "ev": -0.182,
+              "book": "10Bet",
+              "ev": -0.183,
               "mkt_p": 0.792
             },
             {
@@ -3031,18 +1650,18 @@
           "markets": [
             {
               "label": "Yes",
-              "p": 0.499,
+              "p": 0.5,
               "odd": 1.95,
-              "book": "10Bet",
-              "ev": -0.027,
+              "book": "William Hill",
+              "ev": -0.025,
               "mkt_p": 0.49
             },
             {
               "label": "No",
-              "p": 0.501,
+              "p": 0.5,
               "odd": 1.87,
               "book": "Betfair",
-              "ev": -0.063,
+              "ev": -0.065,
               "mkt_p": 0.51
             }
           ]
@@ -3052,18 +1671,18 @@
           "markets": [
             {
               "label": "France yes",
-              "p": 0.328,
+              "p": 0.327,
               "odd": 2.05,
               "book": "10Bet",
-              "ev": -0.328,
+              "ev": -0.33,
               "mkt_p": 0.453
             },
             {
               "label": "Morocco yes",
-              "p": 0.257,
+              "p": 0.258,
               "odd": 5.0,
               "book": "10Bet",
-              "ev": 0.285,
+              "ev": 0.29,
               "mkt_p": 0.184
             }
           ]
@@ -3082,10 +1701,10 @@
             {
               "label": "Morocco yes",
               "p": 0.173,
-              "odd": 9.0,
+              "odd": 9.5,
               "book": "10Bet",
-              "ev": 0.557,
-              "mkt_p": 0.104
+              "ev": 0.644,
+              "mkt_p": 0.1
             }
           ]
         },
@@ -3095,9 +1714,9 @@
             {
               "label": "1:1",
               "p": 0.128,
-              "odd": 7.0,
-              "book": "William Hill",
-              "ev": -0.104
+              "odd": 7.5,
+              "book": "BetVictor",
+              "ev": -0.04
             },
             {
               "label": "1:0",
@@ -3129,10 +1748,10 @@
             },
             {
               "label": "2:0",
-              "p": 0.078,
+              "p": 0.077,
               "odd": 7.0,
               "book": "William Hill",
-              "ev": -0.454
+              "ev": -0.461
             },
             {
               "label": "1:2",
@@ -3148,7 +1767,7 @@
           "markets": [
             {
               "label": "France lead",
-              "p": 0.317
+              "p": 0.316
             },
             {
               "label": "Level",
@@ -3156,7 +1775,7 @@
             },
             {
               "label": "Morocco lead",
-              "p": 0.246
+              "p": 0.247
             }
           ]
         },
@@ -3165,19 +1784,19 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.671,
-              "odd": 1.41,
-              "book": "BetVictor",
-              "ev": -0.054,
-              "mkt_p": 0.671
+              "p": 0.672,
+              "odd": 1.4,
+              "book": "10Bet",
+              "ev": -0.059,
+              "mkt_p": 0.682
             },
             {
               "label": "Under 0.5",
-              "p": 0.329,
-              "odd": 2.88,
+              "p": 0.328,
+              "odd": 3.0,
               "book": "Betfair",
-              "ev": -0.052,
-              "mkt_p": 0.329
+              "ev": -0.016,
+              "mkt_p": 0.318
             },
             {
               "label": "Over 1.5",
@@ -3198,10 +1817,10 @@
             {
               "label": "Over 2.5",
               "p": 0.102,
-              "odd": 8.5,
+              "odd": 8.0,
               "book": "BetVictor",
-              "ev": -0.133,
-              "mkt_p": 0.113
+              "ev": -0.184,
+              "mkt_p": 0.119
             },
             {
               "label": "Under 2.5",
@@ -3209,7 +1828,7 @@
               "odd": 1.08,
               "book": "William Hill",
               "ev": -0.03,
-              "mkt_p": 0.887
+              "mkt_p": 0.881
             }
           ]
         },
@@ -3234,10 +1853,10 @@
             },
             {
               "label": "Morocco lead",
-              "p": 0.265,
+              "p": 0.266,
               "odd": 5.5,
               "book": "10Bet",
-              "ev": 0.458,
+              "ev": 0.463,
               "mkt_p": 0.172
             }
           ]
@@ -3247,35 +1866,35 @@
           "markets": [
             {
               "label": "Over 0.5",
-              "p": 0.743,
+              "p": 0.744,
               "odd": 1.29,
               "book": "William Hill",
-              "ev": -0.042,
-              "mkt_p": 0.749
+              "ev": -0.04,
+              "mkt_p": 0.751
             },
             {
               "label": "Under 0.5",
-              "p": 0.257,
-              "odd": 3.85,
-              "book": "Unibet",
-              "ev": -0.011,
-              "mkt_p": 0.251
+              "p": 0.256,
+              "odd": 3.9,
+              "book": "10Bet",
+              "ev": -0.002,
+              "mkt_p": 0.249
             },
             {
               "label": "Over 1.5",
-              "p": 0.394,
+              "p": 0.395,
               "odd": 2.2,
               "book": "William Hill",
-              "ev": -0.133,
-              "mkt_p": 0.433
+              "ev": -0.131,
+              "mkt_p": 0.44
             },
             {
               "label": "Under 1.5",
-              "p": 0.606,
-              "odd": 1.68,
+              "p": 0.605,
+              "odd": 1.73,
               "book": "10Bet",
-              "ev": 0.018,
-              "mkt_p": 0.567
+              "ev": 0.047,
+              "mkt_p": 0.56
             },
             {
               "label": "Over 2.5",
@@ -3283,15 +1902,15 @@
               "odd": 5.0,
               "book": "888Sport",
               "ev": -0.215,
-              "mkt_p": 0.19
+              "mkt_p": 0.191
             },
             {
               "label": "Under 2.5",
               "p": 0.843,
-              "odd": 1.17,
+              "odd": 1.18,
               "book": "10Bet",
-              "ev": -0.014,
-              "mkt_p": 0.81
+              "ev": -0.005,
+              "mkt_p": 0.809
             }
           ]
         },
@@ -3300,7 +1919,7 @@
           "markets": [
             {
               "label": "Fra/Fra",
-              "p": 0.25
+              "p": 0.249
             },
             {
               "label": "Mor/Mor",
@@ -3319,7 +1938,7 @@
               "p": 0.116
             },
             {
-              "label": "Mor/Draw",
+              "label": "Fra/Draw",
               "p": 0.05
             }
           ]
@@ -3333,63 +1952,63 @@
               "odd": 1.38,
               "book": "Unibet",
               "ev": -0.04,
-              "mkt_p": 0.685
+              "mkt_p": 0.699
             },
             {
               "label": "Total Under 7.5",
               "p": 0.304,
-              "odd": 3.0,
+              "odd": 3.2,
               "book": "Betfair",
-              "ev": -0.088,
-              "mkt_p": 0.315
+              "ev": -0.027,
+              "mkt_p": 0.301
             },
             {
               "label": "Total Over 8.5",
-              "p": 0.598,
+              "p": 0.597,
               "odd": 1.7,
               "book": "10Bet",
-              "ev": 0.017,
-              "mkt_p": 0.564
+              "ev": 0.015,
+              "mkt_p": 0.57
             },
             {
               "label": "Total Under 8.5",
-              "p": 0.402,
-              "odd": 2.2,
+              "p": 0.403,
+              "odd": 2.25,
               "book": "Betfair",
-              "ev": -0.116,
-              "mkt_p": 0.436
+              "ev": -0.093,
+              "mkt_p": 0.43
             },
             {
               "label": "Total Over 9.5",
-              "p": 0.499,
-              "odd": 2.07,
-              "book": "Unibet",
-              "ev": 0.033,
-              "mkt_p": 0.455
+              "p": 0.498,
+              "odd": 2.05,
+              "book": "10Bet",
+              "ev": 0.021,
+              "mkt_p": 0.461
             },
             {
               "label": "Total Under 9.5",
-              "p": 0.501,
-              "odd": 1.73,
+              "p": 0.502,
+              "odd": 1.75,
               "book": "Betfair",
-              "ev": -0.133,
-              "mkt_p": 0.545
+              "ev": -0.121,
+              "mkt_p": 0.539
             },
             {
               "label": "Total Over 10.5",
               "p": 0.404,
-              "odd": 2.75,
-              "book": "Betfair",
-              "ev": 0.111,
-              "mkt_p": 0.341
+              "odd": 2.65,
+              "book": "Unibet",
+              "ev": 0.071,
+              "mkt_p": 0.352
             },
             {
               "label": "Total Under 10.5",
               "p": 0.596,
-              "odd": 1.42,
-              "book": "Unibet",
-              "ev": -0.154,
-              "mkt_p": 0.659
+              "odd": 1.44,
+              "book": "Betfair",
+              "ev": -0.142,
+              "mkt_p": 0.648
             },
             {
               "label": "Morocco 3+",
@@ -3428,7 +2047,7 @@
             {
               "player": "O. Demb\u00e9l\u00e9",
               "label": "O. Demb\u00e9l\u00e9 to score",
-              "p": 0.222
+              "p": 0.221
             },
             {
               "player": "B. Barcola",
@@ -3438,17 +2057,17 @@
             {
               "player": "I. Saibari",
               "label": "I. Saibari to score",
-              "p": 0.14
+              "p": 0.141
             },
             {
               "player": "D. Dou\u00e9",
               "label": "D. Dou\u00e9 to score",
-              "p": 0.115
+              "p": 0.114
             },
             {
               "player": "S. Rahimi",
               "label": "S. Rahimi to score",
-              "p": 0.092
+              "p": 0.093
             },
             {
               "player": "M. Olise",
@@ -3463,7 +2082,7 @@
             {
               "player": "N. El Aynaoui",
               "label": "N. El Aynaoui to score",
-              "p": 0.053
+              "p": 0.054
             },
             {
               "player": "R. Cherki",
@@ -3723,7 +2342,7 @@
             {
               "player": "M. Olise",
               "label": "M. Olise to score or assist",
-              "p": 0.293
+              "p": 0.292
             },
             {
               "player": "B. Barcola",
@@ -3733,7 +2352,7 @@
             {
               "player": "I. Saibari",
               "label": "I. Saibari to score or assist",
-              "p": 0.178
+              "p": 0.179
             },
             {
               "player": "R. Cherki",
@@ -3743,12 +2362,12 @@
             {
               "player": "D. Dou\u00e9",
               "label": "D. Dou\u00e9 to score or assist",
-              "p": 0.159
+              "p": 0.158
             },
             {
               "player": "Brahim D\u00edaz",
               "label": "Brahim D\u00edaz to score or assist",
-              "p": 0.143
+              "p": 0.144
             },
             {
               "player": "S. Rahimi",
@@ -3763,7 +2382,7 @@
             {
               "player": "A. Hakimi",
               "label": "A. Hakimi to score or assist",
-              "p": 0.088
+              "p": 0.089
             },
             {
               "player": "C. Talbi",
@@ -4338,18 +2957,18 @@
             },
             {
               "label": "Over 2.5",
-              "p": 0.137,
+              "p": 0.138,
               "odd": 3.2,
               "book": "10Bet",
-              "ev": -0.562,
+              "ev": -0.558,
               "mkt_p": 0.292
             },
             {
               "label": "Under 2.5",
-              "p": 0.863,
+              "p": 0.862,
               "odd": 1.32,
               "book": "Unibet",
-              "ev": 0.139,
+              "ev": 0.138,
               "mkt_p": 0.708
             }
           ]
@@ -4462,10 +3081,10 @@
             },
             {
               "label": "Belgium yes",
-              "p": 0.23,
+              "p": 0.229,
               "odd": 8.0,
               "book": "10Bet",
-              "ev": 0.84,
+              "ev": 0.832,
               "mkt_p": 0.116
             }
           ]
@@ -4482,10 +3101,10 @@
             },
             {
               "label": "1:2",
-              "p": 0.095,
+              "p": 0.094,
               "odd": 15.0,
               "book": "William Hill",
-              "ev": 0.425
+              "ev": 0.41
             },
             {
               "label": "0:1",
@@ -4681,7 +3300,7 @@
           "markets": [
             {
               "label": "Bel/Bel",
-              "p": 0.297
+              "p": 0.296
             },
             {
               "label": "Spa/Spa",
@@ -5094,7 +3713,7 @@
             {
               "player": "R. Lukaku",
               "label": "R. Lukaku to score or assist",
-              "p": 0.458
+              "p": 0.457
             },
             {
               "player": "Mikel Oyarzabal",
@@ -5169,7 +3788,7 @@
             {
               "player": "Pedri",
               "label": "Pedri to score or assist",
-              "p": 0.075
+              "p": 0.076
             },
             {
               "player": "Marcos Llorente",
@@ -5528,12 +4147,12 @@
     }
   ],
   "track": {
-    "logged": 477,
-    "open": 49,
-    "closed": 367,
-    "clv_single": 61,
-    "avg_clv": 0.0103,
-    "beat_close": 0.425,
+    "logged": 479,
+    "open": 38,
+    "closed": 379,
+    "clv_single": 62,
+    "avg_clv": 0.0096,
+    "beat_close": 0.42,
     "settled": 319,
     "wins": 159,
     "losses": 160,
