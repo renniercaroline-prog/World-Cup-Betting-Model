@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:15:57.814937+00:00",
+  "updated": "2026-07-07T22:58:50.473888+00:00",
   "sample": false,
   "fixtures": [
     {
@@ -2772,10 +2772,10 @@
     "clv_single": 62,
     "avg_clv": 0.0087,
     "beat_close": 0.41,
-    "settled": 331,
-    "wins": 165,
-    "losses": 166,
-    "pnl": 11.67,
-    "roi": 0.035
+    "settled": 344,
+    "wins": 175,
+    "losses": 169,
+    "pnl": 21.25,
+    "roi": 0.062
   }
 }

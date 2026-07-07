@@ -8256,8 +8256,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0139,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1576805|Double chance|Switzerland or draw": {
     "fixture": "Switzerland v Colombia",
@@ -8276,8 +8276,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0309,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.67
   },
   "1576805|Total goals|Under 1.5": {
     "fixture": "Switzerland v Colombia",
@@ -8296,8 +8296,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 2.0
   },
   "1576805|Total goals|Under 2.5": {
     "fixture": "Switzerland v Colombia",
@@ -8316,8 +8316,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.62
   },
   "1576805|Colombia total goals|Under 0.5": {
     "fixture": "Switzerland v Colombia",
@@ -8336,8 +8336,8 @@
     "close_ts": "2026-07-07T14:42:32.984630+00:00",
     "status": "closed",
     "clv": -0.0286,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 2.4
   },
   "1576805|Colombia total goals|Under 1.5": {
     "fixture": "Switzerland v Colombia",
@@ -8356,8 +8356,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0065,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.54
   },
   "1576805|Both teams to score|No": {
     "fixture": "Switzerland v Colombia",
@@ -8376,8 +8376,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": -0.0615,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.83
   },
   "1576805|Clean sheet|Switzerland yes": {
     "fixture": "Switzerland v Colombia",
@@ -8396,8 +8396,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 2.3
   },
   "1576805|Win to nil|Switzerland yes": {
     "fixture": "Switzerland v Colombia",
@@ -8416,8 +8416,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1576805|First-half goals|Under 0.5": {
     "fixture": "Switzerland v Colombia",
@@ -8436,7 +8436,7 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0076,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1576805|First-half goals|Under 1.5": {
@@ -8456,7 +8456,7 @@
     "close_ts": "2026-07-04T17:04:55.458665+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1576805|Second-half goals|Under 0.5": {
@@ -8476,7 +8476,7 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": -0.0147,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1576805|Second-half goals|Under 1.5": {
@@ -8496,7 +8496,7 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": -0.0127,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1576805|Corners|Total Under 7.5": {
@@ -8516,8 +8516,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": -0.0727,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.55
   },
   "1570715|Belgium total goals|Over 1.5": {
     "fixture": "USA v Belgium",
@@ -8596,7 +8596,7 @@
     "close_ts": "2026-07-04T22:56:25.178025+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1570715|Corners|Total Under 8.5": {
@@ -8956,8 +8956,8 @@
     "close_ts": "2026-07-06T06:26:08.629897+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1570714|Corners|Total Under 7.5": {
     "fixture": "Mexico v England",
@@ -9053,7 +9053,7 @@
     "open_ts": "2026-07-06T02:35:37.441902+00:00",
     "close_odds": 4.0,
     "close_book": "BetVictor",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9093,7 +9093,7 @@
     "open_ts": "2026-07-06T02:35:37.441902+00:00",
     "close_odds": 1.3,
     "close_book": "10Bet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9113,7 +9113,7 @@
     "open_ts": "2026-07-06T02:35:37.441902+00:00",
     "close_odds": 1.7,
     "close_book": "10Bet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9133,7 +9133,7 @@
     "open_ts": "2026-07-06T02:35:37.441902+00:00",
     "close_odds": 2.7,
     "close_book": "Unibet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9173,7 +9173,7 @@
     "open_ts": "2026-07-06T02:35:37.441902+00:00",
     "close_odds": 2.6,
     "close_book": "Betfair",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9196,7 +9196,7 @@
     "close_ts": "2026-07-07T06:05:40.269220+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1576756|Corners|Total Under 8.5": {
@@ -9336,8 +9336,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": -0.0146,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.02
   },
   "1581821|Total goals|Over 2.5": {
     "fixture": "Spain v Belgium",
@@ -9353,7 +9353,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 1.8,
     "close_book": "10Bet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9373,7 +9373,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 3.0,
     "close_book": "10Bet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9393,7 +9393,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 5.8,
     "close_book": "Unibet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9413,7 +9413,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 1.34,
     "close_book": "Unibet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9433,7 +9433,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 1.8,
     "close_book": "William Hill",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9453,7 +9453,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 2.63,
     "close_book": "Unibet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9473,7 +9473,7 @@
     "open_ts": "2026-07-07T14:42:32.984630+00:00",
     "close_odds": 7.5,
     "close_book": "BetVictor",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -9556,8 +9556,8 @@
     "close_ts": "2026-07-07T19:40:04.726971+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.65
   },
   "1578539|Second-half goals|Under 1.5": {
     "fixture": "France v Morocco",
@@ -9573,7 +9573,7 @@
     "open_ts": "2026-07-07T17:59:08.574900+00:00",
     "close_odds": 1.73,
     "close_book": "10Bet",
-    "close_ts": "2026-07-07T21:15:57.544091+00:00",
+    "close_ts": "2026-07-07T22:58:50.016946+00:00",
     "status": "open",
     "clv": null,
     "result": null,
