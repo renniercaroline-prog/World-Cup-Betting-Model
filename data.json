@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T15:15:48.934498+00:00",
+  "updated": "2026-07-09T17:55:10.936349+00:00",
   "sample": false,
   "fixtures": [
     {
@@ -13,7 +13,7 @@
         6.1,
         3.8
       ],
-      "agent_note": "Lineups projected ~3h before kickoff.",
+      "agent_note": "Projected XIs; Tchouameni/Thuram doubtful, Saibari ruled out, Riad fitness risk.",
       "groups": [
         {
           "name": "Match result",
@@ -2786,23 +2786,23 @@
               "odd": 4.33,
               "book": "Betfair",
               "ev": 0.16,
-              "mkt_p": 0.222
+              "mkt_p": 0.224
             },
             {
               "label": "Draw",
               "p": 0.209,
-              "odd": 3.7,
-              "book": "Betfair",
-              "ev": -0.227,
-              "mkt_p": 0.259
+              "odd": 3.75,
+              "book": "BetVictor",
+              "ev": -0.216,
+              "mkt_p": 0.258
             },
             {
               "label": "England win",
               "p": 0.522,
-              "odd": 1.85,
-              "book": "William Hill",
-              "ev": -0.034,
-              "mkt_p": 0.519
+              "odd": 1.87,
+              "book": "Unibet",
+              "ev": -0.024,
+              "mkt_p": 0.518
             }
           ]
         },
@@ -2812,10 +2812,10 @@
             {
               "label": "Norway or draw",
               "p": 0.478,
-              "odd": 1.93,
-              "book": "Unibet",
-              "ev": -0.077,
-              "mkt_p": 0.495
+              "odd": 1.91,
+              "book": "10Bet",
+              "ev": -0.087,
+              "mkt_p": 0.499
             },
             {
               "label": "Either team (no draw)",
@@ -2823,7 +2823,7 @@
               "odd": 1.29,
               "book": "William Hill",
               "ev": 0.02,
-              "mkt_p": 0.741
+              "mkt_p": 0.739
             },
             {
               "label": "England or draw",
@@ -2831,7 +2831,7 @@
               "odd": 1.25,
               "book": "BetVictor",
               "ev": -0.085,
-              "mkt_p": 0.764
+              "mkt_p": 0.762
             }
           ]
         },
@@ -2860,15 +2860,15 @@
               "odd": 1.25,
               "book": "10Bet",
               "ev": 0.093,
-              "mkt_p": 0.773
+              "mkt_p": 0.771
             },
             {
               "label": "Under 1.5",
               "p": 0.126,
-              "odd": 4.25,
+              "odd": 4.2,
               "book": "Unibet",
-              "ev": -0.465,
-              "mkt_p": 0.227
+              "ev": -0.471,
+              "mkt_p": 0.229
             },
             {
               "label": "Over 2.5",
@@ -2876,15 +2876,15 @@
               "odd": 1.8,
               "book": "10Bet",
               "ev": 0.253,
-              "mkt_p": 0.535
+              "mkt_p": 0.536
             },
             {
               "label": "Under 2.5",
               "p": 0.304,
-              "odd": 2.07,
+              "odd": 2.08,
               "book": "Unibet",
-              "ev": -0.371,
-              "mkt_p": 0.465
+              "ev": -0.368,
+              "mkt_p": 0.464
             },
             {
               "label": "Over 3.5",
@@ -2892,15 +2892,15 @@
               "odd": 3.0,
               "book": "10Bet",
               "ev": 0.452,
-              "mkt_p": 0.32
+              "mkt_p": 0.321
             },
             {
               "label": "Under 3.5",
               "p": 0.516,
-              "odd": 1.41,
+              "odd": 1.42,
               "book": "Unibet",
-              "ev": -0.272,
-              "mkt_p": 0.68
+              "ev": -0.267,
+              "mkt_p": 0.679
             },
             {
               "label": "Over 4.5",
@@ -3035,15 +3035,15 @@
               "odd": 1.67,
               "book": "10Bet",
               "ev": 0.134,
-              "mkt_p": 0.579
+              "mkt_p": 0.588
             },
             {
               "label": "No",
               "p": 0.321,
-              "odd": 2.3,
+              "odd": 2.38,
               "book": "Betfair",
-              "ev": -0.262,
-              "mkt_p": 0.421
+              "ev": -0.236,
+              "mkt_p": 0.412
             }
           ]
         },
@@ -3166,10 +3166,10 @@
             {
               "label": "Over 0.5",
               "p": 0.802,
-              "odd": 1.39,
+              "odd": 1.38,
               "book": "BetVictor",
-              "ev": 0.115,
-              "mkt_p": 0.697
+              "ev": 0.107,
+              "mkt_p": 0.699
             },
             {
               "label": "Under 0.5",
@@ -3177,7 +3177,7 @@
               "odd": 3.2,
               "book": "Betfair",
               "ev": -0.366,
-              "mkt_p": 0.303
+              "mkt_p": 0.301
             },
             {
               "label": "Over 1.5",
@@ -3222,15 +3222,15 @@
               "odd": 3.9,
               "book": "William Hill",
               "ev": 0.002,
-              "mkt_p": 0.24
+              "mkt_p": 0.239
             },
             {
               "label": "Level",
               "p": 0.304,
-              "odd": 2.8,
+              "odd": 2.75,
               "book": "Unibet",
-              "ev": -0.149,
-              "mkt_p": 0.334
+              "ev": -0.164,
+              "mkt_p": 0.338
             },
             {
               "label": "England lead",
@@ -3238,7 +3238,7 @@
               "odd": 2.2,
               "book": "William Hill",
               "ev": -0.034,
-              "mkt_p": 0.426
+              "mkt_p": 0.423
             }
           ]
         },
@@ -3267,15 +3267,15 @@
               "odd": 2.0,
               "book": "William Hill",
               "ev": 0.176,
-              "mkt_p": 0.488
+              "mkt_p": 0.487
             },
             {
               "label": "Under 1.5",
               "p": 0.412,
-              "odd": 1.91,
+              "odd": 1.9,
               "book": "Unibet",
-              "ev": -0.213,
-              "mkt_p": 0.512
+              "ev": -0.217,
+              "mkt_p": 0.513
             },
             {
               "label": "Over 2.5",
@@ -3330,10 +3330,10 @@
             {
               "label": "Total Over 7.5",
               "p": 0.78,
-              "odd": 1.35,
+              "odd": 1.34,
               "book": "Unibet",
-              "ev": 0.053,
-              "mkt_p": 0.71
+              "ev": 0.045,
+              "mkt_p": 0.711
             },
             {
               "label": "Total Under 7.5",
@@ -3341,15 +3341,15 @@
               "odd": 3.3,
               "book": "Betfair",
               "ev": -0.274,
-              "mkt_p": 0.29
+              "mkt_p": 0.289
             },
             {
               "label": "Total Over 8.5",
               "p": 0.696,
-              "odd": 1.6,
+              "odd": 1.58,
               "book": "Unibet",
-              "ev": 0.114,
-              "mkt_p": 0.6
+              "ev": 0.1,
+              "mkt_p": 0.603
             },
             {
               "label": "Total Under 8.5",
@@ -3357,7 +3357,7 @@
               "odd": 2.4,
               "book": "Betfair",
               "ev": -0.27,
-              "mkt_p": 0.4
+              "mkt_p": 0.397
             },
             {
               "label": "Total Over 9.5",
@@ -3365,15 +3365,15 @@
               "odd": 1.96,
               "book": "Unibet",
               "ev": 0.186,
-              "mkt_p": 0.486
+              "mkt_p": 0.479
             },
             {
               "label": "Total Under 9.5",
               "p": 0.395,
-              "odd": 1.85,
-              "book": "Betfair",
-              "ev": -0.269,
-              "mkt_p": 0.514
+              "odd": 1.8,
+              "book": "10Bet",
+              "ev": -0.289,
+              "mkt_p": 0.521
             },
             {
               "label": "Total Over 10.5",
@@ -4164,26 +4164,26 @@
             {
               "label": "Argentina win",
               "p": 0.483,
-              "odd": 1.73,
-              "book": "10Bet",
-              "ev": -0.164,
-              "mkt_p": 0.561
+              "odd": 1.7,
+              "book": "Unibet",
+              "ev": -0.179,
+              "mkt_p": 0.563
             },
             {
               "label": "Draw",
               "p": 0.246,
               "odd": 3.6,
-              "book": "BetVictor",
+              "book": "10Bet",
               "ev": -0.114,
-              "mkt_p": 0.27
+              "mkt_p": 0.266
             },
             {
               "label": "Switzerland win",
               "p": 0.271,
-              "odd": 5.75,
+              "odd": 5.6,
               "book": "Unibet",
-              "ev": 0.558,
-              "mkt_p": 0.169
+              "ev": 0.518,
+              "mkt_p": 0.171
             }
           ]
         },
@@ -4193,10 +4193,10 @@
             {
               "label": "Argentina or draw",
               "p": 0.729,
-              "odd": 1.18,
-              "book": "10Bet",
-              "ev": -0.14,
-              "mkt_p": 0.814
+              "odd": 1.15,
+              "book": "William Hill",
+              "ev": -0.162,
+              "mkt_p": 0.827
             },
             {
               "label": "Either team (no draw)",
@@ -4204,15 +4204,15 @@
               "odd": 1.3,
               "book": "William Hill",
               "ev": -0.02,
-              "mkt_p": 0.739
+              "mkt_p": 0.731
             },
             {
               "label": "Switzerland or draw",
               "p": 0.517,
               "odd": 2.15,
-              "book": "Unibet",
+              "book": "10Bet",
               "ev": 0.112,
-              "mkt_p": 0.447
+              "mkt_p": 0.442
             }
           ]
         },
@@ -4231,33 +4231,33 @@
               "label": "Under 0.5",
               "p": 0.062,
               "odd": 8.5,
-              "book": "Betfair",
+              "book": "Unibet",
               "ev": -0.473,
               "mkt_p": 0.112
             },
             {
               "label": "Over 1.5",
               "p": 0.766,
-              "odd": 1.4,
-              "book": "Unibet",
-              "ev": 0.072,
-              "mkt_p": 0.678
+              "odd": 1.38,
+              "book": "10Bet",
+              "ev": 0.057,
+              "mkt_p": 0.685
             },
             {
               "label": "Under 1.5",
               "p": 0.234,
-              "odd": 2.95,
-              "book": "10Bet",
-              "ev": -0.31,
-              "mkt_p": 0.322
+              "odd": 3.0,
+              "book": "Unibet",
+              "ev": -0.298,
+              "mkt_p": 0.315
             },
             {
               "label": "Over 2.5",
               "p": 0.527,
-              "odd": 2.28,
-              "book": "Unibet",
-              "ev": 0.202,
-              "mkt_p": 0.42
+              "odd": 2.25,
+              "book": "Betfair",
+              "ev": 0.186,
+              "mkt_p": 0.423
             },
             {
               "label": "Under 2.5",
@@ -4265,15 +4265,15 @@
               "odd": 1.65,
               "book": "10Bet",
               "ev": -0.22,
-              "mkt_p": 0.58
+              "mkt_p": 0.577
             },
             {
               "label": "Over 3.5",
               "p": 0.305,
-              "odd": 4.3,
+              "odd": 4.25,
               "book": "Unibet",
-              "ev": 0.311,
-              "mkt_p": 0.221
+              "ev": 0.296,
+              "mkt_p": 0.223
             },
             {
               "label": "Under 3.5",
@@ -4281,15 +4281,15 @@
               "odd": 1.22,
               "book": "10Bet",
               "ev": -0.152,
-              "mkt_p": 0.779
+              "mkt_p": 0.777
             },
             {
               "label": "Over 4.5",
               "p": 0.15,
-              "odd": 9.5,
+              "odd": 9.0,
               "book": "Unibet",
-              "ev": 0.425,
-              "mkt_p": 0.1
+              "ev": 0.35,
+              "mkt_p": 0.105
             },
             {
               "label": "Under 4.5",
@@ -4297,7 +4297,7 @@
               "odd": 1.06,
               "book": "10Bet",
               "ev": -0.099,
-              "mkt_p": 0.9
+              "mkt_p": 0.895
             }
           ]
         },
@@ -4308,7 +4308,7 @@
               "label": "Over 0.5",
               "p": 0.804,
               "odd": 1.2,
-              "book": "10Bet",
+              "book": "888Sport",
               "ev": -0.035,
               "mkt_p": 0.789
             },
@@ -4326,15 +4326,15 @@
               "odd": 2.0,
               "book": "Betfair",
               "ev": -0.032,
-              "mkt_p": 0.471
+              "mkt_p": 0.474
             },
             {
               "label": "Under 1.5",
               "p": 0.516,
-              "odd": 1.78,
-              "book": "Unibet",
-              "ev": -0.082,
-              "mkt_p": 0.529
+              "odd": 1.8,
+              "book": "10Bet",
+              "ev": -0.071,
+              "mkt_p": 0.526
             },
             {
               "label": "Over 2.5",
@@ -4342,15 +4342,15 @@
               "odd": 4.5,
               "book": "Betfair",
               "ev": 0.008,
-              "mkt_p": 0.212
+              "mkt_p": 0.213
             },
             {
               "label": "Under 2.5",
               "p": 0.776,
-              "odd": 1.21,
-              "book": "Unibet",
-              "ev": -0.061,
-              "mkt_p": 0.788
+              "odd": 1.22,
+              "book": "10Bet",
+              "ev": -0.053,
+              "mkt_p": 0.787
             }
           ]
         },
@@ -4360,34 +4360,34 @@
             {
               "label": "Over 0.5",
               "p": 0.685,
-              "odd": 1.77,
-              "book": "Unibet",
-              "ev": 0.212,
-              "mkt_p": 0.543
+              "odd": 1.75,
+              "book": "10Bet",
+              "ev": 0.199,
+              "mkt_p": 0.545
             },
             {
               "label": "Under 0.5",
               "p": 0.315,
               "odd": 2.1,
-              "book": "10Bet",
+              "book": "Betfair",
               "ev": -0.338,
-              "mkt_p": 0.457
+              "mkt_p": 0.455
             },
             {
               "label": "Over 1.5",
               "p": 0.322,
-              "odd": 5.0,
-              "book": "Betfair",
-              "ev": 0.61,
-              "mkt_p": 0.191
+              "odd": 4.75,
+              "book": "10Bet",
+              "ev": 0.53,
+              "mkt_p": 0.198
             },
             {
               "label": "Under 1.5",
               "p": 0.678,
-              "odd": 1.18,
-              "book": "10Bet",
-              "ev": -0.2,
-              "mkt_p": 0.809
+              "odd": 1.17,
+              "book": "888Sport",
+              "ev": -0.207,
+              "mkt_p": 0.802
             },
             {
               "label": "Over 2.5",
@@ -4413,10 +4413,10 @@
             {
               "label": "Yes",
               "p": 0.551,
-              "odd": 2.12,
-              "book": "Unibet",
-              "ev": 0.168,
-              "mkt_p": 0.449
+              "odd": 2.1,
+              "book": "10Bet",
+              "ev": 0.157,
+              "mkt_p": 0.452
             },
             {
               "label": "No",
@@ -4424,7 +4424,7 @@
               "odd": 1.73,
               "book": "William Hill",
               "ev": -0.223,
-              "mkt_p": 0.551
+              "mkt_p": 0.548
             }
           ]
         },
@@ -4434,18 +4434,18 @@
             {
               "label": "Argentina yes",
               "p": 0.315,
-              "odd": 2.1,
+              "odd": 1.95,
               "book": "10Bet",
-              "ev": -0.338,
-              "mkt_p": 0.44
+              "ev": -0.386,
+              "mkt_p": 0.473
             },
             {
               "label": "Switzerland yes",
               "p": 0.196,
-              "odd": 4.0,
+              "odd": 4.33,
               "book": "10Bet",
-              "ev": -0.216,
-              "mkt_p": 0.231
+              "ev": -0.151,
+              "mkt_p": 0.214
             }
           ]
         },
@@ -4455,18 +4455,18 @@
             {
               "label": "Argentina yes",
               "p": 0.253,
-              "odd": 2.65,
+              "odd": 2.5,
               "book": "10Bet",
-              "ev": -0.33,
-              "mkt_p": 0.352
+              "ev": -0.367,
+              "mkt_p": 0.372
             },
             {
               "label": "Switzerland yes",
               "p": 0.135,
-              "odd": 6.5,
+              "odd": 7.5,
               "book": "10Bet",
-              "ev": -0.122,
-              "mkt_p": 0.142
+              "ev": 0.013,
+              "mkt_p": 0.124
             }
           ]
         },
@@ -4483,9 +4483,9 @@
             {
               "label": "1:0",
               "p": 0.101,
-              "odd": 5.6,
+              "odd": 5.75,
               "book": "Unibet",
-              "ev": -0.434
+              "ev": -0.419
             },
             {
               "label": "2:1",
@@ -4518,9 +4518,9 @@
             {
               "label": "0:0",
               "p": 0.062,
-              "odd": 8.5,
+              "odd": 9.0,
               "book": "Betfair",
-              "ev": -0.473
+              "ev": -0.442
             }
           ]
         },
@@ -4572,7 +4572,7 @@
               "label": "Under 1.5",
               "p": 0.644,
               "odd": 1.3,
-              "book": "William Hill",
+              "book": "10Bet",
               "ev": -0.163,
               "mkt_p": 0.723
             },
@@ -4603,7 +4603,7 @@
               "odd": 2.15,
               "book": "William Hill",
               "ev": -0.149,
-              "mkt_p": 0.437
+              "mkt_p": 0.435
             },
             {
               "label": "Level",
@@ -4611,15 +4611,15 @@
               "odd": 2.48,
               "book": "Unibet",
               "ev": -0.112,
-              "mkt_p": 0.379
+              "mkt_p": 0.377
             },
             {
               "label": "Switzerland lead",
               "p": 0.246,
-              "odd": 5.1,
-              "book": "Unibet",
-              "ev": 0.255,
-              "mkt_p": 0.184
+              "odd": 5.0,
+              "book": "10Bet",
+              "ev": 0.23,
+              "mkt_p": 0.187
             }
           ]
         },
@@ -4711,10 +4711,10 @@
             {
               "label": "Total Over 7.5",
               "p": 0.566,
-              "odd": 1.57,
+              "odd": 1.58,
               "book": "Unibet",
-              "ev": -0.111,
-              "mkt_p": 0.605
+              "ev": -0.106,
+              "mkt_p": 0.603
             },
             {
               "label": "Total Under 7.5",
@@ -4722,39 +4722,39 @@
               "odd": 2.4,
               "book": "Betfair",
               "ev": 0.042,
-              "mkt_p": 0.395
+              "mkt_p": 0.397
             },
             {
               "label": "Total Over 8.5",
               "p": 0.456,
-              "odd": 1.95,
-              "book": "Betfair",
-              "ev": -0.111,
+              "odd": 1.97,
+              "book": "Unibet",
+              "ev": -0.102,
               "mkt_p": 0.477
             },
             {
               "label": "Total Under 8.5",
               "p": 0.544,
-              "odd": 1.78,
-              "book": "Unibet",
-              "ev": -0.032,
+              "odd": 1.8,
+              "book": "Betfair",
+              "ev": -0.021,
               "mkt_p": 0.523
             },
             {
               "label": "Total Over 9.5",
               "p": 0.354,
-              "odd": 2.6,
-              "book": "Betfair",
-              "ev": -0.08,
-              "mkt_p": 0.361
+              "odd": 2.55,
+              "book": "Unibet",
+              "ev": -0.097,
+              "mkt_p": 0.363
             },
             {
               "label": "Total Under 9.5",
               "p": 0.646,
-              "odd": 1.47,
+              "odd": 1.45,
               "book": "Unibet",
-              "ev": -0.05,
-              "mkt_p": 0.639
+              "ev": -0.063,
+              "mkt_p": 0.638
             },
             {
               "label": "Total Over 10.5",
@@ -4762,15 +4762,15 @@
               "odd": 3.6,
               "book": "Betfair",
               "ev": -0.042,
-              "mkt_p": 0.264
+              "mkt_p": 0.261
             },
             {
               "label": "Total Under 10.5",
               "p": 0.734,
-              "odd": 1.29,
+              "odd": 1.27,
               "book": "Unibet",
-              "ev": -0.053,
-              "mkt_p": 0.736
+              "ev": -0.068,
+              "mkt_p": 0.739
             },
             {
               "label": "Switzerland 3+",
