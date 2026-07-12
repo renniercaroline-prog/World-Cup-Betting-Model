@@ -9916,8 +9916,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1582681|Total goals|Over 1.5": {
     "fixture": "Argentina v Switzerland",
@@ -9936,8 +9936,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0282,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.38
   },
   "1582681|Total goals|Over 2.5": {
     "fixture": "Argentina v Switzerland",
@@ -9956,8 +9956,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0517,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.2
   },
   "1582681|Switzerland total goals|Over 0.5": {
     "fixture": "Argentina v Switzerland",
@@ -9976,8 +9976,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0389,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.73
   },
   "1582681|Both teams to score|Yes": {
     "fixture": "Argentina v Switzerland",
@@ -9996,8 +9996,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0553,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.05
   },
   "1582681|First-half goals|Over 0.5": {
     "fixture": "Argentina v Switzerland",
@@ -10016,7 +10016,7 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0323,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1582681|First-half goals|Over 1.5": {
@@ -10036,7 +10036,7 @@
     "close_ts": "2026-07-10T22:57:45.258301+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1582681|Second-half result|Switzerland lead": {
@@ -10056,7 +10056,7 @@
     "close_ts": "2026-07-11T20:39:20.913527+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1582681|Second-half goals|Over 0.5": {
@@ -10076,7 +10076,7 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0221,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1582681|Second-half goals|Over 1.5": {
@@ -10096,7 +10096,7 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.04,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1582681|Second-half goals|Over 2.5": {
@@ -10116,7 +10116,7 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": -0.0417,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1578539|France total goals|Under 1.5": {
@@ -10156,8 +10156,8 @@
     "close_ts": "2026-07-11T13:25:12.087494+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1581037|Norway total goals|Over 1.5": {
     "fixture": "Norway v England",
@@ -10312,8 +10312,8 @@
     "open_book": "BetVictor",
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 3.25,
-    "close_book": "10Bet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_book": "Unibet",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10331,9 +10331,9 @@
     "open_odds": 1.32,
     "open_book": "Unibet",
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
-    "close_odds": 1.33,
-    "close_book": "Betfair",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_odds": 1.32,
+    "close_book": "Unibet",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10351,9 +10351,9 @@
     "open_odds": 1.1,
     "open_book": "10Bet",
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
-    "close_odds": 1.11,
-    "close_book": "Betfair",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_odds": 1.1,
+    "close_book": "10Bet",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10391,9 +10391,9 @@
     "open_odds": 1.16,
     "open_book": "Unibet",
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
-    "close_odds": 1.16,
+    "close_odds": 1.17,
     "close_book": "Unibet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10411,9 +10411,9 @@
     "open_odds": 1.44,
     "open_book": "Unibet",
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
-    "close_odds": 1.44,
-    "close_book": "Betfair",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_odds": 1.4,
+    "close_book": "10Bet",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10433,7 +10433,7 @@
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 2.95,
     "close_book": "10Bet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10493,7 +10493,7 @@
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 1.4,
     "close_book": "William Hill",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10513,7 +10513,7 @@
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 2.55,
     "close_book": "Unibet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10533,7 +10533,7 @@
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 1.2,
     "close_book": "William Hill",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10571,9 +10571,9 @@
     "open_odds": 2.18,
     "open_book": "Unibet",
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
-    "close_odds": 2.25,
+    "close_odds": 2.2,
     "close_book": "Betfair",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10593,7 +10593,7 @@
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 1.8,
     "close_book": "10Bet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10613,7 +10613,7 @@
     "open_ts": "2026-07-11T13:25:12.087494+00:00",
     "close_odds": 1.46,
     "close_book": "Unibet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10676,8 +10676,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.4
   },
   "1581037|England total goals|Over 2.5": {
     "fixture": "Norway v England",
@@ -10716,8 +10716,8 @@
     "close_ts": "2026-07-11T22:44:30.491998+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 2.3
   },
   "1585131|Match result|Spain win": {
     "fixture": "France v Spain",
@@ -10731,9 +10731,9 @@
     "open_odds": 3.3,
     "open_book": "Unibet",
     "open_ts": "2026-07-11T22:44:30.491998+00:00",
-    "close_odds": 3.3,
+    "close_odds": 3.45,
     "close_book": "Unibet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
@@ -10751,9 +10751,9 @@
     "open_odds": 1.62,
     "open_book": "Unibet",
     "open_ts": "2026-07-11T22:44:30.491998+00:00",
-    "close_odds": 1.62,
+    "close_odds": 1.66,
     "close_book": "Unibet",
-    "close_ts": "2026-07-12T02:06:21.247900+00:00",
+    "close_ts": "2026-07-12T05:25:17.262721+00:00",
     "status": "open",
     "clv": null,
     "result": null,
