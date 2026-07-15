@@ -10776,8 +10776,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": -0.0345,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.4
   },
   "1586077|Double chance|Argentina or draw": {
     "fixture": "England v Argentina",
@@ -10796,8 +10796,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0274,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.5
   },
   "1586077|Total goals|Over 0.5": {
     "fixture": "England v Argentina",
@@ -10816,8 +10816,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.1
   },
   "1586077|Total goals|Over 1.5": {
     "fixture": "England v Argentina",
@@ -10836,8 +10836,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.45
   },
   "1586077|Argentina total goals|Over 0.5": {
     "fixture": "England v Argentina",
@@ -10856,8 +10856,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.42
   },
   "1586077|Both teams to score|Yes": {
     "fixture": "England v Argentina",
@@ -10876,8 +10876,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0156,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.95
   },
   "1586077|Win to nil|Argentina yes": {
     "fixture": "England v Argentina",
@@ -10896,8 +10896,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0556,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1586077|First-half goals|Over 0.5": {
     "fixture": "England v Argentina",
@@ -10916,7 +10916,7 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": -0.0065,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1586077|Second-half goals|Over 0.5": {
@@ -10936,7 +10936,7 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": -0.0221,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1586077|Second-half goals|Over 1.5": {
@@ -10956,7 +10956,7 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": -0.04,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1586077|Second-half goals|Over 2.5": {
@@ -10976,7 +10976,7 @@
     "close_ts": "2026-07-15T01:50:43.295386+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1585131|Spain total goals|Under 2.5": {
@@ -11036,8 +11036,8 @@
     "close_ts": "2026-07-15T17:16:43.840662+00:00",
     "status": "closed",
     "clv": -0.1,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1586077|Corners|Total Over 9.5": {
     "fixture": "England v Argentina",
@@ -11056,8 +11056,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": -0.1333,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1586077|Corners|Total Over 8.5": {
     "fixture": "England v Argentina",
@@ -11076,8 +11076,8 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": -0.0667,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1586077|Corners|Total Over 7.5": {
     "fixture": "England v Argentina",
@@ -11096,7 +11096,7 @@
     "close_ts": "2026-07-15T18:54:28.396461+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   }
 }

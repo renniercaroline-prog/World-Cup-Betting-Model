@@ -1,7 +1,1140 @@
 {
-  "updated": "2026-07-15T20:50:47.499263+00:00",
+  "updated": "2026-07-15T22:57:11.748073+00:00",
   "sample": false,
-  "fixtures": [],
+  "fixtures": [
+    {
+      "home": "France",
+      "away": "England",
+      "xg": [
+        1.38,
+        1.22
+      ],
+      "corners": [
+        5.9,
+        4.4
+      ],
+      "agent_note": "Lineups projected ~3h before kickoff.",
+      "groups": [
+        {
+          "name": "Match result",
+          "markets": [
+            {
+              "label": "France win",
+              "p": 0.406
+            },
+            {
+              "label": "Draw",
+              "p": 0.263
+            },
+            {
+              "label": "England win",
+              "p": 0.331
+            }
+          ]
+        },
+        {
+          "name": "Double chance",
+          "markets": [
+            {
+              "label": "France or draw",
+              "p": 0.669
+            },
+            {
+              "label": "Either team (no draw)",
+              "p": 0.737
+            },
+            {
+              "label": "England or draw",
+              "p": 0.594
+            }
+          ]
+        },
+        {
+          "name": "Total goals",
+          "markets": [
+            {
+              "label": "Over 0.5",
+              "p": 0.925
+            },
+            {
+              "label": "Under 0.5",
+              "p": 0.075
+            },
+            {
+              "label": "Over 1.5",
+              "p": 0.732
+            },
+            {
+              "label": "Under 1.5",
+              "p": 0.268
+            },
+            {
+              "label": "Over 2.5",
+              "p": 0.481
+            },
+            {
+              "label": "Under 2.5",
+              "p": 0.519
+            },
+            {
+              "label": "Over 3.5",
+              "p": 0.263
+            },
+            {
+              "label": "Under 3.5",
+              "p": 0.737
+            },
+            {
+              "label": "Over 4.5",
+              "p": 0.122
+            },
+            {
+              "label": "Under 4.5",
+              "p": 0.878
+            }
+          ]
+        },
+        {
+          "name": "France total goals",
+          "markets": [
+            {
+              "label": "Over 0.5",
+              "p": 0.748
+            },
+            {
+              "label": "Under 0.5",
+              "p": 0.252
+            },
+            {
+              "label": "Over 1.5",
+              "p": 0.401
+            },
+            {
+              "label": "Under 1.5",
+              "p": 0.599
+            },
+            {
+              "label": "Over 2.5",
+              "p": 0.161
+            },
+            {
+              "label": "Under 2.5",
+              "p": 0.839
+            }
+          ]
+        },
+        {
+          "name": "England total goals",
+          "markets": [
+            {
+              "label": "Over 0.5",
+              "p": 0.704
+            },
+            {
+              "label": "Under 0.5",
+              "p": 0.296
+            },
+            {
+              "label": "Over 1.5",
+              "p": 0.344
+            },
+            {
+              "label": "Under 1.5",
+              "p": 0.656
+            },
+            {
+              "label": "Over 2.5",
+              "p": 0.125
+            },
+            {
+              "label": "Under 2.5",
+              "p": 0.875
+            }
+          ]
+        },
+        {
+          "name": "Both teams to score",
+          "markets": [
+            {
+              "label": "Yes",
+              "p": 0.527
+            },
+            {
+              "label": "No",
+              "p": 0.473
+            }
+          ]
+        },
+        {
+          "name": "Clean sheet",
+          "markets": [
+            {
+              "label": "France yes",
+              "p": 0.296
+            },
+            {
+              "label": "England yes",
+              "p": 0.252
+            }
+          ]
+        },
+        {
+          "name": "Win to nil",
+          "markets": [
+            {
+              "label": "France yes",
+              "p": 0.221
+            },
+            {
+              "label": "England yes",
+              "p": 0.178
+            }
+          ]
+        },
+        {
+          "name": "Correct score",
+          "markets": [
+            {
+              "label": "1:1",
+              "p": 0.125
+            },
+            {
+              "label": "1:0",
+              "p": 0.103
+            },
+            {
+              "label": "0:1",
+              "p": 0.091
+            },
+            {
+              "label": "2:1",
+              "p": 0.086
+            },
+            {
+              "label": "1:2",
+              "p": 0.076
+            },
+            {
+              "label": "0:0",
+              "p": 0.075
+            },
+            {
+              "label": "2:0",
+              "p": 0.071
+            }
+          ]
+        },
+        {
+          "name": "First-half result",
+          "markets": [
+            {
+              "label": "France lead",
+              "p": 0.31
+            },
+            {
+              "label": "Level",
+              "p": 0.426
+            },
+            {
+              "label": "England lead",
+              "p": 0.264
+            }
+          ]
+        },
+        {
+          "name": "First-half goals",
+          "markets": [
+            {
+              "label": "Over 0.5",
+              "p": 0.689
+            },
+            {
+              "label": "Under 0.5",
+              "p": 0.311
+            },
+            {
+              "label": "Over 1.5",
+              "p": 0.326
+            },
+            {
+              "label": "Under 1.5",
+              "p": 0.674
+            },
+            {
+              "label": "Over 2.5",
+              "p": 0.114
+            },
+            {
+              "label": "Under 2.5",
+              "p": 0.886
+            }
+          ]
+        },
+        {
+          "name": "Second-half result",
+          "markets": [
+            {
+              "label": "France lead",
+              "p": 0.337
+            },
+            {
+              "label": "Level",
+              "p": 0.378
+            },
+            {
+              "label": "England lead",
+              "p": 0.285
+            }
+          ]
+        },
+        {
+          "name": "Second-half goals",
+          "markets": [
+            {
+              "label": "Over 0.5",
+              "p": 0.76
+            },
+            {
+              "label": "Under 0.5",
+              "p": 0.24
+            },
+            {
+              "label": "Over 1.5",
+              "p": 0.418
+            },
+            {
+              "label": "Under 1.5",
+              "p": 0.582
+            },
+            {
+              "label": "Over 2.5",
+              "p": 0.173
+            },
+            {
+              "label": "Under 2.5",
+              "p": 0.827
+            }
+          ]
+        },
+        {
+          "name": "Half-time / Full-time",
+          "markets": [
+            {
+              "label": "Fra/Fra",
+              "p": 0.24
+            },
+            {
+              "label": "Eng/Eng",
+              "p": 0.19
+            },
+            {
+              "label": "Draw/Draw",
+              "p": 0.161
+            },
+            {
+              "label": "Draw/Fra",
+              "p": 0.144
+            },
+            {
+              "label": "Draw/Eng",
+              "p": 0.121
+            },
+            {
+              "label": "Fra/Draw",
+              "p": 0.051
+            }
+          ]
+        },
+        {
+          "name": "Corners",
+          "markets": [
+            {
+              "label": "Total Over 7.5",
+              "p": 0.731
+            },
+            {
+              "label": "Total Under 7.5",
+              "p": 0.269
+            },
+            {
+              "label": "Total Over 8.5",
+              "p": 0.637
+            },
+            {
+              "label": "Total Under 8.5",
+              "p": 0.363
+            },
+            {
+              "label": "Total Over 9.5",
+              "p": 0.54
+            },
+            {
+              "label": "Total Under 9.5",
+              "p": 0.46
+            },
+            {
+              "label": "Total Over 10.5",
+              "p": 0.446
+            },
+            {
+              "label": "Total Under 10.5",
+              "p": 0.554
+            },
+            {
+              "label": "England 3+",
+              "p": 0.743
+            },
+            {
+              "label": "England 4+",
+              "p": 0.585
+            },
+            {
+              "label": "England 5+",
+              "p": 0.432
+            },
+            {
+              "label": "France 4+",
+              "p": 0.751
+            },
+            {
+              "label": "France 5+",
+              "p": 0.624
+            },
+            {
+              "label": "France 6+",
+              "p": 0.496
+            }
+          ]
+        },
+        {
+          "name": "Players \u2014 to score",
+          "markets": [
+            {
+              "player": "Kylian Mbapp\u00e9",
+              "label": "Kylian Mbapp\u00e9 to score",
+              "p": 0.254
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane to score",
+              "p": 0.251
+            },
+            {
+              "player": "O. Demb\u00e9l\u00e9",
+              "label": "O. Demb\u00e9l\u00e9 to score",
+              "p": 0.21
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham to score",
+              "p": 0.15
+            },
+            {
+              "player": "B. Barcola",
+              "label": "B. Barcola to score",
+              "p": 0.145
+            },
+            {
+              "player": "D. Dou\u00e9",
+              "label": "D. Dou\u00e9 to score",
+              "p": 0.103
+            },
+            {
+              "player": "M. Rashford",
+              "label": "M. Rashford to score",
+              "p": 0.102
+            },
+            {
+              "player": "M. Olise",
+              "label": "M. Olise to score",
+              "p": 0.078
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers to score",
+              "p": 0.051
+            },
+            {
+              "player": "R. Cherki",
+              "label": "R. Cherki to score",
+              "p": 0.046
+            },
+            {
+              "player": "B. Saka",
+              "label": "B. Saka to score",
+              "p": 0.046
+            },
+            {
+              "player": "A. Gordon",
+              "label": "A. Gordon to score",
+              "p": 0.045
+            },
+            {
+              "player": "T. Hern\u00e1ndez",
+              "label": "T. Hern\u00e1ndez to score",
+              "p": 0.033
+            },
+            {
+              "player": "A. Rabiot",
+              "label": "A. Rabiot to score",
+              "p": 0.031
+            },
+            {
+              "player": "N. Madueke",
+              "label": "N. Madueke to score",
+              "p": 0.024
+            },
+            {
+              "player": "N. O&apos;Reilly",
+              "label": "N. O&apos;Reilly to score",
+              "p": 0.023
+            },
+            {
+              "player": "D. Rice",
+              "label": "D. Rice to score",
+              "p": 0.017
+            },
+            {
+              "player": "R. James",
+              "label": "R. James to score",
+              "p": 0.016
+            },
+            {
+              "player": "E. Anderson",
+              "label": "E. Anderson to score",
+              "p": 0.014
+            },
+            {
+              "player": "D. Upamecano",
+              "label": "D. Upamecano to score",
+              "p": 0.007
+            },
+            {
+              "player": "A. Tchouam\u00e9ni",
+              "label": "A. Tchouam\u00e9ni to score",
+              "p": 0.006
+            },
+            {
+              "player": "J. Kound\u00e9",
+              "label": "J. Kound\u00e9 to score",
+              "p": 0.005
+            },
+            {
+              "player": "W. Saliba",
+              "label": "W. Saliba to score",
+              "p": 0.005
+            },
+            {
+              "player": "M. Maignan",
+              "label": "M. Maignan to score",
+              "p": 0.0
+            },
+            {
+              "player": "B. Samba",
+              "label": "B. Samba to score",
+              "p": 0.0
+            },
+            {
+              "player": "J. Pickford",
+              "label": "J. Pickford to score",
+              "p": 0.0
+            },
+            {
+              "player": "E. Konsa",
+              "label": "E. Konsa to score",
+              "p": 0.0
+            },
+            {
+              "player": "J. Stones",
+              "label": "J. Stones to score",
+              "p": 0.0
+            }
+          ]
+        },
+        {
+          "name": "Players \u2014 shots on target",
+          "markets": [
+            {
+              "player": "Kylian Mbapp\u00e9",
+              "label": "Kylian Mbapp\u00e9 1+ shot on target",
+              "p": 0.372
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane 1+ shot on target",
+              "p": 0.26
+            },
+            {
+              "player": "D. Dou\u00e9",
+              "label": "D. Dou\u00e9 1+ shot on target",
+              "p": 0.252
+            },
+            {
+              "player": "O. Demb\u00e9l\u00e9",
+              "label": "O. Demb\u00e9l\u00e9 1+ shot on target",
+              "p": 0.23
+            },
+            {
+              "player": "B. Barcola",
+              "label": "B. Barcola 1+ shot on target",
+              "p": 0.227
+            },
+            {
+              "player": "M. Olise",
+              "label": "M. Olise 1+ shot on target",
+              "p": 0.223
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham 1+ shot on target",
+              "p": 0.189
+            },
+            {
+              "player": "M. Rashford",
+              "label": "M. Rashford 1+ shot on target",
+              "p": 0.182
+            },
+            {
+              "player": "B. Saka",
+              "label": "B. Saka 1+ shot on target",
+              "p": 0.135
+            },
+            {
+              "player": "A. Gordon",
+              "label": "A. Gordon 1+ shot on target",
+              "p": 0.117
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers 1+ shot on target",
+              "p": 0.102
+            },
+            {
+              "player": "R. Cherki",
+              "label": "R. Cherki 1+ shot on target",
+              "p": 0.096
+            },
+            {
+              "player": "N. Madueke",
+              "label": "N. Madueke 1+ shot on target",
+              "p": 0.071
+            },
+            {
+              "player": "T. Hern\u00e1ndez",
+              "label": "T. Hern\u00e1ndez 1+ shot on target",
+              "p": 0.067
+            },
+            {
+              "player": "A. Rabiot",
+              "label": "A. Rabiot 1+ shot on target",
+              "p": 0.055
+            },
+            {
+              "player": "N. O&apos;Reilly",
+              "label": "N. O&apos;Reilly 1+ shot on target",
+              "p": 0.049
+            },
+            {
+              "player": "D. Rice",
+              "label": "D. Rice 1+ shot on target",
+              "p": 0.042
+            },
+            {
+              "player": "R. James",
+              "label": "R. James 1+ shot on target",
+              "p": 0.03
+            },
+            {
+              "player": "E. Anderson",
+              "label": "E. Anderson 1+ shot on target",
+              "p": 0.029
+            },
+            {
+              "player": "A. Tchouam\u00e9ni",
+              "label": "A. Tchouam\u00e9ni 1+ shot on target",
+              "p": 0.026
+            },
+            {
+              "player": "D. Upamecano",
+              "label": "D. Upamecano 1+ shot on target",
+              "p": 0.023
+            },
+            {
+              "player": "E. Konsa",
+              "label": "E. Konsa 1+ shot on target",
+              "p": 0.015
+            },
+            {
+              "player": "J. Kound\u00e9",
+              "label": "J. Kound\u00e9 1+ shot on target",
+              "p": 0.014
+            },
+            {
+              "player": "W. Saliba",
+              "label": "W. Saliba 1+ shot on target",
+              "p": 0.003
+            },
+            {
+              "player": "M. Maignan",
+              "label": "M. Maignan 1+ shot on target",
+              "p": 0.0
+            },
+            {
+              "player": "B. Samba",
+              "label": "B. Samba 1+ shot on target",
+              "p": 0.0
+            },
+            {
+              "player": "J. Pickford",
+              "label": "J. Pickford 1+ shot on target",
+              "p": 0.0
+            },
+            {
+              "player": "J. Stones",
+              "label": "J. Stones 1+ shot on target",
+              "p": 0.0
+            }
+          ]
+        },
+        {
+          "name": "Players \u2014 to score/assist",
+          "markets": [
+            {
+              "player": "Kylian Mbapp\u00e9",
+              "label": "Kylian Mbapp\u00e9 to score or assist",
+              "p": 0.318
+            },
+            {
+              "player": "O. Demb\u00e9l\u00e9",
+              "label": "O. Demb\u00e9l\u00e9 to score or assist",
+              "p": 0.306
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane to score or assist",
+              "p": 0.283
+            },
+            {
+              "player": "M. Olise",
+              "label": "M. Olise to score or assist",
+              "p": 0.259
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham to score or assist",
+              "p": 0.187
+            },
+            {
+              "player": "B. Barcola",
+              "label": "B. Barcola to score or assist",
+              "p": 0.177
+            },
+            {
+              "player": "R. Cherki",
+              "label": "R. Cherki to score or assist",
+              "p": 0.173
+            },
+            {
+              "player": "D. Dou\u00e9",
+              "label": "D. Dou\u00e9 to score or assist",
+              "p": 0.167
+            },
+            {
+              "player": "M. Rashford",
+              "label": "M. Rashford to score or assist",
+              "p": 0.16
+            },
+            {
+              "player": "B. Saka",
+              "label": "B. Saka to score or assist",
+              "p": 0.152
+            },
+            {
+              "player": "A. Gordon",
+              "label": "A. Gordon to score or assist",
+              "p": 0.129
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers to score or assist",
+              "p": 0.08
+            },
+            {
+              "player": "A. Rabiot",
+              "label": "A. Rabiot to score or assist",
+              "p": 0.074
+            },
+            {
+              "player": "D. Rice",
+              "label": "D. Rice to score or assist",
+              "p": 0.06
+            },
+            {
+              "player": "E. Anderson",
+              "label": "E. Anderson to score or assist",
+              "p": 0.047
+            },
+            {
+              "player": "R. James",
+              "label": "R. James to score or assist",
+              "p": 0.047
+            },
+            {
+              "player": "T. Hern\u00e1ndez",
+              "label": "T. Hern\u00e1ndez to score or assist",
+              "p": 0.039
+            },
+            {
+              "player": "N. O&apos;Reilly",
+              "label": "N. O&apos;Reilly to score or assist",
+              "p": 0.036
+            },
+            {
+              "player": "N. Madueke",
+              "label": "N. Madueke to score or assist",
+              "p": 0.035
+            },
+            {
+              "player": "A. Tchouam\u00e9ni",
+              "label": "A. Tchouam\u00e9ni to score or assist",
+              "p": 0.034
+            },
+            {
+              "player": "J. Kound\u00e9",
+              "label": "J. Kound\u00e9 to score or assist",
+              "p": 0.021
+            },
+            {
+              "player": "D. Upamecano",
+              "label": "D. Upamecano to score or assist",
+              "p": 0.013
+            },
+            {
+              "player": "W. Saliba",
+              "label": "W. Saliba to score or assist",
+              "p": 0.005
+            },
+            {
+              "player": "M. Maignan",
+              "label": "M. Maignan to score or assist",
+              "p": 0.0
+            },
+            {
+              "player": "B. Samba",
+              "label": "B. Samba to score or assist",
+              "p": 0.0
+            },
+            {
+              "player": "J. Pickford",
+              "label": "J. Pickford to score or assist",
+              "p": 0.0
+            },
+            {
+              "player": "E. Konsa",
+              "label": "E. Konsa to score or assist",
+              "p": 0.0
+            },
+            {
+              "player": "J. Stones",
+              "label": "J. Stones to score or assist",
+              "p": 0.0
+            }
+          ]
+        },
+        {
+          "name": "Players \u2014 to commit a foul",
+          "markets": [
+            {
+              "player": "A. Rabiot",
+              "label": "A. Rabiot to commit a foul",
+              "p": 0.359
+            },
+            {
+              "player": "N. O&apos;Reilly",
+              "label": "N. O&apos;Reilly to commit a foul",
+              "p": 0.317
+            },
+            {
+              "player": "E. Anderson",
+              "label": "E. Anderson to commit a foul",
+              "p": 0.315
+            },
+            {
+              "player": "B. Saka",
+              "label": "B. Saka to commit a foul",
+              "p": 0.311
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers to commit a foul",
+              "p": 0.311
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham to commit a foul",
+              "p": 0.301
+            },
+            {
+              "player": "D. Dou\u00e9",
+              "label": "D. Dou\u00e9 to commit a foul",
+              "p": 0.296
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane to commit a foul",
+              "p": 0.266
+            },
+            {
+              "player": "R. James",
+              "label": "R. James to commit a foul",
+              "p": 0.263
+            },
+            {
+              "player": "A. Tchouam\u00e9ni",
+              "label": "A. Tchouam\u00e9ni to commit a foul",
+              "p": 0.251
+            },
+            {
+              "player": "M. Rashford",
+              "label": "M. Rashford to commit a foul",
+              "p": 0.243
+            },
+            {
+              "player": "R. Cherki",
+              "label": "R. Cherki to commit a foul",
+              "p": 0.232
+            },
+            {
+              "player": "B. Barcola",
+              "label": "B. Barcola to commit a foul",
+              "p": 0.23
+            },
+            {
+              "player": "M. Olise",
+              "label": "M. Olise to commit a foul",
+              "p": 0.229
+            },
+            {
+              "player": "N. Madueke",
+              "label": "N. Madueke to commit a foul",
+              "p": 0.229
+            },
+            {
+              "player": "J. Kound\u00e9",
+              "label": "J. Kound\u00e9 to commit a foul",
+              "p": 0.222
+            },
+            {
+              "player": "T. Hern\u00e1ndez",
+              "label": "T. Hern\u00e1ndez to commit a foul",
+              "p": 0.216
+            },
+            {
+              "player": "D. Upamecano",
+              "label": "D. Upamecano to commit a foul",
+              "p": 0.203
+            },
+            {
+              "player": "W. Saliba",
+              "label": "W. Saliba to commit a foul",
+              "p": 0.189
+            },
+            {
+              "player": "E. Konsa",
+              "label": "E. Konsa to commit a foul",
+              "p": 0.185
+            },
+            {
+              "player": "D. Rice",
+              "label": "D. Rice to commit a foul",
+              "p": 0.182
+            },
+            {
+              "player": "A. Gordon",
+              "label": "A. Gordon to commit a foul",
+              "p": 0.177
+            },
+            {
+              "player": "Kylian Mbapp\u00e9",
+              "label": "Kylian Mbapp\u00e9 to commit a foul",
+              "p": 0.173
+            },
+            {
+              "player": "O. Demb\u00e9l\u00e9",
+              "label": "O. Demb\u00e9l\u00e9 to commit a foul",
+              "p": 0.034
+            },
+            {
+              "player": "J. Stones",
+              "label": "J. Stones to commit a foul",
+              "p": 0.031
+            },
+            {
+              "player": "B. Samba",
+              "label": "B. Samba to commit a foul",
+              "p": 0.009
+            },
+            {
+              "player": "J. Pickford",
+              "label": "J. Pickford to commit a foul",
+              "p": 0.003
+            },
+            {
+              "player": "M. Maignan",
+              "label": "M. Maignan to commit a foul",
+              "p": 0.0
+            }
+          ]
+        },
+        {
+          "name": "Players \u2014 to be fouled",
+          "markets": [
+            {
+              "player": "M. Olise",
+              "label": "M. Olise to be fouled",
+              "p": 0.489
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham to be fouled",
+              "p": 0.475
+            },
+            {
+              "player": "B. Saka",
+              "label": "B. Saka to be fouled",
+              "p": 0.464
+            },
+            {
+              "player": "A. Gordon",
+              "label": "A. Gordon to be fouled",
+              "p": 0.448
+            },
+            {
+              "player": "E. Anderson",
+              "label": "E. Anderson to be fouled",
+              "p": 0.4
+            },
+            {
+              "player": "D. Dou\u00e9",
+              "label": "D. Dou\u00e9 to be fouled",
+              "p": 0.381
+            },
+            {
+              "player": "T. Hern\u00e1ndez",
+              "label": "T. Hern\u00e1ndez to be fouled",
+              "p": 0.381
+            },
+            {
+              "player": "R. Cherki",
+              "label": "R. Cherki to be fouled",
+              "p": 0.352
+            },
+            {
+              "player": "E. Konsa",
+              "label": "E. Konsa to be fouled",
+              "p": 0.339
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers to be fouled",
+              "p": 0.299
+            },
+            {
+              "player": "A. Rabiot",
+              "label": "A. Rabiot to be fouled",
+              "p": 0.297
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane to be fouled",
+              "p": 0.292
+            },
+            {
+              "player": "Kylian Mbapp\u00e9",
+              "label": "Kylian Mbapp\u00e9 to be fouled",
+              "p": 0.286
+            },
+            {
+              "player": "M. Rashford",
+              "label": "M. Rashford to be fouled",
+              "p": 0.259
+            },
+            {
+              "player": "N. Madueke",
+              "label": "N. Madueke to be fouled",
+              "p": 0.252
+            },
+            {
+              "player": "A. Tchouam\u00e9ni",
+              "label": "A. Tchouam\u00e9ni to be fouled",
+              "p": 0.212
+            },
+            {
+              "player": "J. Kound\u00e9",
+              "label": "J. Kound\u00e9 to be fouled",
+              "p": 0.209
+            },
+            {
+              "player": "R. James",
+              "label": "R. James to be fouled",
+              "p": 0.178
+            },
+            {
+              "player": "N. O&apos;Reilly",
+              "label": "N. O&apos;Reilly to be fouled",
+              "p": 0.175
+            },
+            {
+              "player": "D. Upamecano",
+              "label": "D. Upamecano to be fouled",
+              "p": 0.112
+            },
+            {
+              "player": "B. Barcola",
+              "label": "B. Barcola to be fouled",
+              "p": 0.11
+            },
+            {
+              "player": "O. Demb\u00e9l\u00e9",
+              "label": "O. Demb\u00e9l\u00e9 to be fouled",
+              "p": 0.109
+            },
+            {
+              "player": "J. Pickford",
+              "label": "J. Pickford to be fouled",
+              "p": 0.084
+            },
+            {
+              "player": "W. Saliba",
+              "label": "W. Saliba to be fouled",
+              "p": 0.078
+            },
+            {
+              "player": "M. Maignan",
+              "label": "M. Maignan to be fouled",
+              "p": 0.062
+            },
+            {
+              "player": "B. Samba",
+              "label": "B. Samba to be fouled",
+              "p": 0.059
+            },
+            {
+              "player": "D. Rice",
+              "label": "D. Rice to be fouled",
+              "p": 0.05
+            },
+            {
+              "player": "J. Stones",
+              "label": "J. Stones to be fouled",
+              "p": 0.031
+            }
+          ]
+        }
+      ],
+      "kickoff": "2026-07-18T21:00:00+00:00"
+    }
+  ],
   "track": {
     "logged": 555,
     "open": 0,
@@ -9,10 +1142,10 @@
     "clv_single": 67,
     "avg_clv": 0.0064,
     "beat_close": 0.387,
-    "settled": 404,
-    "wins": 214,
-    "losses": 190,
-    "pnl": 36.23,
-    "roi": 0.09
+    "settled": 415,
+    "wins": 220,
+    "losses": 195,
+    "pnl": 34.05,
+    "roi": 0.082
   }
 }
