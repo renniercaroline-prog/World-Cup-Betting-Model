@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T22:55:10.195911+00:00",
+  "updated": "2026-07-17T02:04:28.757110+00:00",
   "sample": false,
   "fixtures": [
     {
@@ -671,7 +671,7 @@
             {
               "player": "H. Kane",
               "label": "H. Kane to score",
-              "p": 0.212
+              "p": 0.197
             },
             {
               "player": "B. Barcola",
@@ -681,7 +681,7 @@
             {
               "player": "J. Bellingham",
               "label": "J. Bellingham to score",
-              "p": 0.125
+              "p": 0.116
             },
             {
               "player": "D. Dou\u00e9",
@@ -699,14 +699,14 @@
               "p": 0.082
             },
             {
+              "player": "A. Gordon",
+              "label": "A. Gordon to score",
+              "p": 0.053
+            },
+            {
               "player": "R. Cherki",
               "label": "R. Cherki to score",
               "p": 0.049
-            },
-            {
-              "player": "M. Rogers",
-              "label": "M. Rogers to score",
-              "p": 0.042
             },
             {
               "player": "B. Saka",
@@ -714,8 +714,8 @@
               "p": 0.038
             },
             {
-              "player": "A. Gordon",
-              "label": "A. Gordon to score",
+              "player": "M. Rogers",
+              "label": "M. Rogers to score",
               "p": 0.037
             },
             {
@@ -741,17 +741,17 @@
             {
               "player": "D. Rice",
               "label": "D. Rice to score",
-              "p": 0.014
+              "p": 0.013
             },
             {
               "player": "R. James",
               "label": "R. James to score",
-              "p": 0.013
+              "p": 0.012
             },
             {
               "player": "E. Anderson",
               "label": "E. Anderson to score",
-              "p": 0.011
+              "p": 0.01
             },
             {
               "player": "D. Upamecano",
@@ -809,14 +809,14 @@
               "p": 0.372
             },
             {
-              "player": "H. Kane",
-              "label": "H. Kane 1+ shot on target",
-              "p": 0.26
-            },
-            {
               "player": "D. Dou\u00e9",
               "label": "D. Dou\u00e9 1+ shot on target",
               "p": 0.252
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane 1+ shot on target",
+              "p": 0.243
             },
             {
               "player": "O. Demb\u00e9l\u00e9",
@@ -834,14 +834,14 @@
               "p": 0.223
             },
             {
-              "player": "J. Bellingham",
-              "label": "J. Bellingham 1+ shot on target",
-              "p": 0.189
-            },
-            {
               "player": "M. Rashford",
               "label": "M. Rashford 1+ shot on target",
               "p": 0.182
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham 1+ shot on target",
+              "p": 0.176
             },
             {
               "player": "B. Saka",
@@ -851,17 +851,17 @@
             {
               "player": "A. Gordon",
               "label": "A. Gordon 1+ shot on target",
-              "p": 0.117
-            },
-            {
-              "player": "M. Rogers",
-              "label": "M. Rogers 1+ shot on target",
-              "p": 0.102
+              "p": 0.12
             },
             {
               "player": "R. Cherki",
               "label": "R. Cherki 1+ shot on target",
               "p": 0.096
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers 1+ shot on target",
+              "p": 0.091
             },
             {
               "player": "N. Madueke",
@@ -879,24 +879,24 @@
               "p": 0.055
             },
             {
-              "player": "N. O&apos;Reilly",
-              "label": "N. O&apos;Reilly 1+ shot on target",
-              "p": 0.049
-            },
-            {
               "player": "D. Rice",
               "label": "D. Rice 1+ shot on target",
-              "p": 0.042
+              "p": 0.05
             },
             {
-              "player": "R. James",
-              "label": "R. James 1+ shot on target",
-              "p": 0.03
+              "player": "N. O&apos;Reilly",
+              "label": "N. O&apos;Reilly 1+ shot on target",
+              "p": 0.048
             },
             {
               "player": "E. Anderson",
               "label": "E. Anderson 1+ shot on target",
-              "p": 0.029
+              "p": 0.027
+            },
+            {
+              "player": "R. James",
+              "label": "R. James 1+ shot on target",
+              "p": 0.027
             },
             {
               "player": "A. Tchouam\u00e9ni",
@@ -966,7 +966,7 @@
             {
               "player": "H. Kane",
               "label": "H. Kane to score or assist",
-              "p": 0.239
+              "p": 0.223
             },
             {
               "player": "B. Barcola",
@@ -986,7 +986,7 @@
             {
               "player": "J. Bellingham",
               "label": "J. Bellingham to score or assist",
-              "p": 0.157
+              "p": 0.145
             },
             {
               "player": "M. Rashford",
@@ -1001,7 +1001,12 @@
             {
               "player": "A. Gordon",
               "label": "A. Gordon to score or assist",
-              "p": 0.107
+              "p": 0.117
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers to score or assist",
+              "p": 0.081
             },
             {
               "player": "A. Rabiot",
@@ -1009,14 +1014,9 @@
               "p": 0.078
             },
             {
-              "player": "M. Rogers",
-              "label": "M. Rogers to score or assist",
-              "p": 0.066
-            },
-            {
               "player": "D. Rice",
               "label": "D. Rice to score or assist",
-              "p": 0.049
+              "p": 0.046
             },
             {
               "player": "T. Hern\u00e1ndez",
@@ -1026,16 +1026,16 @@
             {
               "player": "E. Anderson",
               "label": "E. Anderson to score or assist",
-              "p": 0.039
-            },
-            {
-              "player": "R. James",
-              "label": "R. James to score or assist",
-              "p": 0.039
+              "p": 0.036
             },
             {
               "player": "A. Tchouam\u00e9ni",
               "label": "A. Tchouam\u00e9ni to score or assist",
+              "p": 0.035
+            },
+            {
+              "player": "R. James",
+              "label": "R. James to score or assist",
               "p": 0.035
             },
             {
@@ -1101,12 +1101,22 @@
             {
               "player": "N. O&apos;Reilly",
               "label": "N. O&apos;Reilly to commit a foul",
-              "p": 0.317
+              "p": 0.332
+            },
+            {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham to commit a foul",
+              "p": 0.326
+            },
+            {
+              "player": "M. Rogers",
+              "label": "M. Rogers to commit a foul",
+              "p": 0.325
             },
             {
               "player": "E. Anderson",
               "label": "E. Anderson to commit a foul",
-              "p": 0.315
+              "p": 0.324
             },
             {
               "player": "B. Saka",
@@ -1114,24 +1124,9 @@
               "p": 0.311
             },
             {
-              "player": "M. Rogers",
-              "label": "M. Rogers to commit a foul",
-              "p": 0.311
-            },
-            {
-              "player": "J. Bellingham",
-              "label": "J. Bellingham to commit a foul",
-              "p": 0.301
-            },
-            {
               "player": "D. Dou\u00e9",
               "label": "D. Dou\u00e9 to commit a foul",
               "p": 0.296
-            },
-            {
-              "player": "H. Kane",
-              "label": "H. Kane to commit a foul",
-              "p": 0.266
             },
             {
               "player": "R. James",
@@ -1142,6 +1137,11 @@
               "player": "A. Tchouam\u00e9ni",
               "label": "A. Tchouam\u00e9ni to commit a foul",
               "p": 0.251
+            },
+            {
+              "player": "H. Kane",
+              "label": "H. Kane to commit a foul",
+              "p": 0.249
             },
             {
               "player": "M. Rashford",
@@ -1189,24 +1189,24 @@
               "p": 0.189
             },
             {
-              "player": "E. Konsa",
-              "label": "E. Konsa to commit a foul",
-              "p": 0.185
-            },
-            {
-              "player": "D. Rice",
-              "label": "D. Rice to commit a foul",
-              "p": 0.182
-            },
-            {
               "player": "A. Gordon",
               "label": "A. Gordon to commit a foul",
-              "p": 0.177
+              "p": 0.187
+            },
+            {
+              "player": "E. Konsa",
+              "label": "E. Konsa to commit a foul",
+              "p": 0.183
             },
             {
               "player": "Kylian Mbapp\u00e9",
               "label": "Kylian Mbapp\u00e9 to commit a foul",
               "p": 0.173
+            },
+            {
+              "player": "D. Rice",
+              "label": "D. Rice to commit a foul",
+              "p": 0.168
             },
             {
               "player": "O. Demb\u00e9l\u00e9",
@@ -1216,7 +1216,7 @@
             {
               "player": "J. Stones",
               "label": "J. Stones to commit a foul",
-              "p": 0.031
+              "p": 0.028
             },
             {
               "player": "B. Samba",
@@ -1239,14 +1239,14 @@
           "name": "Players \u2014 to be fouled",
           "markets": [
             {
+              "player": "J. Bellingham",
+              "label": "J. Bellingham to be fouled",
+              "p": 0.493
+            },
+            {
               "player": "M. Olise",
               "label": "M. Olise to be fouled",
               "p": 0.489
-            },
-            {
-              "player": "J. Bellingham",
-              "label": "J. Bellingham to be fouled",
-              "p": 0.475
             },
             {
               "player": "B. Saka",
@@ -1256,12 +1256,12 @@
             {
               "player": "A. Gordon",
               "label": "A. Gordon to be fouled",
-              "p": 0.448
+              "p": 0.437
             },
             {
               "player": "E. Anderson",
               "label": "E. Anderson to be fouled",
-              "p": 0.4
+              "p": 0.428
             },
             {
               "player": "D. Dou\u00e9",
@@ -1281,12 +1281,7 @@
             {
               "player": "E. Konsa",
               "label": "E. Konsa to be fouled",
-              "p": 0.339
-            },
-            {
-              "player": "M. Rogers",
-              "label": "M. Rogers to be fouled",
-              "p": 0.299
+              "p": 0.335
             },
             {
               "player": "A. Rabiot",
@@ -1294,9 +1289,14 @@
               "p": 0.297
             },
             {
+              "player": "M. Rogers",
+              "label": "M. Rogers to be fouled",
+              "p": 0.292
+            },
+            {
               "player": "H. Kane",
               "label": "H. Kane to be fouled",
-              "p": 0.292
+              "p": 0.288
             },
             {
               "player": "Kylian Mbapp\u00e9",
@@ -1326,12 +1326,12 @@
             {
               "player": "R. James",
               "label": "R. James to be fouled",
-              "p": 0.178
+              "p": 0.186
             },
             {
               "player": "N. O&apos;Reilly",
               "label": "N. O&apos;Reilly to be fouled",
-              "p": 0.175
+              "p": 0.174
             },
             {
               "player": "D. Upamecano",
@@ -1351,7 +1351,7 @@
             {
               "player": "J. Pickford",
               "label": "J. Pickford to be fouled",
-              "p": 0.084
+              "p": 0.097
             },
             {
               "player": "W. Saliba",
@@ -1371,12 +1371,12 @@
             {
               "player": "D. Rice",
               "label": "D. Rice to be fouled",
-              "p": 0.05
+              "p": 0.046
             },
             {
               "player": "J. Stones",
               "label": "J. Stones to be fouled",
-              "p": 0.031
+              "p": 0.028
             }
           ]
         }
@@ -1793,12 +1793,17 @@
             {
               "player": "L. Messi",
               "label": "L. Messi to score",
-              "p": 0.205
+              "p": 0.191
             },
             {
               "player": "Mikel Oyarzabal",
               "label": "Mikel Oyarzabal to score",
               "p": 0.154
+            },
+            {
+              "player": "Lautaro Mart\u00ednez",
+              "label": "Lautaro Mart\u00ednez to score",
+              "p": 0.135
             },
             {
               "player": "Mikel Merino",
@@ -1811,34 +1816,24 @@
               "p": 0.121
             },
             {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to score",
-              "p": 0.119
-            },
-            {
               "player": "Lamine Yamal",
               "label": "Lamine Yamal to score",
               "p": 0.1
             },
             {
+              "player": "E. Fern\u00e1ndez",
+              "label": "E. Fern\u00e1ndez to score",
+              "p": 0.056
+            },
+            {
               "player": "J. \u00c1lvarez",
               "label": "J. \u00c1lvarez to score",
-              "p": 0.057
+              "p": 0.052
             },
             {
               "player": "Pedro Porro",
               "label": "Pedro Porro to score",
               "p": 0.049
-            },
-            {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to score",
-              "p": 0.045
-            },
-            {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez to score",
-              "p": 0.043
             },
             {
               "player": "Dani Olmo",
@@ -1851,9 +1846,14 @@
               "p": 0.041
             },
             {
+              "player": "N. Gonz\u00e1lez",
+              "label": "N. Gonz\u00e1lez to score",
+              "p": 0.041
+            },
+            {
               "player": "C. Romero",
               "label": "C. Romero to score",
-              "p": 0.037
+              "p": 0.034
             },
             {
               "player": "T. Almada",
@@ -1868,17 +1868,17 @@
             {
               "player": "A. Mac Allister",
               "label": "A. Mac Allister to score",
-              "p": 0.022
+              "p": 0.02
             },
             {
               "player": "Lisandro Mart\u00ednez",
               "label": "Lisandro Mart\u00ednez to score",
-              "p": 0.016
+              "p": 0.015
             },
             {
               "player": "N. Molina",
               "label": "N. Molina to score",
-              "p": 0.015
+              "p": 0.014
             },
             {
               "player": "Pedri",
@@ -1938,12 +1938,12 @@
             {
               "player": "L. Messi",
               "label": "L. Messi 1+ shot on target",
-              "p": 0.237
+              "p": 0.22
             },
             {
               "player": "Lautaro Mart\u00ednez",
               "label": "Lautaro Mart\u00ednez 1+ shot on target",
-              "p": 0.125
+              "p": 0.133
             },
             {
               "player": "Lamine Yamal",
@@ -1968,12 +1968,12 @@
             {
               "player": "N. Gonz\u00e1lez",
               "label": "N. Gonz\u00e1lez 1+ shot on target",
-              "p": 0.087
+              "p": 0.095
             },
             {
               "player": "E. Fern\u00e1ndez",
               "label": "E. Fern\u00e1ndez 1+ shot on target",
-              "p": 0.07
+              "p": 0.072
             },
             {
               "player": "T. Almada",
@@ -1986,13 +1986,13 @@
               "p": 0.066
             },
             {
-              "player": "Dani Olmo",
-              "label": "Dani Olmo 1+ shot on target",
-              "p": 0.044
-            },
-            {
               "player": "A. Mac Allister",
               "label": "A. Mac Allister 1+ shot on target",
+              "p": 0.048
+            },
+            {
+              "player": "Dani Olmo",
+              "label": "Dani Olmo 1+ shot on target",
               "p": 0.044
             },
             {
@@ -2023,12 +2023,12 @@
             {
               "player": "C. Romero",
               "label": "C. Romero 1+ shot on target",
-              "p": 0.024
+              "p": 0.022
             },
             {
               "player": "Lisandro Mart\u00ednez",
               "label": "Lisandro Mart\u00ednez 1+ shot on target",
-              "p": 0.017
+              "p": 0.016
             },
             {
               "player": "R. De Paul",
@@ -2038,7 +2038,7 @@
             {
               "player": "N. Molina",
               "label": "N. Molina 1+ shot on target",
-              "p": 0.015
+              "p": 0.014
             },
             {
               "player": "Marcos Llorente",
@@ -2083,7 +2083,7 @@
             {
               "player": "L. Messi",
               "label": "L. Messi to score or assist",
-              "p": 0.28
+              "p": 0.283
             },
             {
               "player": "Mikel Oyarzabal",
@@ -2091,14 +2091,14 @@
               "p": 0.186
             },
             {
+              "player": "Lautaro Mart\u00ednez",
+              "label": "Lautaro Mart\u00ednez to score or assist",
+              "p": 0.177
+            },
+            {
               "player": "Mikel Merino",
               "label": "Mikel Merino to score or assist",
               "p": 0.167
-            },
-            {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to score or assist",
-              "p": 0.162
             },
             {
               "player": "Ferran Torres",
@@ -2123,21 +2123,26 @@
             {
               "player": "G. Montiel",
               "label": "G. Montiel to score or assist",
-              "p": 0.078
+              "p": 0.076
             },
             {
               "player": "J. \u00c1lvarez",
               "label": "J. \u00c1lvarez to score or assist",
-              "p": 0.076
+              "p": 0.07
             },
             {
-              "player": "N. Gonz\u00e1lez",
-              "label": "N. Gonz\u00e1lez to score or assist",
-              "p": 0.065
+              "player": "E. Fern\u00e1ndez",
+              "label": "E. Fern\u00e1ndez to score or assist",
+              "p": 0.066
             },
             {
               "player": "Pedri",
               "label": "Pedri to score or assist",
+              "p": 0.063
+            },
+            {
+              "player": "N. Gonz\u00e1lez",
+              "label": "N. Gonz\u00e1lez to score or assist",
               "p": 0.063
             },
             {
@@ -2156,24 +2161,19 @@
               "p": 0.057
             },
             {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to score or assist",
-              "p": 0.056
-            },
-            {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister to score or assist",
-              "p": 0.05
-            },
-            {
               "player": "R. De Paul",
               "label": "R. De Paul to score or assist",
               "p": 0.05
             },
             {
+              "player": "A. Mac Allister",
+              "label": "A. Mac Allister to score or assist",
+              "p": 0.046
+            },
+            {
               "player": "C. Romero",
               "label": "C. Romero to score or assist",
-              "p": 0.041
+              "p": 0.038
             },
             {
               "player": "T. Almada",
@@ -2183,7 +2183,7 @@
             {
               "player": "Lisandro Mart\u00ednez",
               "label": "Lisandro Mart\u00ednez to score or assist",
-              "p": 0.032
+              "p": 0.03
             },
             {
               "player": "F. Medina",
@@ -2193,7 +2193,7 @@
             {
               "player": "N. Molina",
               "label": "N. Molina to score or assist",
-              "p": 0.029
+              "p": 0.027
             },
             {
               "player": "Aymeric Laporte",
@@ -2233,12 +2233,12 @@
             {
               "player": "Lautaro Mart\u00ednez",
               "label": "Lautaro Mart\u00ednez to commit a foul",
-              "p": 0.442
+              "p": 0.439
             },
             {
               "player": "N. Gonz\u00e1lez",
               "label": "N. Gonz\u00e1lez to commit a foul",
-              "p": 0.37
+              "p": 0.381
             },
             {
               "player": "Lamine Yamal",
@@ -2248,12 +2248,17 @@
             {
               "player": "C. Romero",
               "label": "C. Romero to commit a foul",
-              "p": 0.336
+              "p": 0.344
             },
             {
               "player": "F. Medina",
               "label": "F. Medina to commit a foul",
               "p": 0.322
+            },
+            {
+              "player": "E. Fern\u00e1ndez",
+              "label": "E. Fern\u00e1ndez to commit a foul",
+              "p": 0.29
             },
             {
               "player": "Marc Cucurella",
@@ -2266,19 +2271,9 @@
               "p": 0.284
             },
             {
-              "player": "J. \u00c1lvarez",
-              "label": "J. \u00c1lvarez to commit a foul",
-              "p": 0.271
-            },
-            {
               "player": "Dani Olmo",
               "label": "Dani Olmo to commit a foul",
               "p": 0.269
-            },
-            {
-              "player": "R. De Paul",
-              "label": "R. De Paul to commit a foul",
-              "p": 0.266
             },
             {
               "player": "Marcos Llorente",
@@ -2286,9 +2281,9 @@
               "p": 0.262
             },
             {
-              "player": "A. Mac Allister",
-              "label": "A. Mac Allister to commit a foul",
-              "p": 0.261
+              "player": "R. De Paul",
+              "label": "R. De Paul to commit a foul",
+              "p": 0.262
             },
             {
               "player": "Rodri",
@@ -2296,13 +2291,18 @@
               "p": 0.259
             },
             {
-              "player": "E. Fern\u00e1ndez",
-              "label": "E. Fern\u00e1ndez to commit a foul",
-              "p": 0.259
+              "player": "J. \u00c1lvarez",
+              "label": "J. \u00c1lvarez to commit a foul",
+              "p": 0.25
             },
             {
               "player": "Ferran Torres",
               "label": "Ferran Torres to commit a foul",
+              "p": 0.243
+            },
+            {
+              "player": "A. Mac Allister",
+              "label": "A. Mac Allister to commit a foul",
               "p": 0.243
             },
             {
@@ -2313,17 +2313,17 @@
             {
               "player": "G. Montiel",
               "label": "G. Montiel to commit a foul",
-              "p": 0.206
+              "p": 0.201
             },
             {
               "player": "Lisandro Mart\u00ednez",
               "label": "Lisandro Mart\u00ednez to commit a foul",
-              "p": 0.192
+              "p": 0.198
             },
             {
               "player": "N. Molina",
               "label": "N. Molina to commit a foul",
-              "p": 0.185
+              "p": 0.193
             },
             {
               "player": "Mikel Oyarzabal",
@@ -2348,7 +2348,7 @@
             {
               "player": "L. Messi",
               "label": "L. Messi to commit a foul",
-              "p": 0.101
+              "p": 0.093
             },
             {
               "player": "Fabi\u00e1n Ruiz",
@@ -2381,11 +2381,6 @@
               "p": 0.422
             },
             {
-              "player": "Lautaro Mart\u00ednez",
-              "label": "Lautaro Mart\u00ednez to be fouled",
-              "p": 0.39
-            },
-            {
               "player": "Dani Olmo",
               "label": "Dani Olmo to be fouled",
               "p": 0.389
@@ -2396,9 +2391,14 @@
               "p": 0.389
             },
             {
+              "player": "Lautaro Mart\u00ednez",
+              "label": "Lautaro Mart\u00ednez to be fouled",
+              "p": 0.387
+            },
+            {
               "player": "R. De Paul",
               "label": "R. De Paul to be fouled",
-              "p": 0.35
+              "p": 0.345
             },
             {
               "player": "Pedri",
@@ -2408,7 +2408,7 @@
             {
               "player": "N. Gonz\u00e1lez",
               "label": "N. Gonz\u00e1lez to be fouled",
-              "p": 0.323
+              "p": 0.313
             },
             {
               "player": "Rodri",
@@ -2418,7 +2418,7 @@
             {
               "player": "A. Mac Allister",
               "label": "A. Mac Allister to be fouled",
-              "p": 0.301
+              "p": 0.296
             },
             {
               "player": "E. Fern\u00e1ndez",
@@ -2446,13 +2446,13 @@
               "p": 0.216
             },
             {
-              "player": "Marc Cucurella",
-              "label": "Marc Cucurella to be fouled",
-              "p": 0.171
-            },
-            {
               "player": "J. \u00c1lvarez",
               "label": "J. \u00c1lvarez to be fouled",
+              "p": 0.177
+            },
+            {
+              "player": "Marc Cucurella",
+              "label": "Marc Cucurella to be fouled",
               "p": 0.171
             },
             {
@@ -2463,12 +2463,7 @@
             {
               "player": "C. Romero",
               "label": "C. Romero to be fouled",
-              "p": 0.154
-            },
-            {
-              "player": "G. Montiel",
-              "label": "G. Montiel to be fouled",
-              "p": 0.13
+              "p": 0.161
             },
             {
               "player": "Fabi\u00e1n Ruiz",
@@ -2476,14 +2471,14 @@
               "p": 0.128
             },
             {
+              "player": "G. Montiel",
+              "label": "G. Montiel to be fouled",
+              "p": 0.126
+            },
+            {
               "player": "Marcos Llorente",
               "label": "Marcos Llorente to be fouled",
               "p": 0.119
-            },
-            {
-              "player": "Lisandro Mart\u00ednez",
-              "label": "Lisandro Mart\u00ednez to be fouled",
-              "p": 0.11
             },
             {
               "player": "Aymeric Laporte",
@@ -2491,9 +2486,19 @@
               "p": 0.109
             },
             {
+              "player": "Lisandro Mart\u00ednez",
+              "label": "Lisandro Mart\u00ednez to be fouled",
+              "p": 0.103
+            },
+            {
               "player": "Unai Sim\u00f3n",
               "label": "Unai Sim\u00f3n to be fouled",
               "p": 0.088
+            },
+            {
+              "player": "E. Mart\u00ednez",
+              "label": "E. Mart\u00ednez to be fouled",
+              "p": 0.083
             },
             {
               "player": "Pau Cubars\u00ed Paredes",
@@ -2501,14 +2506,9 @@
               "p": 0.078
             },
             {
-              "player": "E. Mart\u00ednez",
-              "label": "E. Mart\u00ednez to be fouled",
-              "p": 0.069
-            },
-            {
               "player": "N. Molina",
               "label": "N. Molina to be fouled",
-              "p": 0.053
+              "p": 0.049
             }
           ]
         }
