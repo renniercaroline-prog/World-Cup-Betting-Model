@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T18:45:09.350939+00:00",
+  "updated": "2026-07-18T20:38:02.947392+00:00",
   "sample": false,
   "fixtures": [
     {
@@ -13,7 +13,7 @@
         6.5,
         4.0
       ],
-      "agent_note": "Projected XIs; France rotate heavily. Reece James doubtful, not confirmed out.",
+      "agent_note": "Latest reports: Saliba and Henderson out; James doubtful, Samba concern; both XIs projected.",
       "groups": [
         {
           "name": "Match result",
