@@ -11396,8 +11396,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0169,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 2.0
   },
   "1591866|Total goals|Under 2.5": {
     "fixture": "Spain v Argentina",
@@ -11416,8 +11416,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0062,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.63
   },
   "1591866|Spain total goals|Under 0.5": {
     "fixture": "Spain v Argentina",
@@ -11436,8 +11436,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1591866|Argentina total goals|Under 0.5": {
     "fixture": "Spain v Argentina",
@@ -11456,8 +11456,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.75
   },
   "1591866|Both teams to score|No": {
     "fixture": "Spain v Argentina",
@@ -11476,8 +11476,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": -0.0256,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.9
   },
   "1591866|Win to nil|Spain yes": {
     "fixture": "Spain v Argentina",
@@ -11496,8 +11496,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 2.7
   },
   "1591866|Second-half goals|Under 0.5": {
     "fixture": "Spain v Argentina",
@@ -11516,7 +11516,7 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1591866|Second-half goals|Under 1.5": {
@@ -11536,7 +11536,7 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
+    "result": "void",
     "pnl": null
   },
   "1591866|Corners|Total Under 7.5": {
@@ -11556,8 +11556,8 @@
     "close_ts": "2026-07-18T22:45:19.588531+00:00",
     "status": "closed",
     "clv": -0.0132,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1591866|Corners|Total Under 8.5": {
     "fixture": "Spain v Argentina",
@@ -11576,8 +11576,8 @@
     "close_ts": "2026-07-18T22:45:19.588531+00:00",
     "status": "closed",
     "clv": -0.0281,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1591866|Corners|Total Under 9.5": {
     "fixture": "Spain v Argentina",
@@ -11596,8 +11596,8 @@
     "close_ts": "2026-07-18T22:45:19.588531+00:00",
     "status": "closed",
     "clv": -0.034,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1591866|Clean sheet|Spain yes": {
     "fixture": "Spain v Argentina",
@@ -11616,8 +11616,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0392,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.65
   },
   "1591866|Corners|Total Under 10.5": {
     "fixture": "Spain v Argentina",
@@ -11636,8 +11636,8 @@
     "close_ts": "2026-07-18T22:45:19.588531+00:00",
     "status": "closed",
     "clv": -0.0156,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1591866|Match result|Argentina win": {
     "fixture": "Spain v Argentina",
@@ -11656,8 +11656,8 @@
     "close_ts": "2026-07-18T22:45:19.588531+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "lose",
+    "pnl": -1
   },
   "1591866|Match result|Spain win": {
     "fixture": "Spain v Argentina",
@@ -11676,8 +11676,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.3
   },
   "1591866|Corners|Total Over 8.5": {
     "fixture": "Spain v Argentina",
@@ -11696,8 +11696,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.1
   },
   "1591866|Corners|Total Over 9.5": {
     "fixture": "Spain v Argentina",
@@ -11716,8 +11716,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 1.88
   },
   "1591866|Double chance|Either team (no draw)": {
     "fixture": "Spain v Argentina",
@@ -11736,8 +11736,8 @@
     "close_ts": "2026-07-19T13:22:31.133187+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.44
   },
   "1591866|Corners|Total Over 7.5": {
     "fixture": "Spain v Argentina",
@@ -11756,8 +11756,8 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 0.7
   },
   "1591866|Corners|Total Over 10.5": {
     "fixture": "Spain v Argentina",
@@ -11776,7 +11776,7 @@
     "close_ts": "2026-07-19T18:49:20.637681+00:00",
     "status": "closed",
     "clv": 0.0,
-    "result": null,
-    "pnl": null
+    "result": "win",
+    "pnl": 3.0
   }
 }
