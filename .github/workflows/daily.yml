@@ -1,20 +1,10 @@
 name: Daily update
 
 on:
-  schedule:
-    # Multiple daily runs so the CLV log captures a price close to each kickoff
-    # (the "closing line") and settles finished games promptly. WC 2026 is in
-    # North America, so kickoffs cluster roughly 16:00–03:00 UTC. Repeat runs are
-    # cheap on the API quota: the historical prior + player pools stay cached in
-    # cache.json, so only odds/fixtures/results are re-fetched each time.
-    - cron: "0 12 * * *"     # morning board refresh
-    - cron: "0 16 * * *"     # afternoon (US noon-ish) kickoffs
-    - cron: "0 18 * * *"
-    - cron: "0 20 * * *"
-    - cron: "0 22 * * *"
-    - cron: "0 0 * * *"      # late US evening kickoffs
-    - cron: "0 2 * * *"      # settle the last games of the night
-  workflow_dispatch:          # manual run button (use ~1h before a game you care about)
+  # WC 2026 is over — the schedule is retired and the site is frozen at the
+  # final board + complete track record. Manual runs remain available below,
+  # but note a manual run would overwrite the archived data.json.
+  workflow_dispatch:          # manual run button
 
 permissions:
   contents: write

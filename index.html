@@ -811,7 +811,9 @@ function gameBest(f){
 }
 function render(){
   document.getElementById('updated').textContent = DATA.updated==='sample'?'':'Updated '+fmt(DATA.updated);
-  document.getElementById('banner').innerHTML = DATA.sample
+  document.getElementById('banner').innerHTML = DATA.archived
+    ? '<div class="banner">World Cup 2026 is over — this is the final board (Spain v Argentina, as priced before kickoff) and the model\'s complete track record, kept for display.</div>'
+    : DATA.sample
     ? '<div class="banner">Showing sample data. Add your API-Football and Anthropic keys in GitHub to switch to live daily numbers and lineups.</div>':'';
   renderTrack();
   renderBoard();
